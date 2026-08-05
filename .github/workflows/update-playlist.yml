@@ -1,0 +1,34 @@
+name: IPTV Playlist 24-Hour Auto Update Bot
+
+on:
+  schedule:
+    # Runs automatically once every 24 hours (at 00:00 UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allows manual trigger anytime from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run IPTV Playlist Filter & Health Check
+        run: |
+          python scripts/update_playlist.py
+
+      - name: Commit and push updated playlists
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add working_playlist.m3u all_channels_status.m3u channels_status.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update working IPTV playlist [$(date -u +'%Y-%m-%d %H:%M UTC')]" && git push)
