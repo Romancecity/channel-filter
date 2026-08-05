@@ -16,21 +16,21 @@ import base64
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
-M3U_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/Combined_Live_TV.m3u"
-JSON_URL = "https://raw.githubusercontent.com/abusaeeidx/Mrgify-BDIX-IPTV/refs/heads/main/Channels_data.json"
+M3U_URL = "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/unified_playlist.m3u"
+JSON_URL = "#"
 
 # Add any additional playlist sources here if needed
 EXTRA_SOURCES = [
-    {"url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/এক্সাম্পল.m3u", "type": "m3u", "name": "Example_M3U_1"},
-    {"url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/এক্সাম্পল.m3u", "type": "m3u", "name": "Example_M3U_2"},
-    {"url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/এক্সাম্পল.m3u", "type": "m3u", "name": "Example_M3U_3"},
-    {"url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/এক্সাম্পল.m3u", "type": "m3u", "name": "Example_M3U_4"},
-    {"url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/এক্সাম্পল.m3u", "type": "m3u", "name": "Example_M3U_5"},
-    {"url": "https://raw.githubusercontent.com/abusaeeidx/Mrgify-BDIX-IPTV/refs/heads/main/এক্সাম্পল.json", "type": "json", "name": "Example_JSON_1"},
-    {"url": "https://raw.githubusercontent.com/abusaeeidx/Mrgify-BDIX-IPTV/refs/heads/main/এক্সাম্পল.json", "type": "json", "name": "Example_JSON_2"},
-    {"url": "https://raw.githubusercontent.com/abusaeeidx/Mrgify-BDIX-IPTV/refs/heads/main/এক্সাম্পল.json", "type": "json", "name": "Example_JSON_3"},
-    {"url": "https://raw.githubusercontent.com/abusaeeidx/Mrgify-BDIX-IPTV/refs/heads/main/এক্সাম্পল.json", "type": "json", "name": "Example_JSON_4"},
-    {"url": "https://raw.githubusercontent.com/abusaeeidx/Mrgify-BDIX-IPTV/refs/heads/main/এক্সাম্পল.json", "type": "json", "name": "Example_JSON_5"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_1"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_2"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_3"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_4"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_5"},
+    {"url": "#", "type": "json", "name": "Example_JSON_1"},
+    {"url": "#", "type": "json", "name": "Example_JSON_2"},
+    {"url": "#", "type": "json", "name": "Example_JSON_3"},
+    {"url": "#", "type": "json", "name": "Example_JSON_4"},
+    {"url": "#", "type": "json", "name": "Example_JSON_5"},
 ]
 
 USER_AGENT = "VLC/3.0.18 LibVLC/3.0.18 (GitHubActionBot)"
