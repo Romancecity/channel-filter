@@ -141,8 +141,20 @@ def parse_json(json_text, source="BDIX_JSON"):
 
     return channels
 
+def is_direct_ip_or_bdix_stream(url_str):
+    try:
+        parsed = urllib.parse.urlparse(url_str)
+        host = parsed.hostname or ""
+        is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
+        is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
+        is_stream_path = parsed.path.endswith(".m3u8") or parsed.path.endswith(".ts") or "index" in parsed.path.lower() or "live" in parsed.path.lower() or "stream" in parsed.path.lower() or parsed.port is not None
+        return (is_ip or is_bdix) and is_stream_path
+    except Exception:
+        return False
+
 def check_stream(channel):
     url = channel["url"]
+    is_bdix = is_direct_ip_or_bdix_stream(url)
     try:
         req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
         with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as response:
@@ -150,12 +162,14 @@ def check_stream(channel):
             if 200 <= code < 400:
                 initial_bytes = response.read(512).decode('utf-8', errors='ignore').lower()
                 if "<html" in initial_bytes or "<!doctype html" in initial_bytes or "access denied" in initial_bytes or "403 forbidden" in initial_bytes:
-                    channel["status"] = "dead"
+                    channel["status"] = "working" if is_bdix else "dead"
                 else:
                     channel["status"] = "working"
                 return channel
     except Exception:
-        pass
+        if is_bdix:
+            channel["status"] = "working"
+            return channel
     channel["status"] = "dead"
     return channel
 
