@@ -114,21 +114,9 @@ def parse_json(json_text, source="BDIX_JSON"):
 
     return channels
 
-def is_direct_ip_or_bdix_stream(url_str):
-    try:
-        parsed = urllib.parse.urlparse(url_str)
-        host = parsed.hostname or ""
-        is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
-        is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
-        is_stream_path = parsed.path.endswith(".m3u8") or parsed.path.endswith(".ts") or "index" in parsed.path.lower() or "live" in parsed.path.lower() or "stream" in parsed.path.lower() or parsed.port is not None
-        return (is_ip or is_bdix) and is_stream_path
-    except Exception:
-        return False
-
 def check_stream(channel):
     url = channel["url"]
     start_time = time.time()
-    is_bdix = is_direct_ip_or_bdix_stream(url)
 
     try:
         req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
@@ -136,37 +124,24 @@ def check_stream(channel):
             code = response.getcode()
             response_time = int((time.time() - start_time) * 1000)
             if 200 <= code < 400:
-                initial_bytes = response.read(512).decode('utf-8', errors='ignore').lower()
-                if "<html" in initial_bytes or "<!doctype html" in initial_bytes or "access denied" in initial_bytes or "403 forbidden" in initial_bytes:
-                    if is_bdix:
-                        channel["status"] = "working"
-                        channel["http_code"] = code
-                        channel["response_time_ms"] = response_time
-                    else:
-                        channel["status"] = "dead"
-                        channel["http_code"] = code
-                        channel["error"] = "HTML Error Page / Access Denied"
+                initial_bytes = response.read(1024).decode('utf-8', errors='ignore').lower()
+                has_m3u_tag = "#extm3u" in initial_bytes or "#extinf" in initial_bytes or "#ext-x-" in initial_bytes or ".m3u8" in initial_bytes or ".ts" in initial_bytes
+                is_html_error = ("<html" in initial_bytes or "<!doctype html" in initial_bytes) and not has_m3u_tag
+                
+                if is_html_error:
+                    channel["status"] = "dead"
+                    channel["http_code"] = code
+                    channel["error"] = "HTML Error / Landing Page"
                 else:
                     channel["status"] = "working"
                     channel["http_code"] = code
                     channel["response_time_ms"] = response_time
                 return channel
     except urllib.error.HTTPError as e:
-        if is_bdix and e.code in [403, 502, 503, 504]:
-            channel["status"] = "working"
-            channel["http_code"] = e.code
-            channel["response_time_ms"] = int((time.time() - start_time) * 1000)
-            return channel
         channel["status"] = "dead"
         channel["http_code"] = e.code
         channel["error"] = f"HTTP {e.code}"
     except Exception as e:
-        if is_bdix:
-            # BDIX direct IP streams (e.g. 27.124.71.27, 103.89.248.130) block foreign cloud runners but work locally
-            channel["status"] = "working"
-            channel["http_code"] = 200
-            channel["response_time_ms"] = int((time.time() - start_time) * 1000)
-            return channel
         channel["status"] = "dead"
         channel["http_code"] = 0
         channel["error"] = str(e)
