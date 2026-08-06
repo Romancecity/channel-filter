@@ -141,33 +141,36 @@ def parse_json(json_text, source="BDIX_JSON"):
 
     return channels
 
-def is_direct_ip_or_bdix_stream(url_str):
+def is_ip_or_bdix_host(url_str):
     try:
         parsed = urllib.parse.urlparse(url_str)
         host = parsed.hostname or ""
         is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
         is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
-        is_stream_path = parsed.path.endswith(".m3u8") or parsed.path.endswith(".ts") or "index" in parsed.path.lower() or "live" in parsed.path.lower() or "stream" in parsed.path.lower() or parsed.port is not None
-        return (is_ip or is_bdix) and is_stream_path
+        return is_ip or is_bdix
     except Exception:
         return False
 
 def check_stream(channel):
     url = channel["url"]
-    is_bdix = is_direct_ip_or_bdix_stream(url)
+    is_bdix = is_ip_or_bdix_host(url)
     try:
         req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
         with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as response:
             code = response.getcode()
             if 200 <= code < 400:
-                initial_bytes = response.read(512).decode('utf-8', errors='ignore').lower()
-                if "<html" in initial_bytes or "<!doctype html" in initial_bytes or "access denied" in initial_bytes or "403 forbidden" in initial_bytes:
-                    channel["status"] = "working" if is_bdix else "dead"
+                initial_bytes = response.read(1024).decode('utf-8', errors='ignore').lower()
+                has_m3u_tag = "#extm3u" in initial_bytes or "#extinf" in initial_bytes or "#ext-x-" in initial_bytes or ".m3u8" in initial_bytes or ".ts" in initial_bytes
+                is_html_error = ("<html" in initial_bytes or "<!doctype html" in initial_bytes or "404 not found" in initial_bytes or "access denied" in initial_bytes) and not has_m3u_tag
+                if is_html_error:
+                    channel["status"] = "dead"
                 else:
                     channel["status"] = "working"
                 return channel
-    except Exception:
-        if is_bdix:
+    except Exception as e:
+        err_msg = str(e).lower()
+        is_explicit_refusal = "connection refused" in err_msg or "errno 111" in err_msg or "name or service not known" in err_msg or "errno -2" in err_msg
+        if is_bdix and not is_explicit_refusal and ("timed out" in err_msg or "timeout" in err_msg):
             channel["status"] = "working"
             return channel
     channel["status"] = "dead"

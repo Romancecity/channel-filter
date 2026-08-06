@@ -118,42 +118,26 @@ function parseJSON(jsonData: any, sourceName: 'BDIX_JSON' | 'Custom' = 'BDIX_JSO
 }
 
 // Helper: HTTP Stream Health Check Probe (Direct Playback Verification)
-function isDirectIpOrBdixStream(urlStr: string): boolean {
-  try {
-    const parsed = new URL(urlStr);
-    const host = parsed.hostname;
-    // Check if host is direct IPv4 address (e.g. 27.124.71.27, 103.89.248.130) or contains BDIX/local domain
-    const isIp = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(host);
-    const isBdixDomain = host.includes('bdix') || host.endsWith('.bd') || host.includes('local');
-    
-    // Check if URL looks like an IPTV stream (.m3u8, .ts, index, live, or custom port)
-    const isStreamPath = parsed.pathname.endsWith('.m3u8') || 
-                         parsed.pathname.endsWith('.ts') || 
-                         parsed.pathname.toLowerCase().includes('index') || 
-                         parsed.pathname.toLowerCase().includes('live') || 
-                         parsed.pathname.toLowerCase().includes('stream') || 
-                         parsed.port !== '';
-
-    return (isIp || isBdixDomain) && isStreamPath;
-  } catch {
-    return false;
-  }
+function isIpOrBdixHost(hostname: string): boolean {
+  if (!hostname) return false;
+  // Check if IPv4 (e.g. 27.124.71.27, 103.89.248.130) or .bd / bdix / local domain
+  const isIp = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(hostname);
+  const isBdix = hostname.includes('bdix') || hostname.endsWith('.bd') || hostname.includes('local');
+  return isIp || isBdix;
 }
 
-function checkStreamUrl(streamUrl: string, timeoutMs: number = 5000, redirectCount: number = 0): Promise<{ status: 'working' | 'dead'; httpCode: number; responseTimeMs: number; errorReason?: string }> {
+function checkStreamUrl(streamUrl: string, timeoutMs: number = 6000, redirectCount: number = 0): Promise<{ status: 'working' | 'dead'; httpCode: number; responseTimeMs: number; errorReason?: string }> {
   return new Promise((resolve) => {
     const startTime = Date.now();
-    const isIpOrBdix = isDirectIpOrBdixStream(streamUrl);
 
-    if (redirectCount > 3) {
-      if (isIpOrBdix) {
-        return resolve({ status: 'working', httpCode: 200, responseTimeMs: 150, errorReason: 'BDIX Stream (Redirected)' });
-      }
+    if (redirectCount > 5) {
       return resolve({ status: 'dead', httpCode: 310, responseTimeMs: Date.now() - startTime, errorReason: 'Too many redirects' });
     }
 
     try {
       const parsedUrl = new URL(streamUrl);
+      const host = parsedUrl.hostname;
+      const isBDIX = isIpOrBdixHost(host);
       const isHttps = parsedUrl.protocol === "https:";
       const client = isHttps ? https : http;
 
@@ -190,7 +174,7 @@ function checkStreamUrl(streamUrl: string, timeoutMs: number = 5000, redirectCou
         let chunkData = "";
 
         res.on("data", (chunk) => {
-          if (chunkData.length < 512) {
+          if (chunkData.length < 1024) {
             chunkData += chunk.toString("utf8");
           }
         });
@@ -201,26 +185,21 @@ function checkStreamUrl(streamUrl: string, timeoutMs: number = 5000, redirectCou
 
           if (statusCode >= 200 && statusCode < 400) {
             const lowerData = chunkData.toLowerCase();
-            const isHtmlPage = lowerData.includes("<html") || lowerData.includes("<!doctype html") || lowerData.includes("access denied") || lowerData.includes("403 forbidden");
+            const hasM3uHeader = lowerData.includes("#extm3u") || lowerData.includes("#extinf") || lowerData.includes("#ext-x-") || lowerData.includes(".m3u8") || lowerData.includes(".ts");
+            const isHtmlError = (lowerData.includes("<html") || lowerData.includes("<!doctype html") || lowerData.includes("404 not found") || lowerData.includes("access denied")) && !hasM3uHeader;
 
-            if (isHtmlPage) {
-              if (isIpOrBdix) {
-                // Direct BDIX stream returning basic html / landing
-                resolve({ status: "working", httpCode: statusCode, responseTimeMs });
-              } else {
-                resolve({
-                  status: "dead",
-                  httpCode: statusCode,
-                  responseTimeMs,
-                  errorReason: "HTML Error / Access Denied page received",
-                });
-              }
+            if (isHtmlError) {
+              resolve({
+                status: "dead",
+                httpCode: statusCode,
+                responseTimeMs,
+                errorReason: "HTML Error or Landing Page",
+              });
             } else {
               resolve({ status: "working", httpCode: statusCode, responseTimeMs });
             }
-          } else if (isIpOrBdix && (statusCode === 403 || statusCode === 502 || statusCode === 503 || statusCode === 504)) {
-            resolve({ status: "working", httpCode: statusCode, responseTimeMs, errorReason: "BDIX Local Stream (Geo/ISP Restricted)" });
           } else {
+            // Explicit HTTP error (404, 500, etc.)
             resolve({
               status: "dead",
               httpCode: statusCode,
@@ -233,33 +212,41 @@ function checkStreamUrl(streamUrl: string, timeoutMs: number = 5000, redirectCou
         res.on("error", (err) => {
           if (!resolved) {
             resolved = true;
-            if (isIpOrBdix) {
-              resolve({ status: "working", httpCode: 200, responseTimeMs: Date.now() - startTime, errorReason: "BDIX Local Stream" });
-            } else {
-              resolve({
-                status: "dead",
-                httpCode: statusCode,
-                responseTimeMs,
-                errorReason: err.message || "Stream error",
-              });
-            }
+            resolve({
+              status: "dead",
+              httpCode: statusCode || 0,
+              responseTimeMs: Date.now() - startTime,
+              errorReason: err.message || "Stream read error",
+            });
           }
         });
       });
 
-      req.on("error", (err) => {
+      req.on("error", (err: any) => {
         if (!resolved) {
           resolved = true;
-          const responseTimeMs = Date.now() - startTime;
-          if (isIpOrBdix) {
-            // BDIX local IP streams (e.g. 27.124.71.27, 103.89.248.130) cause connection timeout from foreign cloud servers, but play on local connection
-            resolve({ status: "working", httpCode: 200, responseTimeMs, errorReason: "BDIX Local Stream (Verified for Local Playback)" });
+          const errMsg = (err.message || "").toLowerCase();
+          const errCode = (err.code || "").toLowerCase();
+          
+          // Explicit connection refused or DNS resolution failure means the stream/server is DEAD
+          const isExplicitRefusal = errCode.includes('econnrefused') || errMsg.includes('econnrefused') || 
+                                    errCode.includes('enotfound') || errMsg.includes('enotfound') ||
+                                    errCode.includes('ehostunreach');
+
+          if (!isExplicitRefusal && isBDIX) {
+            // BDIX local IP stream that timed out on foreign cloud server
+            resolve({
+              status: "working",
+              httpCode: 200,
+              responseTimeMs: Date.now() - startTime,
+              errorReason: "BDIX Local Stream (Verified for local ISP)",
+            });
           } else {
             resolve({
               status: "dead",
               httpCode: 0,
-              responseTimeMs,
-              errorReason: err.message || "Connection error",
+              responseTimeMs: Date.now() - startTime,
+              errorReason: err.message || "Connection refused / unreachable",
             });
           }
         }
@@ -269,15 +256,20 @@ function checkStreamUrl(streamUrl: string, timeoutMs: number = 5000, redirectCou
         req.destroy();
         if (!resolved) {
           resolved = true;
-          const responseTimeMs = Date.now() - startTime;
-          if (isIpOrBdix) {
-            resolve({ status: "working", httpCode: 200, responseTimeMs, errorReason: "BDIX Local Stream (Timeout on Cloud)" });
+          if (isBDIX) {
+            // BDIX IP timeout on cloud runner -> preserve as working BDIX stream
+            resolve({
+              status: "working",
+              httpCode: 200,
+              responseTimeMs: Date.now() - startTime,
+              errorReason: "BDIX Local Stream (Cloud timeout)",
+            });
           } else {
             resolve({
               status: "dead",
               httpCode: 408,
-              responseTimeMs,
-              errorReason: "Request timeout",
+              responseTimeMs: Date.now() - startTime,
+              errorReason: "Connection timeout",
             });
           }
         }
@@ -285,16 +277,12 @@ function checkStreamUrl(streamUrl: string, timeoutMs: number = 5000, redirectCou
 
       req.end();
     } catch (e: any) {
-      if (isIpOrBdix) {
-        resolve({ status: "working", httpCode: 200, responseTimeMs: Date.now() - startTime, errorReason: "BDIX Local Stream" });
-      } else {
-        resolve({
-          status: "dead",
-          httpCode: 0,
-          responseTimeMs: Date.now() - startTime,
-          errorReason: e.message || "Invalid URL format",
-        });
-      }
+      resolve({
+        status: "dead",
+        httpCode: 0,
+        responseTimeMs: Date.now() - startTime,
+        errorReason: e.message || "Invalid URL format",
+      });
     }
   });
 }
