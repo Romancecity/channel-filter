@@ -21,12 +21,12 @@ JSON_URL = "#"
 
 # Add any additional playlist sources here if needed
 EXTRA_SOURCES = [
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/category/refs/heads/main/output/sports.m3u", "type": "m3u", "name": "Example_M3U_1"},
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/category/refs/heads/main/output/movies.m3u", "type": "m3u", "name": "Example_M3U_2"},
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/category/refs/heads/main/output/documentary.m3u", "type": "m3u", "name": "Example_M3U_3"},
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/category/refs/heads/main/output/kids.m3u", "type": "m3u", "name": "Example_M3U_4"},
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/category/refs/heads/main/output/entertainment.m3u", "type": "m3u", "name": "Example_M3U_5"},
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/category/refs/heads/main/output/music.m3u", "type": "m3u", "name": "Example_M3U_6"},
+    {"url": "https://raw.githubusercontent.com/iptvorg-bd/iptv-category/refs/heads/main/playlists/all_categories.m3u", "type": "m3u", "name": "Example_M3U_1"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_2"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_3"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_4"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_5"},
+    {"url": "#", "type": "m3u", "name": "Example_M3U_6"},
     {"url": "#", "type": "json", "name": "Example_JSON_2"},
     {"url": "#", "type": "json", "name": "Example_JSON_3"},
     {"url": "#", "type": "json", "name": "Example_JSON_4"},
