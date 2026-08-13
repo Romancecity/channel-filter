@@ -2,8 +2,8 @@ name: IPTV Playlist 24-Hour Auto Update Bot
 
 on:
   schedule:
-    # Runs automatically once every 24 hours (at 00:00 UTC)
-    - cron: '0 0 * * *'
+    # Runs automatically once every 12 hours
+    - cron: '0 0/12 * * *'
   workflow_dispatch:
     # Allows manual trigger anytime from GitHub Actions tab
 
