@@ -2,7 +2,7 @@ name: Automated Willow JSON Updater
 
 on:
   schedule:
-    - cron: '*/7 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
   push:
     branches:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Configure Git User
         run: |
-          git config --global user.name "sportlive18"
+          git config --global user.name "ireentv"
           git config --global user.email "271363488+sportlive18@users.noreply.github.com"
 
       - name: Fetch, Filter Old Credits, and Apply New Details
@@ -32,7 +32,6 @@ jobs:
           python3 - << 'EOF'
           import urllib.request
           import json
-          import re
           from datetime import datetime
           import pytz
 
@@ -41,32 +40,29 @@ jobs:
           current_time = datetime.now(tz).strftime('%I:%M %p %d-%m-%Y')
 
           # -------------------------------------------------------------
-          # ১. M3U প্লেলিস্ট প্রসেসিং
+          # ১. M3U প্লেলিস্ট ফিল্টারিং ও আপডেট
           # -------------------------------------------------------------
           m3u_url = "https://raw.githubusercontent.com/srhady/willow-event/refs/heads/main/live_sports.m3u"
           req = urllib.request.Request(m3u_url, headers={'User-Agent': 'Mozilla/5.0'})
           m3u_content = urllib.request.urlopen(req).read().decode('utf-8')
 
-          # অরিজিনাল হেডার ও আগের ওনারের লাইনগুলো ব্লক/ফিল্টার করা
-          cleaned_lines = []
+          # আগের ওনারের যেকোনো লেখা ফিল্টার করা
+          cleaned_m3u_lines = []
           for line in m3u_content.splitlines():
-              line_stripped = line.strip()
-              # আগের যে লাইনগুলো বাদ দেওয়া হবে
-              if any(line_stripped.startswith(tag) for tag in [
-                  "#EXTM3U", "#PLAYLIST:", "#LAST_UPDATE:", "#TELEGRAM:", 
-                  "#OWNER:", "#LIVE_COUNT:", "# Playlist Name:", "# Owner:",
-                  "# Telegram:", "# Website:", "# Developer:", "# Version:", 
-                  "# Channels Amount:", "# Last Update:"
-              ]):
+              l = line.strip()
+              # আগের ওনারের নাম, লিঙ্ক বা ট্যাগ থাকলে বাদ দেবে
+              if any(bad.lower() in l.lower() for bad in ["hady", "sohanur", "livesportsplay", "#playlist:", "#last_update:", "#telegram:", "#owner:", "#live_count:"]):
                   continue
-              if line_stripped != "":
-                  cleaned_lines.append(line)
+              if l.startswith("#EXTM3U") or l.startswith("# Playlist Name:") or l.startswith("# Owner:"):
+                  continue
+              if l != "":
+                  cleaned_m3u_lines.append(line)
 
-          # চ্যানেল সংখ্যা গণনা
-          channel_count = sum(1 for line in cleaned_lines if line.strip().startswith("#EXTINF"))
+          # মোট চ্যানেল সংখ্যা গণনা
+          channel_count = sum(1 for line in cleaned_m3u_lines if line.strip().startswith("#EXTINF"))
 
-          # আপনার নতুন হেডার তৈরি
-          new_m3u_header = [
+          # আপনার নতুন হেডার
+          new_m3u = [
               "#EXTM3U",
               "# Playlist Name: Willow Cricket Event Info",
               "# Owner: MD ANAMUL HOQUE",
@@ -78,43 +74,66 @@ jobs:
               f"# Last Update: {current_time}",
               ""
           ]
+          new_m3u.extend(cleaned_m3u_lines)
 
-          # willow.m3u ফাইলে সেভ করা
-          final_m3u = "\n".join(new_m3u_header) + "\n" + "\n".join(cleaned_lines)
           with open("willow.m3u", "w", encoding="utf-8") as f:
-              f.write(final_m3u.strip() + "\n")
+              f.write("\n".join(new_m3u).strip() + "\n")
 
           # -------------------------------------------------------------
-          # ২. JSON প্লেলিস্ট প্রসেসিং
+          # ২. JSON প্লেলিস্ট ফিল্টারিং ও আপডেট
           # -------------------------------------------------------------
           json_url = "https://raw.githubusercontent.com/srhady/willow-event/refs/heads/main/live_sports.json"
           req_json = urllib.request.Request(json_url, headers={'User-Agent': 'Mozilla/5.0'})
           json_raw = urllib.request.urlopen(req_json).read().decode('utf-8')
-          json_data = json.loads(json_raw)
+          data = json.loads(json_raw)
 
-          # JSON-এর ভেতর থেকে আগের ওনারের ডিটেইলস মুছে নতুন ডিটেইলস সেট করা
-          new_json_data = {}
-          new_json_data["playlist_name"] = "Willow Cricket Event Info"
-          new_json_data["owner"] = "MD ANAMUL HOQUE"
-          new_json_data["telegram"] = "https://t.me/ireentv"
-          new_json_data["website"] = "https://anamul.pages.dev"
-          new_json_data["developer"] = "IreenTechnology"
-          new_json_data["version"] = "1.0"
-          new_json_data["channels_amount"] = channel_count
-          new_json_data["last_update"] = current_time
+          # আগের ওনার সংক্রান্ত ডেটা চেক করার ফাংশন
+          def contains_old_credit(obj):
+              s = json.dumps(obj).lower()
+              return any(bad in s for bad in ["hady", "sohanur", "livesportsplay"])
 
-          if isinstance(json_data, dict):
-              # আগের মেটাডাটা কীগুলো বাদ দেওয়া
-              blocked_keys = ["playlist_name", "owner", "telegram", "website", "developer", "version", "last_update", "live_count", "LAST_UPDATE", "OWNER", "TELEGRAM"]
-              for k, v in json_data.items():
-                  if k not in blocked_keys:
-                      new_json_data[k] = v
-          elif isinstance(json_data, list):
-              new_json_data["events"] = json_data
+          # আপনার মেটাডাটা
+          meta = {
+              "playlist_name": "Willow Cricket Event Info",
+              "owner": "MD ANAMUL HOQUE",
+              "telegram": "https://t.me/ireentv",
+              "website": "https://anamul.pages.dev",
+              "developer": "IreenTechnology",
+              "version": "1.0",
+              "channels_amount": channel_count,
+              "last_update": current_time
+          }
+
+          blocked_keys = {
+              "owner", "telegram", "website", "developer", "version", 
+              "playlist_name", "playlist", "last_update", "live_count", 
+              "admin", "channel_count", "channels_amount"
+          }
+
+          final_json = {}
+
+          if isinstance(data, dict):
+              cleaned_dict = {}
+              for k, v in data.items():
+                  # পুরনো মেটাডাটা কী বা ওনারের নাম থাকলে সরাসরি রিমুভ
+                  if k.lower() in blocked_keys or contains_old_credit(k) or contains_old_credit(v):
+                      continue
+                  
+                  # যদি ভ্যালু কোনো চ্যানেল লিস্ট হয়, তার ভেতর থেকেও ফিল্টার করবে
+                  if isinstance(v, list):
+                      cleaned_dict[k] = [item for item in v if not contains_old_credit(item)]
+                  else:
+                      cleaned_dict[k] = v
+              
+              final_json = {**meta, **cleaned_dict}
+
+          elif isinstance(data, list):
+              cleaned_list = [item for item in data if not contains_old_credit(item)]
+              final_json = {**meta, "events": cleaned_list}
 
           # willow.json ফাইলে সেভ করা
           with open("willow.json", "w", encoding="utf-8") as f:
-              json.dump(new_json_data, f, indent=2, ensure_ascii=False)
+              json.dump(final_json, f, indent=2, ensure_ascii=False)
 
           # -------------------------------------------------------------
           # ৩. লগ ফাইল আপডেট
