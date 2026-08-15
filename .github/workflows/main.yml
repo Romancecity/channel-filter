@@ -23,7 +23,7 @@ jobs:
       - name: Configure Git User
         run: |
           git config --global user.name "ireentv"
-          git config --global user.email "271363488+sportlive18@users.noreply.github.com"
+          git config --global user.email "271363488+Romancecity@users.noreply.github.com"
 
       - name: Fetch, Filter Old Credits, and Apply New Details
         run: |
