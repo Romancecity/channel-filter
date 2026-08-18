@@ -30,7 +30,7 @@ jobs:
 
           # ৩টি প্লেলিস্টের লিংক
           source_urls = [
-              "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/IreenTV_vip.m3u",
+              "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/working_playlist.m3u",
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u",
               "https://raw.githubusercontent.com/Romancecity/vip/refs/heads/main/Vip_Sports.m3u"
           ]
