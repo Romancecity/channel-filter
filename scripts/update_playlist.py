@@ -16,7 +16,7 @@ import base64
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
-M3U_URL = "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/unified_playlist.m3u"
+M3U_URL = "https://raw.githubusercontent.com/Romancecity/pl_vip/refs/heads/main/playlist_vip.m3u"
 JSON_URL = "#"
 
 # Add any additional playlist sources here if needed
