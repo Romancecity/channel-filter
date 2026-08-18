@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  filter-and-update:
+  merge-and-update:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,13 +22,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Filter HTTPS Channels and Generate Playlist with Header
+      - name: Merge All Playlists and Generate Header
         run: |
           python - << 'EOF'
           import urllib.request
           from datetime import datetime, timezone, timedelta
 
-          # এখানে ৩টি প্লেলিস্টের লিংক একসাথে যুক্ত করা হয়েছে
+          # ৩টি প্লেলিস্টের লিংক
           source_urls = [
               "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/IreenTV_vip.m3u",
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u",
@@ -36,10 +36,10 @@ jobs:
           ]
           output_file = "IreenTV_vip.m3u"
 
-          valid_channels = []
+          merged_channels = []
           channel_count = 0
 
-          # প্রতিটি প্লেলিস্ট ডাউনলোড ও প্রসেস করা
+          # প্রতিটি প্লেলিস্ট ডাউনলোড ও একত্রিত করা (কোনো ফিল্টার ছাড়া)
           for url in source_urls:
               print(f"Fetching: {url}")
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -50,28 +50,24 @@ jobs:
                   continue
 
               lines = content.splitlines()
-              buffer_meta = []
 
-              # চ্যানেল ফিল্টারিং (শুধু https:// রাখবে)
               for line in lines:
                   line_clean = line.strip()
                   if not line_clean:
                       continue
+                  # মাঝের ফাইলের #EXTM3U বাদ দেওয়া হচ্ছে যাতে ডুপ্লিকেট হেডার না হয়
                   if line_clean.startswith("#EXTM3U"):
                       continue
-                  elif line_clean.startswith("#"):
-                      buffer_meta.append(line_clean)
-                  else:
-                      if line_clean.startswith("https://"):
-                          valid_channels.extend(buffer_meta)
-                          valid_channels.append(line_clean)
-                          channel_count += 1
-                      buffer_meta = []
+                  
+                  merged_channels.append(line_clean)
+                  # প্রতি স্ট্রিম লিংকের জন্য চ্যানেল কাউন্ট বাড়ানো
+                  if not line_clean.startswith("#"):
+                      channel_count += 1
 
           # বাংলাদেশ সময় (BST / UTC+6) বের করা
           bd_time = datetime.now(timezone(timedelta(hours=6))).strftime("%d-%m-%Y | %I:%M:%S %p (BST)")
 
-          # হেডারের তথ্য সাজানো
+          # কাস্টম হেডারের তথ্য সাজানো
           header = [
               "#EXTM3U",
               "# Playlist Name: IreenTV vip",
@@ -86,11 +82,11 @@ jobs:
           ]
 
           # সম্পূর্ণ ফাইল তৈরি ও সেভ করা
-          final_content = header + valid_channels
+          final_content = header + merged_channels
           with open(output_file, "w", encoding="utf-8") as f:
               f.write("\n".join(final_content) + "\n")
 
-          print(f"All playlists merged! Total {channel_count} HTTPS channels saved.")
+          print(f"Merge complete! Total {channel_count} channels added.")
           EOF
 
       - name: Commit and Push Changes
