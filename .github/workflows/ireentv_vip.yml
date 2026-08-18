@@ -28,38 +28,45 @@ jobs:
           import urllib.request
           from datetime import datetime, timezone, timedelta
 
-          source_url = "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/IreenTV_vip.m3u"
-          source_url = "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u"
+          # এখানে ৩টি প্লেলিস্টের লিংক একসাথে যুক্ত করা হয়েছে
+          source_urls = [
+              "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/IreenTV_vip.m3u",
+              "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u",
+              "https://raw.githubusercontent.com/Romancecity/vip/refs/heads/main/Vip_Sports.m3u"
+          ]
           output_file = "IreenTV_vip.m3u"
 
-          # প্লেলিস্ট ডাউনলোড করা
-          req = urllib.request.Request(source_url, headers={'User-Agent': 'Mozilla/5.0'})
-          try:
-              content = urllib.request.urlopen(req).read().decode('utf-8', errors='ignore')
-          except Exception as e:
-              print(f"Error downloading playlist: {e}")
-              exit(1)
-
-          lines = content.splitlines()
           valid_channels = []
-          buffer_meta = []
           channel_count = 0
 
-          # চ্যানেল ফিল্টারিং (শুধু https:// রাখবে)
-          for line in lines:
-              line_clean = line.strip()
-              if not line_clean:
+          # প্রতিটি প্লেলিস্ট ডাউনলোড ও প্রসেস করা
+          for url in source_urls:
+              print(f"Fetching: {url}")
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+              try:
+                  content = urllib.request.urlopen(req, timeout=30).read().decode('utf-8', errors='ignore')
+              except Exception as e:
+                  print(f"Error downloading playlist from {url}: {e}")
                   continue
-              if line_clean.startswith("#EXTM3U"):
-                  continue
-              elif line_clean.startswith("#"):
-                  buffer_meta.append(line_clean)
-              else:
-                  if line_clean.startswith("https://"):
-                      valid_channels.extend(buffer_meta)
-                      valid_channels.append(line_clean)
-                      channel_count += 1
-                  buffer_meta = []
+
+              lines = content.splitlines()
+              buffer_meta = []
+
+              # চ্যানেল ফিল্টারিং (শুধু https:// রাখবে)
+              for line in lines:
+                  line_clean = line.strip()
+                  if not line_clean:
+                      continue
+                  if line_clean.startswith("#EXTM3U"):
+                      continue
+                  elif line_clean.startswith("#"):
+                      buffer_meta.append(line_clean)
+                  else:
+                      if line_clean.startswith("https://"):
+                          valid_channels.extend(buffer_meta)
+                          valid_channels.append(line_clean)
+                          channel_count += 1
+                      buffer_meta = []
 
           # বাংলাদেশ সময় (BST / UTC+6) বের করা
           bd_time = datetime.now(timezone(timedelta(hours=6))).strftime("%d-%m-%Y | %I:%M:%S %p (BST)")
@@ -83,7 +90,7 @@ jobs:
           with open(output_file, "w", encoding="utf-8") as f:
               f.write("\n".join(final_content) + "\n")
 
-          print(f"Playlist generated with {channel_count} HTTPS channels.")
+          print(f"All playlists merged! Total {channel_count} HTTPS channels saved.")
           EOF
 
       - name: Commit and Push Changes
