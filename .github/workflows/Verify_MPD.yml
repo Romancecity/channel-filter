@@ -1,0 +1,127 @@
+name: Verify MPD Playlist Streams
+
+on:
+  schedule:
+    # প্রতিদিন রাত ১২টা (UTC) অর্থাৎ প্রতি ২৪ ঘণ্টায় একবার অটোমেটিক রান হবে
+    - cron: '0 0 * * *'
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests concurrent-log-handler
+
+      - name: Verify Playlist Streams
+        run: |
+          python - << 'EOF'
+          import urllib.request
+          import requests
+          from concurrent.futures import ThreadPoolExecutor
+
+          PLAYLIST_URL = "https://raw.githubusercontent.com/Romancecity/MD/refs/heads/main/mpd.m3u"
+          VERIFY_FILE = "verify_mpd.m3u"
+          DEAD_FILE = "dead.m3u"
+
+          HEADERS = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          }
+
+          print("Fetching original playlist...")
+          req = urllib.request.Request(PLAYLIST_URL, headers=HEADERS)
+          with urllib.request.urlopen(req) as response:
+              content = response.read().decode('utf-8', errors='ignore')
+
+          lines = [line.strip() for line in content.splitlines() if line.strip()]
+
+          # M3U পার্স করে চ্যানেল ব্লক আলাদা করা
+          channels = []
+          current_meta = []
+
+          for line in lines:
+              if line.startswith("#EXTM3U"):
+                  continue
+              if line.startswith("#"):
+                  current_meta.append(line)
+              else:
+                  # এটি স্ট্রিম URL
+                  channels.append({
+                      "meta": current_meta,
+                      "url": line
+                  })
+                  current_meta = []
+
+          print(f"Total channels found: {len(channels)}")
+
+          def check_stream(channel):
+              url = channel["url"]
+              try:
+                  # MPD বা লাইভ স্ট্রিম সক্রিয় আছে কিনা তা চেক করা
+                  response = requests.get(url, headers=HEADERS, timeout=7, stream=True, allow_redirects=True)
+                  if response.status_code in [200, 206, 302]:
+                      # কিছু বাইট ডেটা রিড করে নিশ্চিত হওয়া
+                      for _ in response.iter_content(chunk_size=1024):
+                          return channel, True
+                  return channel, False
+              except Exception:
+                  return channel, False
+
+          live_channels = []
+          dead_channels = []
+
+          # ২০টি থ্রেড একসাথে স্ক্যান করবে যাতে দ্রুত কাজ শেষ হয়
+          print("Scanning streams...")
+          with ThreadPoolExecutor(max_workers=20) as executor:
+              results = executor.map(check_stream, channels)
+              for channel, is_alive in results:
+                  if is_alive:
+                      live_channels.append(channel)
+                  else:
+                      dead_channels.append(channel)
+
+          print(f"Live channels: {len(live_channels)} | Dead channels: {len(dead_channels)}")
+
+          # verify_mpd.m3u তৈরি
+          with open(VERIFY_FILE, "w", encoding="utf-8") as f:
+              f.write("#EXTM3U\n")
+              for ch in live_channels:
+                  for meta in ch["meta"]:
+                      f.write(meta + "\n")
+                  f.write(ch["url"] + "\n")
+
+          # dead.m3u তৈরি
+          with open(DEAD_FILE, "w", encoding="utf-8") as f:
+              f.write("#EXTM3U\n")
+              for ch in dead_channels:
+                  for meta in ch["meta"]:
+                      f.write(meta + "\n")
+                  f.write(ch["url"] + "\n")
+
+          print("Playlists successfully updated!")
+          EOF
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add verify_mpd.m3u dead.m3u
+          if git diff --staged --quiet; then
+            echo "No changes found."
+          else
+            git commit -m "Auto-update: verify_mpd and dead playlists"
+            git push
+          fi
