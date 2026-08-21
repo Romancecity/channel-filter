@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-21 14:13:44 UTC",
+  "last_updated": "2026-08-21 16:33:52 UTC",
   "stats": {
     "total": 300,
-    "working": 254,
-    "dead": 46
+    "working": 259,
+    "dead": 41
   },
   "channels": [
     {
@@ -15,7 +15,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 214
+      "response_time_ms": 404
     },
     {
       "id": "Combined_M3U_1_aHR0cHM6",
@@ -26,7 +26,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 355
+      "response_time_ms": 402
     },
     {
       "id": "Combined_M3U_2_aHR0cHM6",
@@ -37,7 +37,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 972
+      "response_time_ms": 906
     },
     {
       "id": "Combined_M3U_3_aHR0cHM6",
@@ -48,7 +48,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 994
+      "response_time_ms": 912
     },
     {
       "id": "Combined_M3U_4_aHR0cHM6",
@@ -59,7 +59,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 964
+      "response_time_ms": 907
     },
     {
       "id": "Combined_M3U_5_aHR0cDov",
@@ -79,10 +79,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/jamuna_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 441
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 853
     },
     {
       "id": "Combined_M3U_7_aHR0cDov",
@@ -93,7 +92,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5003
+      "response_time_ms": 5006
     },
     {
       "id": "Combined_M3U_8_aHR0cDov",
@@ -115,7 +114,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5004
+      "response_time_ms": 5005
     },
     {
       "id": "Combined_M3U_10_aHR0cHM6",
@@ -124,10 +123,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/ekattor_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 453
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 803
     },
     {
       "id": "Combined_M3U_11_aHR0cHM6",
@@ -136,10 +134,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/channel_24_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 476
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 831
     },
     {
       "id": "Combined_M3U_12_aHR0cDov",
@@ -150,7 +147,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5008
+      "response_time_ms": 5010
     },
     {
       "id": "Combined_M3U_13_aHR0cDov",
@@ -161,7 +158,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5007
+      "response_time_ms": 5019
     },
     {
       "id": "Combined_M3U_14_aHR0cHM6",
@@ -170,9 +167,10 @@
       "group": "Bangla",
       "url": "https://s2.itcnbd.live/server-2/stream/anandatv.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 991
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5200
     },
     {
       "id": "Combined_M3U_15_aHR0cHM6",
@@ -181,10 +179,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 361
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 587
     },
     {
       "id": "Combined_M3U_16_aHR0cDov",
@@ -195,7 +192,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5003
+      "response_time_ms": 5005
     },
     {
       "id": "Combined_M3U_17_aHR0cHM6",
@@ -204,10 +201,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/asian_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 358
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 366
     },
     {
       "id": "Combined_M3U_18_aHR0cHM6",
@@ -218,7 +214,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 323
+      "response_time_ms": 542
     },
     {
       "id": "Combined_M3U_19_aHR0cHM6",
@@ -229,7 +225,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 189
+      "response_time_ms": 354
     },
     {
       "id": "Combined_M3U_20_aHR0cDov",
@@ -251,7 +247,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 532
+      "response_time_ms": 480
     },
     {
       "id": "Combined_M3U_22_aHR0cHM6",
@@ -260,10 +256,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/desh_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 359
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 665
     },
     {
       "id": "Combined_M3U_23_aHR0cHM6",
@@ -275,7 +270,7 @@
       "status": "dead",
       "http_code": 404,
       "error": "HTTP 404",
-      "response_time_ms": 187
+      "response_time_ms": 193
     },
     {
       "id": "Combined_M3U_24_aHR0cDov",
@@ -286,7 +281,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5006
     },
     {
       "id": "Combined_M3U_25_aHR0cHM6",
@@ -297,7 +292,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 941
+      "response_time_ms": 897
     },
     {
       "id": "Combined_M3U_26_aHR0cHM6",
@@ -308,7 +303,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1286
+      "response_time_ms": 1111
     },
     {
       "id": "Combined_M3U_27_aHR0cDov",
@@ -330,7 +325,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 15039
+      "response_time_ms": 791
     },
     {
       "id": "Combined_M3U_29_aHR0cDov",
@@ -352,7 +347,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5004
     },
     {
       "id": "Combined_M3U_31_aHR0cHM6",
@@ -361,10 +356,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/nexus_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 372
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 357
     },
     {
       "id": "Combined_M3U_32_aHR0cDov",
@@ -386,7 +380,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1115
+      "response_time_ms": 1058
     },
     {
       "id": "Combined_M3U_34_aHR0cDov",
@@ -397,7 +391,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 487
+      "response_time_ms": 510
     },
     {
       "id": "Combined_M3U_35_aHR0cHM6",
@@ -408,7 +402,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 979
+      "response_time_ms": 796
     },
     {
       "id": "Combined_M3U_36_aHR0cHM6",
@@ -419,7 +413,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 846
+      "response_time_ms": 792
     },
     {
       "id": "Combined_M3U_37_aHR0cDov",
@@ -441,7 +435,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 876
+      "response_time_ms": 878
     },
     {
       "id": "Combined_M3U_39_aHR0cHM6",
@@ -452,7 +446,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 861
+      "response_time_ms": 887
     },
     {
       "id": "Combined_M3U_40_aHR0cDov",
@@ -474,7 +468,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 351
+      "response_time_ms": 165
     },
     {
       "id": "Combined_M3U_42_aHR0cHM6",
@@ -485,7 +479,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 763
+      "response_time_ms": 754
     },
     {
       "id": "Combined_M3U_43_aHR0cDov",
@@ -518,7 +512,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 817
+      "response_time_ms": 751
     },
     {
       "id": "Combined_M3U_46_aHR0cDov",
@@ -540,7 +534,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5481
+      "response_time_ms": 761
     },
     {
       "id": "Combined_M3U_48_aHR0cHM6",
@@ -551,7 +545,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 260
+      "response_time_ms": 426
     },
     {
       "id": "Combined_M3U_49_aHR0cHM6",
@@ -560,10 +554,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/bijoy_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 359
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 343
     },
     {
       "id": "Combined_M3U_50_aHR0cDov",
@@ -574,7 +567,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5004
+      "response_time_ms": 5005
     },
     {
       "id": "Combined_M3U_51_aHR0cHM6",
@@ -585,7 +578,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 809
+      "response_time_ms": 766
     },
     {
       "id": "Combined_M3U_52_aHR0cDov",
@@ -596,7 +589,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5002
+      "response_time_ms": 5005
     },
     {
       "id": "Combined_M3U_53_aHR0cHM6",
@@ -607,7 +600,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 841
+      "response_time_ms": 804
     },
     {
       "id": "Combined_M3U_54_aHR0cHM6",
@@ -618,7 +611,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 160
+      "response_time_ms": 214
     },
     {
       "id": "Combined_M3U_55_aHR0cHM6",
@@ -629,7 +622,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 271
+      "response_time_ms": 201
     },
     {
       "id": "Combined_M3U_56_aHR0cHM6",
@@ -640,7 +633,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 845
+      "response_time_ms": 803
     },
     {
       "id": "Combined_M3U_57_aHR0cHM6",
@@ -649,10 +642,9 @@
       "group": "Bangla",
       "url": "https://app.ncare.live/live-orgin/channels.stream/live-orgin/channels.stream/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 404,
-      "error": "HTTP 404",
-      "response_time_ms": 165
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 238
     },
     {
       "id": "Combined_M3U_58_aHR0cHM6",
@@ -663,7 +655,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 4508
+      "response_time_ms": 546
     },
     {
       "id": "Combined_M3U_59_aHR0cHM6",
@@ -672,10 +664,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/global_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 356
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 1156
     },
     {
       "id": "Combined_M3U_60_aHR0cHM6",
@@ -686,7 +677,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 4414
+      "response_time_ms": 425
     },
     {
       "id": "Combined_M3U_61_aHR0cDov",
@@ -706,10 +697,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/mohona_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 333
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 347
     },
     {
       "id": "Combined_M3U_63_aHR0cHM6",
@@ -720,7 +710,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 3933
+      "response_time_ms": 292
     },
     {
       "id": "Combined_M3U_64_aHR0cDov",
@@ -731,7 +721,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5000
+      "response_time_ms": 5005
     },
     {
       "id": "Combined_M3U_65_aHR0cHM6",
@@ -743,7 +733,7 @@
       "status": "dead",
       "http_code": 404,
       "error": "HTTP 404",
-      "response_time_ms": 1214
+      "response_time_ms": 1489
     },
     {
       "id": "Combined_M3U_66_aHR0cHM6",
@@ -754,7 +744,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 3633
+      "response_time_ms": 200
     },
     {
       "id": "Combined_M3U_67_aHR0cHM6",
@@ -765,7 +755,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 163
+      "response_time_ms": 195
     },
     {
       "id": "Combined_M3U_68_aHR0cHM6",
@@ -776,7 +766,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 154
+      "response_time_ms": 233
     },
     {
       "id": "Combined_M3U_69_aHR0cHM6",
@@ -787,7 +777,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 2198
+      "response_time_ms": 4703
     },
     {
       "id": "Combined_M3U_70_aHR0cHM6",
@@ -798,7 +788,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 271
+      "response_time_ms": 272
     },
     {
       "id": "Combined_M3U_71_aHR0cHM6",
@@ -809,7 +799,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 884
+      "response_time_ms": 4659
     },
     {
       "id": "Combined_M3U_72_aHR0cHM6",
@@ -820,7 +810,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 866
+      "response_time_ms": 853
     },
     {
       "id": "Combined_M3U_73_aHR0cHM6",
@@ -831,7 +821,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 523
+      "response_time_ms": 4557
     },
     {
       "id": "Combined_M3U_74_aHR0cHM6",
@@ -842,7 +832,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 135
+      "response_time_ms": 197
     },
     {
       "id": "Combined_M3U_75_aHR0cHM6",
@@ -853,7 +843,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5308
+      "response_time_ms": 5041
     },
     {
       "id": "Combined_M3U_76_aHR0cHM6",
@@ -865,7 +855,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 231
+      "response_time_ms": 199
     },
     {
       "id": "Combined_M3U_77_aHR0cHM6",
@@ -876,7 +866,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 140
+      "response_time_ms": 260
     },
     {
       "id": "Combined_M3U_78_aHR0cHM6",
@@ -887,7 +877,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 3144
+      "response_time_ms": 3768
     },
     {
       "id": "Combined_M3U_79_aHR0cHM6",
@@ -898,7 +888,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 938
+      "response_time_ms": 832
     },
     {
       "id": "Combined_M3U_80_aHR0cHM6",
@@ -909,7 +899,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 738
+      "response_time_ms": 841
     },
     {
       "id": "Combined_M3U_81_aHR0cDov",
@@ -920,7 +910,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1047
+      "response_time_ms": 1108
     },
     {
       "id": "Combined_M3U_82_aHR0cHM6",
@@ -929,10 +919,9 @@
       "group": "Bangla",
       "url": "https://stream.ottplus.live/live/zee_bangla_cinema_abr/live/zee_bangla_cinema_720/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 387
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 334
     },
     {
       "id": "Combined_M3U_83_aHR0cHM6",
@@ -941,9 +930,10 @@
       "group": "Bangla",
       "url": "https://s2.itcnbd.live/server-2/stream/zee_bangla_cinema.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 1040
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5023
     },
     {
       "id": "Combined_M3U_84_aHR0cHM6",
@@ -954,7 +944,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 154
+      "response_time_ms": 89
     },
     {
       "id": "Combined_M3U_85_aHR0cDov",
@@ -974,9 +964,10 @@
       "group": "Bangla",
       "url": "https://s2.itcnbd.live/server-2/stream/zee_bangla.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 2998
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5055
     },
     {
       "id": "Combined_M3U_87_aHR0cHM6",
@@ -987,7 +978,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 44
+      "response_time_ms": 104
     },
     {
       "id": "Combined_M3U_88_aHR0cDov",
@@ -1009,7 +1000,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 474
+      "response_time_ms": 829
     },
     {
       "id": "Combined_M3U_90_aHR0cHM6",
@@ -1020,7 +1011,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 238
+      "response_time_ms": 223
     },
     {
       "id": "Combined_M3U_91_aHR0cHM6",
@@ -1031,7 +1022,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 80
+      "response_time_ms": 111
     },
     {
       "id": "Combined_M3U_92_aHR0cDov",
@@ -1053,7 +1044,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 307
+      "response_time_ms": 393
     },
     {
       "id": "Combined_M3U_94_aHR0cDov",
@@ -1075,7 +1066,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 187
+      "response_time_ms": 105
     },
     {
       "id": "Combined_M3U_96_aHR0cHM6",
@@ -1087,7 +1078,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error timed out>",
-      "response_time_ms": 5126
+      "response_time_ms": 5053
     },
     {
       "id": "Combined_M3U_97_aHR0cDov",
@@ -1109,7 +1100,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 619
+      "response_time_ms": 954
     },
     {
       "id": "Combined_M3U_99_aHR0cDov",
@@ -1120,7 +1111,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5004
     },
     {
       "id": "Combined_M3U_100_aHR0cHM6",
@@ -1131,7 +1122,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 723
+      "response_time_ms": 795
     },
     {
       "id": "Combined_M3U_101_aHR0cHM6",
@@ -1142,7 +1133,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 43
+      "response_time_ms": 105
     },
     {
       "id": "Combined_M3U_102_aHR0cHM6",
@@ -1151,9 +1142,10 @@
       "group": "Bangla",
       "url": "https://s2.itcnbd.live/server-2/stream/sonyaath.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 2088
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5090
     },
     {
       "id": "Combined_M3U_103_aHR0cDov",
@@ -1164,7 +1156,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5004
+      "response_time_ms": 5003
     },
     {
       "id": "Combined_M3U_104_aHR0cHM6",
@@ -1175,7 +1167,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 175
+      "response_time_ms": 136
     },
     {
       "id": "Combined_M3U_105_aHR0cDov",
@@ -1197,7 +1189,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 749
+      "response_time_ms": 503
     },
     {
       "id": "Combined_M3U_107_aHR0cDov",
@@ -1219,7 +1211,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1009
+      "response_time_ms": 872
     },
     {
       "id": "Combined_M3U_109_aHR0cHM6",
@@ -1228,10 +1220,9 @@
       "group": "Hindi Movies",
       "url": "https://stream.ottplus.live/live/zee_cinema_hd_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 344
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 359
     },
     {
       "id": "Combined_M3U_110_aHR0cHM6",
@@ -1242,7 +1233,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 43
+      "response_time_ms": 47
     },
     {
       "id": "Combined_M3U_111_aHR0cHM6",
@@ -1251,10 +1242,9 @@
       "group": "Hindi Movies",
       "url": "https://stream.ottplus.live/live/zee_bollywood_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 350
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 347
     },
     {
       "id": "Combined_M3U_112_aHR0cHM6",
@@ -1263,10 +1253,9 @@
       "group": "MOVIE",
       "url": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 343
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 371
     },
     {
       "id": "Combined_M3U_113_aHR0cHM6",
@@ -1275,9 +1264,10 @@
       "group": "MOVIE",
       "url": "https://s2.itcnbd.live/server-2/stream/zee_action.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 945
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5057
     },
     {
       "id": "Combined_M3U_114_aHR0cHM6",
@@ -1286,10 +1276,9 @@
       "group": "Hindi",
       "url": "https://stream.ottplus.live/live/zee_anmol_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 1396
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 368
     },
     {
       "id": "Combined_M3U_115_aHR0cHM6",
@@ -1300,7 +1289,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 49
+      "response_time_ms": 75
     },
     {
       "id": "Combined_M3U_116_aHR0cDov",
@@ -1311,7 +1300,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5003
     },
     {
       "id": "Combined_M3U_117_aHR0cHM6",
@@ -1322,7 +1311,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 46
+      "response_time_ms": 98
     },
     {
       "id": "Combined_M3U_118_aHR0cHM6",
@@ -1331,9 +1320,10 @@
       "group": "Hindi",
       "url": "https://s2.itcnbd.live/server-2/stream/sonyentertainmnt_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 3164
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5070
     },
     {
       "id": "Combined_M3U_119_aHR0cHM6",
@@ -1344,7 +1334,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 59
+      "response_time_ms": 77
     },
     {
       "id": "Combined_M3U_120_aHR0cHM6",
@@ -1353,9 +1343,10 @@
       "group": "Movies",
       "url": "https://s2.itcnbd.live/server-2/stream/sonypix_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 2442
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5162
     },
     {
       "id": "Combined_M3U_121_aHR0cHM6",
@@ -1366,7 +1357,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1212
+      "response_time_ms": 953
     },
     {
       "id": "Combined_M3U_122_aHR0cHM6",
@@ -1377,7 +1368,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 61
+      "response_time_ms": 85
     },
     {
       "id": "Combined_M3U_123_aHR0cHM6",
@@ -1386,9 +1377,10 @@
       "group": "MOVIE",
       "url": "https://s2.itcnbd.live/server-2/stream/andpicture_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 2367
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5054
     },
     {
       "id": "Combined_M3U_124_aHR0cDov",
@@ -1408,10 +1400,9 @@
       "group": "Hindi",
       "url": "https://stream.ottplus.live/live/hum_tv_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 378
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 342
     },
     {
       "id": "Combined_M3U_126_aHR0cHM6",
@@ -1422,7 +1413,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 55
+      "response_time_ms": 103
     },
     {
       "id": "Combined_M3U_127_aHR0cHM6",
@@ -1431,9 +1422,10 @@
       "group": "Hindi",
       "url": "https://s2.itcnbd.live/server-2/stream/sonysab_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 2104
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5056
     },
     {
       "id": "Combined_M3U_128_aHR0cHM6",
@@ -1442,9 +1434,8 @@
       "group": "Hindi",
       "url": "https://stream.ottplus.live/live/zee_tv_hd_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
+      "status": "working",
+      "http_code": 200,
       "response_time_ms": 361
     },
     {
@@ -1454,9 +1445,10 @@
       "group": "Hindi",
       "url": "https://s2.itcnbd.live/server-2/stream/zee_tv_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 2071
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5073
     },
     {
       "id": "Combined_M3U_130_aHR0cHM6",
@@ -1465,10 +1457,9 @@
       "group": "Hindi",
       "url": "https://stream.ottplus.live/live/and_tv_hd_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 377
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 369
     },
     {
       "id": "Combined_M3U_131_aHR0cHM6",
@@ -1477,9 +1468,10 @@
       "group": "Hindi",
       "url": "https://s2.itcnbd.live/server-2/stream/and_tv_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 1673
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5023
     },
     {
       "id": "Combined_M3U_132_aHR0cHM6",
@@ -1490,7 +1482,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 373
+      "response_time_ms": 283
     },
     {
       "id": "Combined_M3U_133_aHR0cHM6",
@@ -1501,7 +1493,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 366
+      "response_time_ms": 318
     },
     {
       "id": "Combined_M3U_134_aHR0cHM6",
@@ -1512,7 +1504,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 271
+      "response_time_ms": 282
     },
     {
       "id": "Combined_M3U_135_aHR0cHM6",
@@ -1523,7 +1515,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 347
+      "response_time_ms": 1346
     },
     {
       "id": "Combined_M3U_136_aHR0cDov",
@@ -1534,7 +1526,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 200
+      "response_time_ms": 263
     },
     {
       "id": "Combined_M3U_137_aHR0cHM6",
@@ -1545,7 +1537,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 600
+      "response_time_ms": 423
     },
     {
       "id": "Combined_M3U_138_aHR0cHM6",
@@ -1556,7 +1548,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 863
+      "response_time_ms": 767
     },
     {
       "id": "Combined_M3U_139_aHR0cDov",
@@ -1578,7 +1570,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 492
+      "response_time_ms": 256
     },
     {
       "id": "Combined_M3U_141_aHR0cHM6",
@@ -1589,7 +1581,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1298
+      "response_time_ms": 589
     },
     {
       "id": "Combined_M3U_142_aHR0cHM6",
@@ -1600,7 +1592,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 588
+      "response_time_ms": 730
     },
     {
       "id": "Combined_M3U_143_aHR0cHM6",
@@ -1612,7 +1604,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 486
+      "response_time_ms": 512
     },
     {
       "id": "Combined_M3U_144_aHR0cDov",
@@ -1632,10 +1624,9 @@
       "group": "Music",
       "url": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 367
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 382
     },
     {
       "id": "Combined_M3U_146_aHR0cHM6",
@@ -1646,7 +1637,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 514
+      "response_time_ms": 629
     },
     {
       "id": "Combined_M3U_147_aHR0cHM6",
@@ -1657,7 +1648,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 610
+      "response_time_ms": 451
     },
     {
       "id": "Combined_M3U_148_aHR0cHM6",
@@ -1668,7 +1659,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 164
+      "response_time_ms": 132
     },
     {
       "id": "Combined_M3U_149_aHR0cHM6",
@@ -1679,7 +1670,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 428
+      "response_time_ms": 546
     },
     {
       "id": "Combined_M3U_150_aHR0cHM6",
@@ -1690,7 +1681,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 514
+      "response_time_ms": 236
     },
     {
       "id": "Combined_M3U_151_aHR0cHM6",
@@ -1701,7 +1692,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 876
+      "response_time_ms": 969
     },
     {
       "id": "Combined_M3U_152_aHR0cHM6",
@@ -1712,7 +1703,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 899
+      "response_time_ms": 928
     },
     {
       "id": "Combined_M3U_153_aHR0cHM6",
@@ -1723,7 +1714,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 541
+      "response_time_ms": 218
     },
     {
       "id": "Combined_M3U_154_aHR0cHM6",
@@ -1745,7 +1736,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 395
+      "response_time_ms": 233
     },
     {
       "id": "Combined_M3U_156_aHR0cHM6",
@@ -1756,7 +1747,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 399
+      "response_time_ms": 249
     },
     {
       "id": "Combined_M3U_157_aHR0cHM6",
@@ -1767,7 +1758,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 717
+      "response_time_ms": 735
     },
     {
       "id": "Combined_M3U_158_aHR0cDov",
@@ -1776,9 +1767,10 @@
       "group": "Music",
       "url": "http://146.59.253.52:8080/hindihitshd/index.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 177
+      "status": "dead",
+      "http_code": 404,
+      "error": "HTTP 404",
+      "response_time_ms": 260
     },
     {
       "id": "Combined_M3U_159_aHR0cHM6",
@@ -1790,7 +1782,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 79
+      "response_time_ms": 208
     },
     {
       "id": "Combined_M3U_160_aHR0cHM6",
@@ -1802,7 +1794,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 74
+      "response_time_ms": 159
     },
     {
       "id": "Combined_M3U_161_aHR0cHM6",
@@ -1814,7 +1806,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 98
+      "response_time_ms": 183
     },
     {
       "id": "Combined_M3U_163_aHR0cHM6",
@@ -1823,9 +1815,10 @@
       "group": "Music",
       "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 163
+      "status": "dead",
+      "http_code": 503,
+      "error": "HTTP 503",
+      "response_time_ms": 181
     },
     {
       "id": "Combined_M3U_164_aHR0cHM6",
@@ -1836,7 +1829,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 655
+      "response_time_ms": 645
     },
     {
       "id": "Combined_M3U_165_aHR0cHM6",
@@ -1847,7 +1840,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 825
+      "response_time_ms": 923
     },
     {
       "id": "Combined_M3U_166_aHR0cHM6",
@@ -1859,7 +1852,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -5] No address associated with hostname>",
-      "response_time_ms": 104
+      "response_time_ms": 63
     },
     {
       "id": "Combined_M3U_167_aHR0cHM6",
@@ -1871,7 +1864,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -5] No address associated with hostname>",
-      "response_time_ms": 77
+      "response_time_ms": 69
     },
     {
       "id": "Combined_M3U_168_aHR0cHM6",
@@ -1883,7 +1876,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -2] Name or service not known>",
-      "response_time_ms": 105
+      "response_time_ms": 154
     },
     {
       "id": "Combined_M3U_169_aHR0cHM6",
@@ -1894,7 +1887,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 215
+      "response_time_ms": 287
     },
     {
       "id": "Combined_M3U_170_aHR0cHM6",
@@ -1905,7 +1898,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 218
+      "response_time_ms": 514
     },
     {
       "id": "Combined_M3U_171_aHR0cHM6",
@@ -1916,7 +1909,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 320
+      "response_time_ms": 424
     },
     {
       "id": "Combined_M3U_172_aHR0cHM6",
@@ -1927,7 +1920,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 388
+      "response_time_ms": 421
     },
     {
       "id": "Combined_M3U_173_aHR0cHM6",
@@ -1938,7 +1931,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 231
+      "response_time_ms": 1085
     },
     {
       "id": "Combined_M3U_174_aHR0cHM6",
@@ -1949,7 +1942,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 677
+      "response_time_ms": 522
     },
     {
       "id": "Combined_M3U_175_aHR0cHM6",
@@ -1960,7 +1953,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 443
+      "response_time_ms": 402
     },
     {
       "id": "Combined_M3U_176_aHR0cHM6",
@@ -1971,7 +1964,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 616
+      "response_time_ms": 686
     },
     {
       "id": "Combined_M3U_177_aHR0cHM6",
@@ -1982,7 +1975,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 475
+      "response_time_ms": 449
     },
     {
       "id": "Combined_M3U_178_aHR0cHM6",
@@ -1993,7 +1986,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 525
+      "response_time_ms": 599
     },
     {
       "id": "Combined_M3U_179_aHR0cHM6",
@@ -2004,7 +1997,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 580
+      "response_time_ms": 412
     },
     {
       "id": "Combined_M3U_180_aHR0cHM6",
@@ -2015,7 +2008,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 971
+      "response_time_ms": 18687
     },
     {
       "id": "Combined_M3U_181_aHR0cHM6",
@@ -2024,9 +2017,10 @@
       "group": "Music",
       "url": "https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 970
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+      "response_time_ms": 10028
     },
     {
       "id": "Combined_M3U_182_aHR0cHM6",
@@ -2037,7 +2031,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1078
+      "response_time_ms": 1167
     },
     {
       "id": "Combined_M3U_183_aHR0cHM6",
@@ -2048,7 +2042,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1131
+      "response_time_ms": 1203
     },
     {
       "id": "Combined_M3U_184_aHR0cHM6",
@@ -2059,7 +2053,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1064
+      "response_time_ms": 1184
     },
     {
       "id": "Combined_M3U_185_aHR0cDov",
@@ -2071,7 +2065,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 650
+      "response_time_ms": 739
     },
     {
       "id": "Combined_M3U_186_aHR0cHM6",
@@ -2082,7 +2076,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 534
+      "response_time_ms": 713
     },
     {
       "id": "Combined_M3U_187_aHR0cDov",
@@ -2093,7 +2087,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 467
+      "response_time_ms": 504
     },
     {
       "id": "Combined_M3U_188_aHR0cDov",
@@ -2115,7 +2109,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 493
+      "response_time_ms": 542
     },
     {
       "id": "Combined_M3U_190_aHR0cDov",
@@ -2126,7 +2120,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 177
+      "response_time_ms": 564
     },
     {
       "id": "Combined_M3U_191_aHR0cHM6",
@@ -2137,7 +2131,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 893
+      "response_time_ms": 854
     },
     {
       "id": "Combined_M3U_192_aHR0cDov",
@@ -2159,7 +2153,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 462
+      "response_time_ms": 502
     },
     {
       "id": "Combined_M3U_194_aHR0cHM6",
@@ -2170,7 +2164,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 114
+      "response_time_ms": 236
     },
     {
       "id": "Combined_M3U_195_aHR0cHM6",
@@ -2181,7 +2175,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 826
+      "response_time_ms": 797
     },
     {
       "id": "Combined_M3U_196_aHR0cHM6",
@@ -2193,7 +2187,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)>",
-      "response_time_ms": 481
+      "response_time_ms": 521
     },
     {
       "id": "Combined_M3U_197_aHR0cHM6",
@@ -2204,7 +2198,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 105
+      "response_time_ms": 144
     },
     {
       "id": "Combined_M3U_198_aHR0cHM6",
@@ -2216,7 +2210,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)>",
-      "response_time_ms": 480
+      "response_time_ms": 504
     },
     {
       "id": "Combined_M3U_199_aHR0cHM6",
@@ -2227,7 +2221,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 240
+      "response_time_ms": 253
     },
     {
       "id": "Combined_M3U_200_aHR0cHM6",
@@ -2238,7 +2232,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 828
+      "response_time_ms": 823
     },
     {
       "id": "Combined_M3U_201_aHR0cHM6",
@@ -2249,7 +2243,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 926
+      "response_time_ms": 758
     },
     {
       "id": "Combined_M3U_202_aHR0cHM6",
@@ -2260,7 +2254,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 847
+      "response_time_ms": 776
     },
     {
       "id": "Combined_M3U_203_aHR0cHM6",
@@ -2271,7 +2265,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 850
+      "response_time_ms": 811
     },
     {
       "id": "Combined_M3U_204_aHR0cHM6",
@@ -2282,7 +2276,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 855
+      "response_time_ms": 766
     },
     {
       "id": "Combined_M3U_205_aHR0cHM6",
@@ -2293,7 +2287,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 833
+      "response_time_ms": 811
     },
     {
       "id": "Combined_M3U_206_aHR0cHM6",
@@ -2304,7 +2298,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 112
+      "response_time_ms": 234
     },
     {
       "id": "Combined_M3U_207_aHR0cHM6",
@@ -2315,7 +2309,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 97
+      "response_time_ms": 217
     },
     {
       "id": "Combined_M3U_208_aHR0cHM6",
@@ -2326,7 +2320,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 199
+      "response_time_ms": 259
     },
     {
       "id": "Combined_M3U_209_aHR0cHM6",
@@ -2337,7 +2331,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 266
+      "response_time_ms": 157
     },
     {
       "id": "Combined_M3U_210_aHR0cHM6",
@@ -2348,7 +2342,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 261
+      "response_time_ms": 153
     },
     {
       "id": "Combined_M3U_211_aHR0cHM6",
@@ -2357,9 +2351,10 @@
       "group": "𝐒𝐩𝐨𝐫𝐭𝐬",
       "url": "https://s2.itcnbd.live/server-2/stream/ten_cricket.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 935
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5021
     },
     {
       "id": "Combined_M3U_212_aHR0cDov",
@@ -2381,7 +2376,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 206
+      "response_time_ms": 132
     },
     {
       "id": "Combined_M3U_214_aHR0cHM6",
@@ -2392,7 +2387,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 842
+      "response_time_ms": 752
     },
     {
       "id": "Combined_M3U_215_aHR0cHM6",
@@ -2403,7 +2398,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 878
+      "response_time_ms": 791
     },
     {
       "id": "Combined_M3U_216_aHR0cHM6",
@@ -2414,7 +2409,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 906
+      "response_time_ms": 762
     },
     {
       "id": "Combined_M3U_217_aHR0cDov",
@@ -2425,7 +2420,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 494
+      "response_time_ms": 505
     },
     {
       "id": "Combined_M3U_218_aHR0cHM6",
@@ -2436,7 +2431,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 225
+      "response_time_ms": 145
     },
     {
       "id": "Combined_M3U_219_aHR0cHM6",
@@ -2447,7 +2442,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 193
+      "response_time_ms": 148
     },
     {
       "id": "Combined_M3U_220_aHR0cHM6",
@@ -2458,7 +2453,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 95
+      "response_time_ms": 153
     },
     {
       "id": "Combined_M3U_221_aHR0cHM6",
@@ -2469,7 +2464,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 130
+      "response_time_ms": 345
     },
     {
       "id": "Combined_M3U_222_aHR0cHM6",
@@ -2481,7 +2476,7 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 120
+      "response_time_ms": 190
     },
     {
       "id": "Combined_M3U_223_aHR0cHM6",
@@ -2490,9 +2485,10 @@
       "group": "Sports",
       "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 713
+      "status": "dead",
+      "http_code": 0,
+      "error": "Remote end closed connection without response",
+      "response_time_ms": 755
     },
     {
       "id": "Combined_M3U_224_aHR0cHM6",
@@ -2503,7 +2499,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 203
+      "response_time_ms": 132
     },
     {
       "id": "Combined_M3U_225_aHR0cHM6",
@@ -2514,7 +2510,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 201
+      "response_time_ms": 273
     },
     {
       "id": "Combined_M3U_226_aHR0cHM6",
@@ -2525,7 +2521,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 202
+      "response_time_ms": 224
     },
     {
       "id": "Combined_M3U_227_aHR0cHM6",
@@ -2536,7 +2532,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 212
+      "response_time_ms": 229
     },
     {
       "id": "Combined_M3U_228_aHR0cHM6",
@@ -2547,7 +2543,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 127
+      "response_time_ms": 157
     },
     {
       "id": "Combined_M3U_229_aHR0cHM6",
@@ -2558,7 +2554,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 218
+      "response_time_ms": 153
     },
     {
       "id": "Combined_M3U_230_aHR0cHM6",
@@ -2569,7 +2565,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 855
+      "response_time_ms": 766
     },
     {
       "id": "Combined_M3U_231_aHR0cHM6",
@@ -2580,7 +2576,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 814
+      "response_time_ms": 810
     },
     {
       "id": "Combined_M3U_232_aHR0cHM6",
@@ -2591,7 +2587,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 927
+      "response_time_ms": 786
     },
     {
       "id": "Combined_M3U_233_aHR0cHM6",
@@ -2603,7 +2599,7 @@
       "status": "dead",
       "http_code": 404,
       "error": "HTTP 404",
-      "response_time_ms": 812
+      "response_time_ms": 761
     },
     {
       "id": "Combined_M3U_234_aHR0cHM6",
@@ -2612,9 +2608,10 @@
       "group": "Sports",
       "url": "https://s3.itcnbd.live/channel/2929059f34d114ca.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 1018
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5243
     },
     {
       "id": "Combined_M3U_235_aHR0cDov",
@@ -2636,7 +2633,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 811
+      "response_time_ms": 747
     },
     {
       "id": "Combined_M3U_237_aHR0cHM6",
@@ -2647,7 +2644,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 814
+      "response_time_ms": 794
     },
     {
       "id": "Combined_M3U_238_aHR0cDov",
@@ -2678,9 +2675,10 @@
       "group": "Sports",
       "url": "https://s3.itcnbd.live/channel/ea25a516d781cb1c.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 3002
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5184
     },
     {
       "id": "Combined_M3U_241_aHR0cHM6",
@@ -2689,10 +2687,9 @@
       "group": "Sports",
       "url": "https://stream.ottplus.live/live/ten_1_hd_abr/live/ten_1_hd_720/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 366
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 401
     },
     {
       "id": "Combined_M3U_242_aHR0cHM6",
@@ -2701,9 +2698,10 @@
       "group": "Sports",
       "url": "https://s2.itcnbd.live/server-2/stream/sony_sports_1_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 936
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5046
     },
     {
       "id": "Combined_M3U_243_aHR0cDov",
@@ -2723,10 +2721,9 @@
       "group": "Sports",
       "url": "https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 346
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 337
     },
     {
       "id": "Combined_M3U_245_aHR0cHM6",
@@ -2735,9 +2732,10 @@
       "group": "Sports",
       "url": "https://s2.itcnbd.live/server-2/stream/sony_sports_2_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 905
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5033
     },
     {
       "id": "Combined_M3U_246_aHR0cDov",
@@ -2748,7 +2746,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5001
     },
     {
       "id": "Combined_M3U_247_aHR0cHM6",
@@ -2758,9 +2756,9 @@
       "url": "https://stream.ottplus.live/live/ten_3_hd_abr/live/ten_3_hd_720/chunks.m3u8",
       "source": "Combined_M3U",
       "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 1385
+      "http_code": 404,
+      "error": "HTTP 404",
+      "response_time_ms": 350
     },
     {
       "id": "Combined_M3U_248_aHR0cDov",
@@ -2780,10 +2778,9 @@
       "group": "Sports",
       "url": "https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 358
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 373
     },
     {
       "id": "Combined_M3U_250_aHR0cHM6",
@@ -2792,9 +2789,10 @@
       "group": "Sports",
       "url": "https://s1.itcnbd.live/PTV-Sports/tracks-v1a1/mono.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 894
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5034
     },
     {
       "id": "Combined_M3U_251_aHR0cDov",
@@ -2805,7 +2803,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5003
     },
     {
       "id": "Combined_M3U_252_aHR0cHM6",
@@ -2816,7 +2814,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 94
+      "response_time_ms": 138
     },
     {
       "id": "Combined_M3U_253_aHR0cDov",
@@ -2838,7 +2836,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 217
+      "response_time_ms": 139
     },
     {
       "id": "Combined_M3U_255_aHR0cDov",
@@ -2860,7 +2858,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1564
+      "response_time_ms": 1935
     },
     {
       "id": "Combined_M3U_257_aHR0cDov",
@@ -2882,7 +2880,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1444
+      "response_time_ms": 1537
     },
     {
       "id": "Combined_M3U_259_aHR0cDov",
@@ -2893,7 +2891,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5000
+      "response_time_ms": 5005
     },
     {
       "id": "Combined_M3U_260_aHR0cHM6",
@@ -2904,7 +2902,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 252
+      "response_time_ms": 334
     },
     {
       "id": "Combined_M3U_261_aHR0cDov",
@@ -2926,7 +2924,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 223
+      "response_time_ms": 303
     },
     {
       "id": "Combined_M3U_263_aHR0cHM6",
@@ -2937,7 +2935,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 44
+      "response_time_ms": 70
     },
     {
       "id": "Combined_M3U_264_aHR0cDov",
@@ -2957,9 +2955,10 @@
       "group": "Sports",
       "url": "https://s2.itcnbd.live/server-2/stream/euro_sports_hd.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 907
+      "status": "dead",
+      "http_code": 0,
+      "error": "<urlopen error timed out>",
+      "response_time_ms": 5018
     },
     {
       "id": "Combined_M3U_266_aHR0cHM6",
@@ -2970,7 +2969,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 184
+      "response_time_ms": 278
     },
     {
       "id": "Combined_M3U_267_aHR0cHM6",
@@ -2979,10 +2978,9 @@
       "group": "𝐊𝐢𝐝𝐬",
       "url": "https://stream.ottplus.live/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 357
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 325
     },
     {
       "id": "Combined_M3U_268_aHR0cHM6",
@@ -2991,10 +2989,9 @@
       "group": "𝐊𝐢𝐝𝐬",
       "url": "https://stream.ottplus.live/live/discovery_kids_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 361
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 391
     },
     {
       "id": "Combined_M3U_269_aHR0cHM6",
@@ -3003,10 +3000,9 @@
       "group": "𝐊𝐢𝐝𝐬",
       "url": "https://stream.ottplus.live/live/pogo_sd_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 353
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 371
     },
     {
       "id": "Combined_M3U_270_aHR0cHM6",
@@ -3017,7 +3013,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 213
+      "response_time_ms": 188
     },
     {
       "id": "Combined_M3U_271_aHR0cHM6",
@@ -3028,7 +3024,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1153
+      "response_time_ms": 1115
     },
     {
       "id": "Combined_M3U_272_aHR0cHM6",
@@ -3039,7 +3035,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 857
+      "response_time_ms": 973
     },
     {
       "id": "Combined_M3U_273_aHR0cHM6",
@@ -3050,7 +3046,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 184
+      "response_time_ms": 244
     },
     {
       "id": "Combined_M3U_274_aHR0cHM6",
@@ -3061,7 +3057,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 181
+      "response_time_ms": 126
     },
     {
       "id": "Combined_M3U_275_aHR0cHM6",
@@ -3072,7 +3068,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 173
+      "response_time_ms": 184
     },
     {
       "id": "Combined_M3U_276_aHR0cHM6",
@@ -3083,7 +3079,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 90
+      "response_time_ms": 175
     },
     {
       "id": "Combined_M3U_277_aHR0cHM6",
@@ -3094,7 +3090,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 518
+      "response_time_ms": 1549
     },
     {
       "id": "Combined_M3U_278_aHR0cHM6",
@@ -3105,7 +3101,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 917
+      "response_time_ms": 830
     },
     {
       "id": "Combined_M3U_279_aHR0cHM6",
@@ -3116,7 +3112,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 840
+      "response_time_ms": 758
     },
     {
       "id": "Combined_M3U_280_aHR0cHM6",
@@ -3127,7 +3123,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 818
+      "response_time_ms": 792
     },
     {
       "id": "Combined_M3U_281_aHR0cHM6",
@@ -3138,7 +3134,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 903
+      "response_time_ms": 752
     },
     {
       "id": "Combined_M3U_282_aHR0cHM6",
@@ -3149,7 +3145,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 834
+      "response_time_ms": 766
     },
     {
       "id": "Combined_M3U_283_aHR0cHM6",
@@ -3160,7 +3156,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 105
+      "response_time_ms": 196
     },
     {
       "id": "Combined_M3U_284_aHR0cHM6",
@@ -3171,7 +3167,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 192
+      "response_time_ms": 107
     },
     {
       "id": "Combined_M3U_285_aHR0cHM6",
@@ -3182,7 +3178,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 362
+      "response_time_ms": 285
     },
     {
       "id": "Combined_M3U_286_aHR0cHM6",
@@ -3191,10 +3187,9 @@
       "group": "Documentary",
       "url": "https://stream.ottplus.live/live/bbc_earth_hd_abr/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 521,
-      "error": "HTTP 521",
-      "response_time_ms": 351
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 402
     },
     {
       "id": "Combined_M3U_287_aHR0cHM6",
@@ -3205,7 +3200,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 475
+      "response_time_ms": 143
     },
     {
       "id": "Combined_M3U_288_aHR0cHM6",
@@ -3216,7 +3211,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 223
+      "response_time_ms": 272
     },
     {
       "id": "Combined_M3U_289_aHR0cHM6",
@@ -3227,7 +3222,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 46
+      "response_time_ms": 82
     },
     {
       "id": "Combined_M3U_290_aHR0cDov",
@@ -3238,7 +3233,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 471
+      "response_time_ms": 512
     },
     {
       "id": "Combined_M3U_291_aHR0cHM6",
@@ -3250,7 +3245,7 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -2] Name or service not known>",
-      "response_time_ms": 17
+      "response_time_ms": 12
     },
     {
       "id": "Combined_M3U_292_aHR0cHM6",
@@ -3261,7 +3256,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1072
+      "response_time_ms": 1224
     },
     {
       "id": "Combined_M3U_293_aHR0cHM6",
@@ -3271,8 +3266,8 @@
       "url": "https://stream.ottplus.bd/live/discovery_sd_abr/live/discovery_sd/chunks.m3u8",
       "source": "Combined_M3U",
       "status": "working",
-      "http_code": 403,
-      "response_time_ms": 46
+      "http_code": 200,
+      "response_time_ms": 95
     },
     {
       "id": "Combined_M3U_294_aHR0cHM6",
@@ -3283,7 +3278,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 966
+      "response_time_ms": 1157
     },
     {
       "id": "Combined_M3U_295_aHR0cDov",
@@ -3305,7 +3300,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 915
+      "response_time_ms": 1127
     },
     {
       "id": "Combined_M3U_297_aHR0cDov",
@@ -3327,7 +3322,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 765
+      "response_time_ms": 1091
     },
     {
       "id": "Combined_M3U_299_aHR0cHM6",
@@ -3338,7 +3333,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 751
+      "response_time_ms": 1081
     },
     {
       "id": "Combined_M3U_300_aHR0cDov",
@@ -3349,7 +3344,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 491
+      "response_time_ms": 565
     }
   ]
 }
