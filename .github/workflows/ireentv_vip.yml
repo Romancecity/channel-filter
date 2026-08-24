@@ -30,6 +30,7 @@ jobs:
 
           # ৩টি প্লেলিস্টের লিংক
           source_urls = [
+              "https://raw.githubusercontent.com/Romancecity/vip/refs/heads/main/Mix_Ott.m3u",
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/working_playlist.m3u",
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u",
               "https://raw.githubusercontent.com/abusaeeidx/Toffee-playlist/refs/heads/main/ott_navigator.m3u"
