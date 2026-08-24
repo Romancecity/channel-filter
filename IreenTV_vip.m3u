@@ -1626,3 +1626,9 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/pogo_sd/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Toffee (Linux;Android 14)
 #EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787768801:KeyName=prod_linear:Signature=3AKcjccCjdUpsC_RwMWfhpvRADGUZfT0T6wi3Sr3pWsUv55Fd5S1TAKW4CRKSxuy2ow2kXrHnjtHZ5cP4Z1AAA"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyyay/playlist.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://tvprofil.com/img/kanali-logo/mtv-hits-logo.png" group-title="Music",MTV Hits
+http://caffe.link:25461/live/Anerroditelji/TGCZeJBZz5Bf/1426.m3u8
+#EXTINF:-1 tvg-logo="https://tvprofil.com/img/kanali-logo/mtv-music.png" group-title="Music",MTV Music
+http://caffe.link:25461/live/Anerroditelji/TGCZeJBZz5Bf/1427.m3u8
