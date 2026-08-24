@@ -1632,21 +1632,9 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyyay/playlist.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=39b5c756c18355d9978fe6c6311b4891:3aaa7efc64f9b81b91512d1af2c56e3c
-#EXTVLCOPT:http-user-agent=Droovy
-#EXTHTTP:{"cookie": "__hdnea__=st=1787576403~exp=1787598003~acl=/*~hmac=9c945814ed4f5897e3e690161dc6290b9e3b1faeaf697b9fb1cbb2090f7b4104"}
 https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Gold_HD_MOB/WDVLive/index.mpd
 
-#EXTINF:-1 tvg-id="1351" group-title="JioTV+ | Entertainment" group-logo="https://i.postimg.cc/52qG6sKt/STREAMXi.png" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ZeeTV.png",Zee TV 111
+#EXTINF:-1 tvg-id="144" group-title="JioTV+ ▶ | Entertainment" group-logo="https://i.postimg.cc/52qG6sKt/STREAMXi.png" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsHD.png",Colors HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=135fa2c3db6756a2a89dc08c033680ec:5d2ed0c831759179354b2151a2cb0566
-#EXTVLCOPT:http-user-agent=OTT Navigator
-#EXTHTTP:{"cookie":"__hdnea__=st=1787570345~exp=1787591945~acl=/bpk-tv/ZeeTV_BTS/WDVLive/*~hmac=1926127c22f041a854bf86d11dfbc7e076ca8862bc02509a6cd3fc9f3c04c29b","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}
-https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeTV_BTS/WDVLive/index.mpd
-
-#EXTINF:-1 tvg-id="482" tvg-name="Colors Cineplex" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Colors_Cineplex.png" group-title="Movies",Colors Cineplex 111
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://streamflexsmm.in/license/482/
-#EXTVLCOPT:http-user-agent=plaYtv/7.1.5 (StreamFlex;Android 16) JioTvMobile
-#EXTHTTP:{"cookie":"__hdnea__=st=1787313839~exp=1787335439~acl=/*~hmac=8a7f5f1245b0bf2c611d1bae0dcd3d4b9b5a72c24bf08270ca49329ff2c4f192"}
-https://jiotvbpkmob.cdn.jio.com/bpk-tv/Colors_Cineplex_MOB/WDVLive/index.mpd?|Cookie=__hdnea__=st=1787313839~exp=1787335439~acl=/*~hmac=8a7f5f1245b0bf2c611d1bae0dcd3d4b9b5a72c24bf08270ca49329ff2c4f192&xxx=%7Ccookie=__hdnea__=st=1787313839~exp=1787335439~acl=/*~hmac=8a7f5f1245b0bf2c611d1bae0dcd3d4b9b5a72c24bf08270ca49329ff2c4f192
+#KODIPROP:inputstream.adaptive.license_key=5360e12d4bb2519a9148d1089a55908d:7e8f500cef51595f3d43acafab1a8fb4
+https://jiotvmblive.cdn.jio.com/bpk-tv/ColorsHD_MOB/WDVLive/index.mpd
