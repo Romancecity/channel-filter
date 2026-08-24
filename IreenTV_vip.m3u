@@ -1627,16 +1627,4 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyyay/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-name="Sonic Digital By @sayan10" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6294/1782290926294-h" group-title="Kids By @sayan10", Sonic Digital @sayan10 111
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d939611fa2e489bb4a7b58d10c10000:1fba40d5aa564f079c8c7e378ccb3019
-https://livetv.hotstar.com/mp1/gec-india-1540068791/78782613f6f54c38bf5961e9f066328a/index.mpd
 
-#EXTINF:-1 tvg-name="Sonic Digital By @sayan10" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6294/1782290926294-h" group-title="Kids By @sayan10", Sonic Digital @sayan10
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@sayan10(Android/15)
-#EXTVLCOPT:http-referrer=https://www.hotstar.com/
-#EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787655157~acl=%2f*~id=efc577c54d34ec5fa859ccf603678789~data=hdntl~hmac=52750bc14e8bc5c7b6adea965ef2f3d46f9b9a5235c9573fb6ac5af159b7726a
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787655157~acl=%2f*~id=efc577c54d34ec5fa859ccf603678789~data=hdntl~hmac=52750bc14e8bc5c7b6adea965ef2f3d46f9b9a5235c9573fb6ac5af159b7726a"}
-https://livetv.hotstar.com/mp1/gec-india-1540068791/78782613f6f54c38bf5961e9f066328a/index.mpd
