@@ -1642,3 +1642,23 @@ https://hotstarplugx.cstds.workers.dev/jio/Colors-Cineplex-Digital.mpd
 #KODIPROP:inputstream.adaptive.license_key=f61b43f2b3a34a5daafacc05b7a30000:7105b6b6de914502a54667970e2dc9c0
 https://hotstarplugx.cstds.workers.dev/jio/Colors-Kannada-Cinema-Digital.mpd
 
+
+#EXTINF:-1 tvg-name="Colors Cineplex Bollywood" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets/cineplex-1713963820848.jpeg" group-title="Movies",Colors Cineplex Bollywood 111
+#EXTVLCOPT:network-caching=1000
+https://shoebinfo.qzz.io/test/hot.php/Colors-Cineplex-Bollywood.m3u8
+
+#EXTINF:-1 tvg-name="Colors Cineplex HD" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets/Live-Tv-Channels-colors-cineplex-1607514413063.jpg" group-title="Movies",Colors Cineplex HD 111
+#EXTVLCOPT:network-caching=1000
+https://shoebinfo.qzz.io/test/hot.php/Colors-Cineplex-HD.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_Max_HD.png" group-title="Sony liv",Sony Max HD 111
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/max-hd.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_Max_SD.png" group-title="Sony liv",Sony Max 111
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/max.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_Wah.png" group-title="Sony liv",Sony Wah 111
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/wah.m3u8
