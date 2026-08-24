@@ -1626,5 +1626,19 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/pogo_sd/playlist.m3u8
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyyay/playlist.m3u8
 
 
+#EXTINF:-1 tvg-id="colors-cineplex-digital" tvg-name="Colors Cineplex Digital" group-title="Movies",Colors Cineplex Digital 111
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=215ced4a1eb7400488d290d09ebe0000:71b4165c9e294b06b88c1e0f4e953cc2
+https://hotstarplugx.cstds.workers.dev/jio/Colors-Cineplex-Digital.mpd
 
+#EXTINF:-1 tvg-id="colors-kannada-cinema-digital" tvg-name="Colors Kannada Cinema Digital" group-title="Movies",Colors Kannada Cinema Digital 111
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=f61b43f2b3a34a5daafacc05b7a30000:7105b6b6de914502a54667970e2dc9c0
+https://hotstarplugx.cstds.workers.dev/jio/Colors-Kannada-Cinema-Digital.mpd
 
