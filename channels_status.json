@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-25 08:41:32 UTC",
+  "last_updated": "2026-08-25 16:36:57 UTC",
   "stats": {
-    "total": 332,
-    "working": 292,
-    "dead": 40
+    "total": 336,
+    "working": 293,
+    "dead": 43
   },
   "channels": [
     {
@@ -15,7 +15,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 383
+      "response_time_ms": 203
     },
     {
       "id": "Combined_M3U_1_aHR0cHM6",
@@ -26,7 +26,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 474
+      "response_time_ms": 448
     },
     {
       "id": "Combined_M3U_2_aHR0cHM6",
@@ -37,7 +37,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 993
+      "response_time_ms": 1002
     },
     {
       "id": "Combined_M3U_3_aHR0cHM6",
@@ -48,7 +48,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1031
+      "response_time_ms": 944
     },
     {
       "id": "Combined_M3U_4_aHR0cHM6",
@@ -59,7 +59,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1038
+      "response_time_ms": 1009
     },
     {
       "id": "Combined_M3U_5_aHR0cHM6",
@@ -70,7 +70,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1195
+      "response_time_ms": 1117
     },
     {
       "id": "Combined_M3U_6_aHR0cDov",
@@ -81,7 +81,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5014
     },
     {
       "id": "Combined_M3U_7_aHR0cHM6",
@@ -92,7 +92,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 974
+      "response_time_ms": 992
     },
     {
       "id": "Combined_M3U_8_aHR0cDov",
@@ -114,7 +114,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1039
+      "response_time_ms": 650
     },
     {
       "id": "Combined_M3U_10_aHR0cDov",
@@ -125,7 +125,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5003
+      "response_time_ms": 5017
     },
     {
       "id": "Combined_M3U_11_aHR0cDov",
@@ -136,7 +136,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5007
     },
     {
       "id": "Combined_M3U_12_aHR0cDov",
@@ -147,7 +147,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5010
     },
     {
       "id": "Combined_M3U_13_aHR0cHM6",
@@ -158,7 +158,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1032
+      "response_time_ms": 945
     },
     {
       "id": "Combined_M3U_14_aHR0cHM6",
@@ -169,13 +169,13 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1036
+      "response_time_ms": 651
     },
     {
       "id": "Combined_M3U_15_aHR0cDov",
       "name": "News 24 HD",
-      "logo": "",
-      "group": "News",
+      "logo": "https://i.ibb.co.com/FLgCtB1S/1770186895850.png",
+      "group": "Bangla",
       "url": "http://103.89.248.130:8082/NEWS-24/index.m3u8",
       "source": "Combined_M3U",
       "status": "working",
@@ -183,7 +183,18 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_16_aHR0cHM6",
+      "id": "Combined_M3U_16_aHR0cDov",
+      "name": "Atn News",
+      "logo": "https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/NCLx35oBEef-9-uVh-Dg/posters/af9773c7-7971-41a2-9b78-121fcb240c48.png",
+      "group": "Bangla",
+      "url": "http://103.89.248.130:8082/ATN-NEWS/index.m3u8",
+      "source": "Combined_M3U",
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 5005
+    },
+    {
+      "id": "Combined_M3U_17_aHR0cHM6",
       "name": "Jago News 24",
       "logo": "https://i.ibb.co.com/KpRt3cT5/Jago-News-24.png",
       "group": "Bangla",
@@ -191,10 +202,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 348
+      "response_time_ms": 414
     },
     {
-      "id": "Combined_M3U_17_aHR0cHM6",
+      "id": "Combined_M3U_18_aHR0cHM6",
       "name": "Ekhon TV",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png",
       "group": "Bangla",
@@ -202,10 +213,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 927
+      "response_time_ms": 375
     },
     {
-      "id": "Combined_M3U_18_aHR0cDov",
+      "id": "Combined_M3U_19_aHR0cDov",
       "name": "Ekhon TV",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png",
       "group": "Bangla",
@@ -216,7 +227,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_19_aHR0cHM6",
+      "id": "Combined_M3U_20_aHR0cHM6",
       "name": "Ananda TV",
       "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
       "group": "Bangla",
@@ -225,10 +236,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 811
+      "response_time_ms": 878
     },
     {
-      "id": "Combined_M3U_20_aHR0cHM6",
+      "id": "Combined_M3U_21_aHR0cHM6",
       "name": "Asian TV",
       "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
       "group": "Bangla",
@@ -236,10 +247,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 648
+      "response_time_ms": 390
     },
     {
-      "id": "Combined_M3U_21_aHR0cHM6",
+      "id": "Combined_M3U_22_aHR0cHM6",
       "name": "Asian TV",
       "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
       "group": "Bangla",
@@ -247,10 +258,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 351
+      "response_time_ms": 615
     },
     {
-      "id": "Combined_M3U_22_aHR0cHM6",
+      "id": "Combined_M3U_23_aHR0cHM6",
       "name": "Green tv",
       "logo": "https://s3.aynaott.com/storage/499219599639007120dc540bdc6e7d9d",
       "group": "Bangla",
@@ -258,10 +269,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 240
+      "response_time_ms": 300
     },
     {
-      "id": "Combined_M3U_23_aHR0cDov",
+      "id": "Combined_M3U_24_aHR0cDov",
       "name": "NAGORIK TV HD",
       "logo": "https://dl.dropbox.com/s/4av1om6yhu12w9j/nagorik-bd.png",
       "group": "BANGLA",
@@ -269,10 +280,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5008
+      "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_24_aHR0cHM6",
+      "id": "Combined_M3U_25_aHR0cHM6",
       "name": "BOISHAKHI TV",
       "logo": "https://s3.aynaott.com/storage/58658d4594ca1ff3c5031c9d8e3d9fc0",
       "group": "BANGLA",
@@ -280,10 +291,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 287
+      "response_time_ms": 136
     },
     {
-      "id": "Combined_M3U_25_aHR0cHM6",
+      "id": "Combined_M3U_26_aHR0cHM6",
       "name": "BOISHAKHI TV",
       "logo": "https://s3.aynaott.com/storage/58658d4594ca1ff3c5031c9d8e3d9fc0",
       "group": "BANGLA",
@@ -291,10 +302,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 565
+      "response_time_ms": 507
     },
     {
-      "id": "Combined_M3U_26_aHR0cHM6",
+      "id": "Combined_M3U_27_aHR0cHM6",
       "name": "Desh TV",
       "logo": "https://i.postimg.cc/wvBbd56q/Desh-TV.jpg",
       "group": "Bangla",
@@ -302,10 +313,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 685
+      "response_time_ms": 703
     },
     {
-      "id": "Combined_M3U_27_aHR0cHM6",
+      "id": "Combined_M3U_28_aHR0cHM6",
       "name": "Desh TV",
       "logo": "https://i.postimg.cc/wvBbd56q/Desh-TV.jpg",
       "group": "Bangla",
@@ -314,10 +325,10 @@
       "status": "dead",
       "http_code": 404,
       "error": "HTTP 404",
-      "response_time_ms": 261
+      "response_time_ms": 158
     },
     {
-      "id": "Combined_M3U_28_aHR0cDov",
+      "id": "Combined_M3U_29_aHR0cDov",
       "name": "Desh TV",
       "logo": "https://i.postimg.cc/wvBbd56q/Desh-TV.jpg",
       "group": "Bangla",
@@ -328,19 +339,18 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_29_aHR0cHM6",
+      "id": "Combined_M3U_30_aHR0cHM6",
       "name": "MAASRANGA HD",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png",
       "group": "Bangla",
       "url": "https://tvsen5.aynascope.net/maasrangatv/index.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 404,
-      "error": "HTTP 404",
-      "response_time_ms": 888
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 943
     },
     {
-      "id": "Combined_M3U_30_aHR0cHM6",
+      "id": "Combined_M3U_31_aHR0cHM6",
       "name": "MAASRANGA HD",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png",
       "group": "Bangla",
@@ -351,7 +361,7 @@
       "response_time_ms": 1128
     },
     {
-      "id": "Combined_M3U_31_aHR0cDov",
+      "id": "Combined_M3U_32_aHR0cDov",
       "name": "MAASRANGA HD",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png",
       "group": "Bangla",
@@ -362,7 +372,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_32_aHR0cHM6",
+      "id": "Combined_M3U_33_aHR0cHM6",
       "name": "GAZI TV",
       "logo": "https://i.ibb.co/pQGXzMP/images-1-removebg-preview.png",
       "group": "BANGLA",
@@ -370,10 +380,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 311
+      "response_time_ms": 325
     },
     {
-      "id": "Combined_M3U_33_aHR0cDov",
+      "id": "Combined_M3U_34_aHR0cDov",
       "name": "GAZI TV",
       "logo": "https://i.ibb.co/pQGXzMP/images-1-removebg-preview.png",
       "group": "BANGLA",
@@ -384,7 +394,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_34_aHR0cDov",
+      "id": "Combined_M3U_35_aHR0cDov",
       "name": "My TV",
       "logo": "https://otapp.store/uploads/tv_image/sm/my-tv.png",
       "group": "BANGLA",
@@ -392,10 +402,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5002
     },
     {
-      "id": "Combined_M3U_35_aHR0cHM6",
+      "id": "Combined_M3U_36_aHR0cHM6",
       "name": "NEXUS TV",
       "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
       "group": "Bangla",
@@ -403,10 +413,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 705
+      "response_time_ms": 381
     },
     {
-      "id": "Combined_M3U_36_aHR0cDov",
+      "id": "Combined_M3U_37_aHR0cDov",
       "name": "NEXUS TV",
       "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
       "group": "Bangla",
@@ -417,7 +427,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_37_aHR0cHM6",
+      "id": "Combined_M3U_38_aHR0cHM6",
       "name": "Deepto TV HD",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
       "group": "Bangla",
@@ -425,10 +435,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1133
+      "response_time_ms": 1144
     },
     {
-      "id": "Combined_M3U_38_aHR0cDov",
+      "id": "Combined_M3U_39_aHR0cDov",
       "name": "Deepto TV HD",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
       "group": "Bangla",
@@ -439,7 +449,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_39_aHR0cHM6",
+      "id": "Combined_M3U_40_aHR0cHM6",
       "name": "SRK TV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1746005940155.png",
       "group": "Bangla",
@@ -447,10 +457,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 782
+      "response_time_ms": 876
     },
     {
-      "id": "Combined_M3U_40_aHR0cHM6",
+      "id": "Combined_M3U_41_aHR0cHM6",
       "name": "Channel i",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
       "group": "Bangla",
@@ -458,10 +468,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 814
+      "response_time_ms": 917
     },
     {
-      "id": "Combined_M3U_41_aHR0cDov",
+      "id": "Combined_M3U_42_aHR0cDov",
       "name": "Channel i",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
       "group": "Bangla",
@@ -472,18 +482,19 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_42_aHR0cHM6",
+      "id": "Combined_M3U_43_aHR0cHM6",
       "name": "Bangla Vision",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735561344354.png",
       "group": "Bangla",
       "url": "https://tvsen5.aynaott.com/banglavision/index.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 888
+      "status": "dead",
+      "http_code": 404,
+      "error": "HTTP 404",
+      "response_time_ms": 879
     },
     {
-      "id": "Combined_M3U_43_aHR0cHM6",
+      "id": "Combined_M3U_44_aHR0cHM6",
       "name": "NTV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
       "group": "Bangla",
@@ -491,10 +502,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 188
+      "response_time_ms": 147
     },
     {
-      "id": "Combined_M3U_44_aHR0cHM6",
+      "id": "Combined_M3U_45_aHR0cHM6",
       "name": "NTV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
       "group": "Bangla",
@@ -502,10 +513,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 906
+      "response_time_ms": 843
     },
     {
-      "id": "Combined_M3U_45_aHR0cDov",
+      "id": "Combined_M3U_46_aHR0cDov",
       "name": "NTV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
       "group": "Bangla",
@@ -516,7 +527,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_46_aHR0cHM6",
+      "id": "Combined_M3U_47_aHR0cHM6",
       "name": "Bangla TV",
       "logo": "https://s3.aynaott.com/storage/5b22893ae4e816ef2cf87e63c96e9e08",
       "group": "Bangla",
@@ -524,21 +535,22 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 366
+      "response_time_ms": 130
     },
     {
-      "id": "Combined_M3U_47_aHR0cHM6",
+      "id": "Combined_M3U_48_aHR0cHM6",
       "name": "Bangla TV",
       "logo": "https://s3.aynaott.com/storage/5b22893ae4e816ef2cf87e63c96e9e08",
       "group": "Bangla",
       "url": "https://cdn.ghuddi.live/Bangla_TV/Bangla_TV_BD/playlist.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 820
+      "status": "dead",
+      "http_code": 404,
+      "error": "HTTP 404",
+      "response_time_ms": 737
     },
     {
-      "id": "Combined_M3U_48_aHR0cDov",
+      "id": "Combined_M3U_49_aHR0cDov",
       "name": "Movie Bangla",
       "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
       "group": "Bangla",
@@ -549,7 +561,7 @@
       "error": "HTML Error Page / Access Denied"
     },
     {
-      "id": "Combined_M3U_49_aHR0cHM6",
+      "id": "Combined_M3U_50_aHR0cHM6",
       "name": "Ekushey TV",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png",
       "group": "Bangla",
@@ -557,10 +569,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 144
+      "response_time_ms": 209
     },
     {
-      "id": "Combined_M3U_50_aHR0cDov",
+      "id": "Combined_M3U_51_aHR0cDov",
       "name": "Ekushey TV",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png",
       "group": "Bangla",
@@ -571,7 +583,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_51_aHR0cHM6",
+      "id": "Combined_M3U_52_aHR0cHM6",
       "name": "RTV",
       "logo": "https://s4.gifyu.com/images/image29282f9d45a183d6.png",
       "group": "BANGLA",
@@ -579,10 +591,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 887
+      "response_time_ms": 832
     },
     {
-      "id": "Combined_M3U_52_aHR0cDov",
+      "id": "Combined_M3U_53_aHR0cDov",
       "name": "RTV",
       "logo": "https://s4.gifyu.com/images/image29282f9d45a183d6.png",
       "group": "BANGLA",
@@ -593,7 +605,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_53_aHR0cHM6",
+      "id": "Combined_M3U_54_aHR0cHM6",
       "name": "RTV",
       "logo": "https://s4.gifyu.com/images/image29282f9d45a183d6.png",
       "group": "BANGLA",
@@ -601,10 +613,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 442
+      "response_time_ms": 225
     },
     {
-      "id": "Combined_M3U_54_aHR0cHM6",
+      "id": "Combined_M3U_55_aHR0cHM6",
       "name": "Deshi TV HD",
       "logo": "https://i.postimg.cc/t4cxjxRj/Deshi-TV.jpg",
       "group": "Bangla",
@@ -612,10 +624,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 397
+      "response_time_ms": 167
     },
     {
-      "id": "Combined_M3U_55_aHR0cHM6",
+      "id": "Combined_M3U_56_aHR0cHM6",
       "name": "Bijoy TV",
       "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
       "group": "Bangla",
@@ -623,10 +635,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 549
+      "response_time_ms": 364
     },
     {
-      "id": "Combined_M3U_56_aHR0cDov",
+      "id": "Combined_M3U_57_aHR0cDov",
       "name": "Bijoy TV",
       "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
       "group": "Bangla",
@@ -637,7 +649,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_57_aHR0cHM6",
+      "id": "Combined_M3U_58_aHR0cHM6",
       "name": "ATN BANGLA HD",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
       "group": "Bangla",
@@ -645,10 +657,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 167
+      "response_time_ms": 204
     },
     {
-      "id": "Combined_M3U_58_aHR0cHM6",
+      "id": "Combined_M3U_59_aHR0cHM6",
       "name": "ATN BANGLA HD",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
       "group": "Bangla",
@@ -656,10 +668,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 838
+      "response_time_ms": 831
     },
     {
-      "id": "Combined_M3U_59_aHR0cDov",
+      "id": "Combined_M3U_60_aHR0cDov",
       "name": "ATN BANGLA HD",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
       "group": "Bangla",
@@ -670,7 +682,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_60_aHR0cHM6",
+      "id": "Combined_M3U_61_aHR0cHM6",
       "name": "ATN BANGLA HD",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
       "group": "Bangla",
@@ -678,10 +690,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 964
+      "response_time_ms": 828
     },
     {
-      "id": "Combined_M3U_61_aHR0cHM6",
+      "id": "Combined_M3U_62_aHR0cHM6",
       "name": "ATN UK",
       "logo": "https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg",
       "group": "Bangla",
@@ -689,10 +701,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 221
+      "response_time_ms": 278
     },
     {
-      "id": "Combined_M3U_62_aHR0cHM6",
+      "id": "Combined_M3U_63_aHR0cHM6",
       "name": "ATN UK",
       "logo": "https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg",
       "group": "Bangla",
@@ -700,10 +712,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 176
+      "response_time_ms": 186
     },
     {
-      "id": "Combined_M3U_63_aHR0cHM6",
+      "id": "Combined_M3U_64_aHR0cHM6",
       "name": "G-Serise",
       "logo": "https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png",
       "group": "Bangla",
@@ -711,10 +723,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 860
+      "response_time_ms": 820
     },
     {
-      "id": "Combined_M3U_64_aHR0cHM6",
+      "id": "Combined_M3U_65_aHR0cHM6",
       "name": "Channel S",
       "logo": "https://i.ibb.co.com/Vp2HKT0s/Channel-S-TV.png",
       "group": "Bangla",
@@ -722,10 +734,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 202
+      "response_time_ms": 155
     },
     {
-      "id": "Combined_M3U_65_aHR0cHM6",
+      "id": "Combined_M3U_66_aHR0cHM6",
       "name": "Ayna TV",
       "logo": "https://i.ibb.co.com/5hy7S3wB/Ayna-TV.png",
       "group": "Bangla",
@@ -733,10 +745,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 319
+      "response_time_ms": 222
     },
     {
-      "id": "Combined_M3U_66_aHR0cHM6",
+      "id": "Combined_M3U_67_aHR0cHM6",
       "name": "Global TV",
       "logo": "https://i.ibb.co.com/Q7Q7X64N/Global-TV.png",
       "group": "Bangla",
@@ -744,10 +756,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 645
+      "response_time_ms": 358
     },
     {
-      "id": "Combined_M3U_67_aHR0cHM6",
+      "id": "Combined_M3U_68_aHR0cHM6",
       "name": "Global TV",
       "logo": "https://i.ibb.co.com/Q7Q7X64N/Global-TV.png",
       "group": "Bangla",
@@ -755,10 +767,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 320
+      "response_time_ms": 229
     },
     {
-      "id": "Combined_M3U_68_aHR0cDov",
+      "id": "Combined_M3U_69_aHR0cDov",
       "name": "Global TV",
       "logo": "https://i.ibb.co.com/Q7Q7X64N/Global-TV.png",
       "group": "Bangla",
@@ -766,10 +778,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5001
     },
     {
-      "id": "Combined_M3U_69_aHR0cHM6",
+      "id": "Combined_M3U_70_aHR0cHM6",
       "name": "Mohona TV",
       "logo": "https://i.ibb.co.com/Ndvm37Vr/Mohona-TV.png",
       "group": "Bangla",
@@ -777,10 +789,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 714
+      "response_time_ms": 347
     },
     {
-      "id": "Combined_M3U_70_aHR0cHM6",
+      "id": "Combined_M3U_71_aHR0cHM6",
       "name": "Mohona TV",
       "logo": "https://i.ibb.co.com/Ndvm37Vr/Mohona-TV.png",
       "group": "Bangla",
@@ -788,10 +800,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 301
+      "response_time_ms": 5237
     },
     {
-      "id": "Combined_M3U_71_aHR0cDov",
+      "id": "Combined_M3U_72_aHR0cDov",
       "name": "Mohona TV",
       "logo": "https://i.ibb.co.com/Ndvm37Vr/Mohona-TV.png",
       "group": "Bangla",
@@ -802,7 +814,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_72_aHR0cHM6",
+      "id": "Combined_M3U_73_aHR0cHM6",
       "name": "Thikana TV",
       "logo": "https://imglink.cc/cdn/rw8iAU9ZcB.jpg",
       "group": "Bangla",
@@ -810,22 +822,21 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1475
+      "response_time_ms": 1223
     },
     {
-      "id": "Combined_M3U_73_aHR0cHM6",
+      "id": "Combined_M3U_74_aHR0cHM6",
       "name": "Thikana TV",
       "logo": "https://imglink.cc/cdn/rw8iAU9ZcB.jpg",
       "group": "Bangla",
       "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/thikanatv.stream/tracks-v1a1/mono.m3u8",
       "source": "Combined_M3U",
-      "status": "dead",
-      "http_code": 404,
-      "error": "HTTP 404",
-      "response_time_ms": 425
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 228
     },
     {
-      "id": "Combined_M3U_74_aHR0cHM6",
+      "id": "Combined_M3U_75_aHR0cHM6",
       "name": "NRB",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10",
       "group": "Bangla",
@@ -833,10 +844,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 178
+      "response_time_ms": 282
     },
     {
-      "id": "Combined_M3U_75_aHR0cHM6",
+      "id": "Combined_M3U_76_aHR0cHM6",
       "name": "DesheBideshe TV",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVHvCz2LvHBsKAUnb6Bp910Ud7v5_GpsmU9VVZ6rlq9CJB5Adxd2CkUvtfzKoP4kS2y30H2EQxOA3_BM23vDwe6stKuzsTyq28P6ivN5AmKG4hy_tdLHyvGDXnlW5BweV2hkoaq0PMRpR8KKpGKHWAGrYwLdgdtcoFw5feL2hDKK7Z_LnfD90STRQ6Gw/s600/Nur_20251226_221441_0000.png",
       "group": "Bangla",
@@ -844,10 +855,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 271
+      "response_time_ms": 223
     },
     {
-      "id": "Combined_M3U_76_aHR0cHM6",
+      "id": "Combined_M3U_77_aHR0cHM6",
       "name": "NTV UK",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijrhw8dmKmTBXBK7hXcnw4eSJm0CU8wK5xmJB7FVVhYSliWevh9pdXa9OmfOWA8Z2JH56KtgkHduaFB6vuUtvKWSa6Ad_PJvTX3yJ1O9-iZ3J1PLuT7OWtDD1oioQ9_rwumYuJznprCNjtPzQdZhyrmQrciMxdhARYCg4JtsI6_03XwlzcQlx4JqZ9IQ/s1080/1000019125.png",
       "group": "Bangla",
@@ -855,10 +866,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 199
+      "response_time_ms": 292
     },
     {
-      "id": "Combined_M3U_77_aHR0cHM6",
+      "id": "Combined_M3U_78_aHR0cHM6",
       "name": "EPTV HD",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGAnc8Wh4Xk0EsLOlkBJqTnOlAMQjFO4kvNpNoNwX0sq9kUcgML-RiIyNkR4CDc85_mnOp1OT886XdWdhojzRKqQjCDYqo2Iz-aTBhYx25XHVP2CO_6jQuUwNu20iEHDfzhrSoaLCeZpSaZiZd87LQFfqiRZMmX8LI2ZIVfSA15WRpJMnFYes2EvVfdw/s1080/1000046586.png",
       "group": "Bangla",
@@ -866,10 +877,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5310
+      "response_time_ms": 213
     },
     {
-      "id": "Combined_M3U_78_aHR0cHM6",
+      "id": "Combined_M3U_79_aHR0cHM6",
       "name": "Enter TV",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNMCLUJvhmcB_CSnlbh1Pq2EftQ31a8fw5Z37yr-b_vyEweqF_hNpN2REZH0gIeLUpdz8n5YyHrOZzVu_lnSK-QyG0nAiZXT9DBZwpPPE0Z24svJjFRxihtIFcEwo6ZnpbnxyE6P2XJrdvm0saWcJ1wfM09zrnbBM7b5yMBlMPAuWhOANXsAUcaqIoHQ/s1080/1000060523.png",
       "group": "Bangla",
@@ -877,10 +888,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1080
+      "response_time_ms": 1075
     },
     {
-      "id": "Combined_M3U_79_aHR0cHM6",
+      "id": "Combined_M3U_80_aHR0cHM6",
       "name": "Alpona TV",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQAdnA2hqGzs5Ox4QXPvuyMhTk9QMJjeDJRzDIYZkdKqyWj3e5_3KfV8aAxJj9JbY_Tw-yscv-e5hKjNo-9GnDqrFBo1ttwUZU_tN1GZ3D-Jiol7cfLQ5iq_c4FQH1cIFo4wY1MvrjXtDjKH6BjhHfHySqE3ThN9IBJ6Y3Tmuimq8RISGfYR35Ski6w/s1080/1000060597.png",
       "group": "Bangla",
@@ -888,10 +899,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 313
+      "response_time_ms": 5274
     },
     {
-      "id": "Combined_M3U_80_aHR0cHM6",
+      "id": "Combined_M3U_81_aHR0cHM6",
       "name": "CBN TV USA",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqqGdZfRBTlwxlTiMpedU9cqB8GsS1NlD6oyDP0Cqt2v8gPOjIO102af5XEGgXQGrwE7DHoKQeKEmgfIYGuM69LenggOOdxKk9vxEKaNHZeun95b28wrY4bZuhB1_0mWtqrWWODw0IYniZ-VAwVAfVAPwyw3TC7Vx0xGhM7wSsfoT2374wlatZty7Vng/s1080/1000059224.png",
       "group": "Bangla",
@@ -899,10 +910,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 197
+      "response_time_ms": 131
     },
     {
-      "id": "Combined_M3U_81_aHR0cHM6",
+      "id": "Combined_M3U_82_aHR0cHM6",
       "name": "JaTV",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3ABK7g4ZwY1Kre_fjEa2ItzSVcUFWhf6856ogWQEhbLS6I6Zrwfa40ctvKHFiv9d63aoJOekbffCjcdMXipWT2QWAHOUWgpgyk0Agodv-MwUqAvP57w92iu8nXQlViVICM6R98H5L0q-Wor0lf1umABAiveSXg6pYYegAJNsucF4SXwmv1j9b8BtWOA/s1080/1000060521.png",
       "group": "Bangla",
@@ -910,10 +921,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 578
+      "response_time_ms": 815
     },
     {
-      "id": "Combined_M3U_82_aHR0cHM6",
+      "id": "Combined_M3U_83_aHR0cHM6",
       "name": "BanglaOne",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXPTEox19EZ_tkHJSzWBEQJEVXwscxnIHFFSpySqZL-Lu42_OrFyBaY2WyylwU9_oP2vq-N5I8lFTR4Y-TychDhyphenhyphentON9RBXRhWZwGSlDo0pZdDMFZyjozm_Rhnktg2L25XCuqvSbpn5Mfw98HlUYMUooocAgSKG2DEkeNkrlWHTRgWgm489R-sznqQlg/s1080/1000059769.png",
       "group": "Bangla",
@@ -922,10 +933,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 318
+      "response_time_ms": 182
     },
     {
-      "id": "Combined_M3U_83_aHR0cHM6",
+      "id": "Combined_M3U_84_aHR0cHM6",
       "name": "Bengali Beats",
       "logo": "https://i.ibb.co.com/jPCD1N8z/Bengali-Beats.png",
       "group": "Bangla Music",
@@ -933,10 +944,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 294
+      "response_time_ms": 166
     },
     {
-      "id": "Combined_M3U_84_aHR0cHM6",
+      "id": "Combined_M3U_85_aHR0cHM6",
       "name": "Channel 16",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN4JrZ3Ur3BHiD2tQhsQq3WQ5DXpv7HATFyNDT6o-rSNwAZaeQieMBdfPoGPio5UPipGV2ZBb8rLmyYJe5vySfQjEmTE5MLc_6q8CKfXuzb4eRQREjPiyL5tkncb1Xt5pVMJa6t77CT98JvAFozg95IH_9qofXJ2s1ubKCbJ-_JsuRVb458aBztLImQ/s1080/1000015295.png",
       "group": "Bangla Music",
@@ -944,10 +955,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 424
+      "response_time_ms": 602
     },
     {
-      "id": "Combined_M3U_85_aHR0cHM6",
+      "id": "Combined_M3U_86_aHR0cHM6",
       "name": "Al Jazeera",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735547218986.png",
       "group": "News",
@@ -956,10 +967,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 1041
+      "response_time_ms": 1062
     },
     {
-      "id": "Combined_M3U_86_aHR0cHM6",
+      "id": "Combined_M3U_87_aHR0cHM6",
       "name": "Peace TV Bangla",
       "logo": "https://i.ibb.co/Gfw89mC/20240804-033102.png",
       "group": "Relagion Channel",
@@ -967,10 +978,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 980
+      "response_time_ms": 756
     },
     {
-      "id": "Combined_M3U_87_aHR0cHM6",
+      "id": "Combined_M3U_88_aHR0cHM6",
       "name": "Peace TV Bangla",
       "logo": "https://i.ibb.co/Gfw89mC/20240804-033102.png",
       "group": "Relagion Channel",
@@ -978,10 +989,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 842
+      "response_time_ms": 681
     },
     {
-      "id": "Combined_M3U_88_aHR0cDov",
+      "id": "Combined_M3U_89_aHR0cDov",
       "name": "Sanonda Tv",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrOMsdkfX7iirtL5LHIosFTqpB8hhdpS7zg&usqp=CAU",
       "group": "Bangla",
@@ -989,10 +1000,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 6494
+      "response_time_ms": 1119
     },
     {
-      "id": "Combined_M3U_89_aHR0cHM6",
+      "id": "Combined_M3U_90_aHR0cHM6",
       "name": "Zee Bangla Sonar",
       "logo": "https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png",
       "group": "Bangla",
@@ -1000,10 +1011,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1562
+      "response_time_ms": 362
     },
     {
-      "id": "Combined_M3U_90_aHR0cHM6",
+      "id": "Combined_M3U_91_aHR0cHM6",
       "name": "Zee Bangla Sonar",
       "logo": "https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png",
       "group": "Bangla",
@@ -1012,10 +1023,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 817
+      "response_time_ms": 871
     },
     {
-      "id": "Combined_M3U_91_aHR0cHM6",
+      "id": "Combined_M3U_92_aHR0cHM6",
       "name": "Zee Bangla Sonar",
       "logo": "https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png",
       "group": "Bangla",
@@ -1023,10 +1034,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 149
+      "response_time_ms": 125
     },
     {
-      "id": "Combined_M3U_92_aHR0cDov",
+      "id": "Combined_M3U_93_aHR0cDov",
       "name": "Zee Bangla Sonar",
       "logo": "https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png",
       "group": "Bangla",
@@ -1037,7 +1048,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_93_aHR0cHM6",
+      "id": "Combined_M3U_94_aHR0cHM6",
       "name": "Zee Bangla",
       "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9XHWylqs.png",
       "group": "Bangla",
@@ -1045,10 +1056,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 183
+      "response_time_ms": 230
     },
     {
-      "id": "Combined_M3U_94_aHR0cHM6",
+      "id": "Combined_M3U_95_aHR0cHM6",
       "name": "Zee Bangla",
       "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9XHWylqs.png",
       "group": "Bangla",
@@ -1056,10 +1067,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 320
+      "response_time_ms": 188
     },
     {
-      "id": "Combined_M3U_95_aHR0cHM6",
+      "id": "Combined_M3U_96_aHR0cHM6",
       "name": "Zee Bangla",
       "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9XHWylqs.png",
       "group": "Bangla",
@@ -1068,10 +1079,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 921
+      "response_time_ms": 2155
     },
     {
-      "id": "Combined_M3U_96_aHR0cHM6",
+      "id": "Combined_M3U_97_aHR0cHM6",
       "name": "Zee Bangla",
       "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9XHWylqs.png",
       "group": "Bangla",
@@ -1079,10 +1090,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 71
+      "response_time_ms": 52
     },
     {
-      "id": "Combined_M3U_97_aHR0cDov",
+      "id": "Combined_M3U_98_aHR0cDov",
       "name": "Zee Bangla",
       "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9XHWylqs.png",
       "group": "Bangla",
@@ -1093,7 +1104,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_98_aHR0cDov",
+      "id": "Combined_M3U_99_aHR0cDov",
       "name": "Zee Bangla",
       "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9XHWylqs.png",
       "group": "Bangla",
@@ -1101,10 +1112,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 525
+      "response_time_ms": 512
     },
     {
-      "id": "Combined_M3U_99_aHR0cHM6",
+      "id": "Combined_M3U_100_aHR0cHM6",
       "name": "Jhankar TV",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2LWHMLeQR_RCoxUGae5HTqqA7y7a-0A2IUfR6aNVjFPRHOa-iiP8Hv3HK_iTuJKpiUBPCNGgBSMmXPjbqprI3t2YeLf-_QhE1ZhafnGD6FEFxGXcw5g1yE2dz2TEhF7eXoTTpmcS4TlOd75ptLZEuJVdnTo2qCY_mxKm2wbpZL4QqudSaRat3I9Qphg/s600/Nur_20251226_221413_0000.png",
       "group": "Indian Bangla Music",
@@ -1112,10 +1123,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 309
+      "response_time_ms": 176
     },
     {
-      "id": "Combined_M3U_100_aHR0cHM6",
+      "id": "Combined_M3U_101_aHR0cHM6",
       "name": "Star Jalsha",
       "logo": "https://i.imgur.com/IlufzR5.png",
       "group": "Bangla",
@@ -1123,10 +1134,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 170
+      "response_time_ms": 194
     },
     {
-      "id": "Combined_M3U_101_aHR0cHM6",
+      "id": "Combined_M3U_102_aHR0cHM6",
       "name": "Star Jalsha",
       "logo": "https://i.imgur.com/IlufzR5.png",
       "group": "Bangla",
@@ -1134,10 +1145,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 277
+      "response_time_ms": 323
     },
     {
-      "id": "Combined_M3U_102_aHR0cHM6",
+      "id": "Combined_M3U_103_aHR0cHM6",
       "name": "Star Jalsha",
       "logo": "https://i.imgur.com/IlufzR5.png",
       "group": "Bangla",
@@ -1145,10 +1156,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 137
+      "response_time_ms": 184
     },
     {
-      "id": "Combined_M3U_103_aHR0cDov",
+      "id": "Combined_M3U_104_aHR0cDov",
       "name": "Star Jalsha",
       "logo": "https://i.imgur.com/IlufzR5.png",
       "group": "Bangla",
@@ -1159,7 +1170,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_104_aHR0cHM6",
+      "id": "Combined_M3U_105_aHR0cHM6",
       "name": "Jalsha Movies",
       "logo": "https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png",
       "group": "Movies",
@@ -1167,10 +1178,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 176
+      "response_time_ms": 171
     },
     {
-      "id": "Combined_M3U_105_aHR0cHM6",
+      "id": "Combined_M3U_106_aHR0cHM6",
       "name": "Jalsha Movies",
       "logo": "https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png",
       "group": "Movies",
@@ -1178,10 +1189,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 428
+      "response_time_ms": 323
     },
     {
-      "id": "Combined_M3U_106_aHR0cDov",
+      "id": "Combined_M3U_107_aHR0cDov",
       "name": "Jalsha Movies",
       "logo": "https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png",
       "group": "Movies",
@@ -1189,10 +1200,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5000
     },
     {
-      "id": "Combined_M3U_107_aHR0cHM6",
+      "id": "Combined_M3U_108_aHR0cHM6",
       "name": "AAKASH AATH",
       "logo": "https://karthavya.com/wp-content/uploads/2022/12/akash-bangla.jpg",
       "group": "Bangla",
@@ -1201,10 +1212,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno 111] Connection refused>",
-      "response_time_ms": 301
+      "response_time_ms": 344
     },
     {
-      "id": "Combined_M3U_108_aHR0cDov",
+      "id": "Combined_M3U_109_aHR0cDov",
       "name": "Enter 10 Bangla",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg",
       "group": "Bangla",
@@ -1212,10 +1223,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5001
+      "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_109_aHR0cHM6",
+      "id": "Combined_M3U_110_aHR0cHM6",
       "name": "Enter 10 Bangla",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg",
       "group": "Bangla",
@@ -1223,10 +1234,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 928
+      "response_time_ms": 687
     },
     {
-      "id": "Combined_M3U_110_aHR0cDov",
+      "id": "Combined_M3U_111_aHR0cDov",
       "name": "Sangeet Bangla",
       "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
       "group": "Music",
@@ -1234,10 +1245,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5000
+      "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_111_aHR0cHM6",
+      "id": "Combined_M3U_112_aHR0cHM6",
       "name": "Sangeet Bangla",
       "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
       "group": "Music",
@@ -1245,10 +1256,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 766
+      "response_time_ms": 684
     },
     {
-      "id": "Combined_M3U_112_aHR0cHM6",
+      "id": "Combined_M3U_113_aHR0cHM6",
       "name": "Sony Aath",
       "logo": "https://i.ibb.co.com/FLh8qFS9/Sony-AATH-Logo-2022.png",
       "group": "Bangla",
@@ -1256,10 +1267,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 64
+      "response_time_ms": 50
     },
     {
-      "id": "Combined_M3U_113_aHR0cHM6",
+      "id": "Combined_M3U_114_aHR0cHM6",
       "name": "Sony Aath",
       "logo": "https://i.ibb.co.com/FLh8qFS9/Sony-AATH-Logo-2022.png",
       "group": "Bangla",
@@ -1268,10 +1279,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 808
+      "response_time_ms": 873
     },
     {
-      "id": "Combined_M3U_114_aHR0cHM6",
+      "id": "Combined_M3U_115_aHR0cHM6",
       "name": "Colors Bangla",
       "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
       "group": "Bangla",
@@ -1279,10 +1290,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 152
+      "response_time_ms": 76
     },
     {
-      "id": "Combined_M3U_115_aHR0cHM6",
+      "id": "Combined_M3U_116_aHR0cHM6",
       "name": "Colors Bangla",
       "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
       "group": "Bangla",
@@ -1290,10 +1301,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 126
+      "response_time_ms": 104
     },
     {
-      "id": "Combined_M3U_116_aHR0cDov",
+      "id": "Combined_M3U_117_aHR0cDov",
       "name": "Colors Bangla",
       "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
       "group": "Bangla",
@@ -1301,10 +1312,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5000
+      "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_117_aHR0cDov",
+      "id": "Combined_M3U_118_aHR0cDov",
       "name": "Color Bangla Cinema",
       "logo": "https://i.ibb.co.com/vxg5pDdJ/Colors-Bangla-Cinema.png",
       "group": "Movies",
@@ -1315,7 +1326,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_118_aHR0cDov",
+      "id": "Combined_M3U_119_aHR0cDov",
       "name": "Sun Bangla",
       "logo": "https://i.ibb.co.com/0Vr6dQCx/Sun-Bangla-HD-logo-2023.webp",
       "group": "Bangla",
@@ -1326,7 +1337,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_119_aHR0cHM6",
+      "id": "Combined_M3U_120_aHR0cHM6",
       "name": "Rongeen TV",
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxW1Tk5YcPMJtI5hh47SGGuJnQWY9YwkYZS9vOt_dJtQ5lRsS1vXarCGc6ixKgdEBAp2Y-K8xJyVSdiv3D62oWv_E5An9kHP_wSawaYiflPVttCjb8BW8ayfJV0JfR-TzcMD75P5hsyNzYGmHe6BK2KvXABCLMtYBANLhYQ8RUyZVXTNQHqggCb42qYg/s1080/1000023429.png",
       "group": "Bangla",
@@ -1334,10 +1345,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 881
+      "response_time_ms": 1163
     },
     {
-      "id": "Combined_M3U_120_aHR0cHM6",
+      "id": "Combined_M3U_121_aHR0cHM6",
       "name": "Zee Cinema FHD",
       "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
       "group": "Hindi Movies",
@@ -1345,10 +1356,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 247
+      "response_time_ms": 84
     },
     {
-      "id": "Combined_M3U_121_aHR0cHM6",
+      "id": "Combined_M3U_122_aHR0cHM6",
       "name": "Zee Cinema HD",
       "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
       "group": "Hindi Movies",
@@ -1356,10 +1367,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 3639
+      "response_time_ms": 355
     },
     {
-      "id": "Combined_M3U_122_aHR0cHM6",
+      "id": "Combined_M3U_123_aHR0cHM6",
       "name": "Zee Cinema HD",
       "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
       "group": "Hindi Movies",
@@ -1367,10 +1378,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 297
+      "response_time_ms": 93
     },
     {
-      "id": "Combined_M3U_123_aHR0cHM6",
+      "id": "Combined_M3U_124_aHR0cHM6",
       "name": "Zee Cinema",
       "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
       "group": "Hindi Movies",
@@ -1378,10 +1389,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 77
+      "response_time_ms": 52
     },
     {
-      "id": "Combined_M3U_124_aHR0cHM6",
+      "id": "Combined_M3U_125_aHR0cHM6",
       "name": "Zee Bollywood",
       "logo": "https://i.postimg.cc/52SzwQF1/20251222_220548.png",
       "group": "Hindi Movies",
@@ -1389,10 +1400,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 651
+      "response_time_ms": 703
     },
     {
-      "id": "Combined_M3U_125_aHR0cHM6",
+      "id": "Combined_M3U_126_aHR0cHM6",
       "name": "ZEE ACTION",
       "logo": "https://ah-media-eug.pages.dev/logos/ZeeAction.png",
       "group": "MOVIE",
@@ -1400,10 +1411,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 639
+      "response_time_ms": 705
     },
     {
-      "id": "Combined_M3U_126_aHR0cHM6",
+      "id": "Combined_M3U_127_aHR0cHM6",
       "name": "ZEE ACTION",
       "logo": "https://ah-media-eug.pages.dev/logos/ZeeAction.png",
       "group": "MOVIE",
@@ -1412,10 +1423,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 826
+      "response_time_ms": 887
     },
     {
-      "id": "Combined_M3U_127_aHR0cHM6",
+      "id": "Combined_M3U_128_aHR0cHM6",
       "name": "MBC BOLLYWOOD",
       "logo": "https://i.ibb.co.com/KcCFP6yY/hhh.webp",
       "group": "MOVIE",
@@ -1423,10 +1434,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 269
+      "response_time_ms": 207
     },
     {
-      "id": "Combined_M3U_128_aHR0cHM6",
+      "id": "Combined_M3U_129_aHR0cHM6",
       "name": "MBC BOLLYWOOD",
       "logo": "https://i.ibb.co.com/KcCFP6yY/hhh.webp",
       "group": "MOVIE",
@@ -1434,10 +1445,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 142
+      "response_time_ms": 213
     },
     {
-      "id": "Combined_M3U_129_aHR0cHM6",
+      "id": "Combined_M3U_130_aHR0cHM6",
       "name": "MBC BOLLYWOOD",
       "logo": "https://i.ibb.co.com/KcCFP6yY/hhh.webp",
       "group": "MOVIE",
@@ -1445,10 +1456,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 154
+      "response_time_ms": 127
     },
     {
-      "id": "Combined_M3U_130_aHR0cHM6",
+      "id": "Combined_M3U_131_aHR0cHM6",
       "name": "Zee Anmol",
       "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f630a176-73cc-48d7-94cf-69ba0d201b36.png",
       "group": "Hindi",
@@ -1456,10 +1467,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 754
+      "response_time_ms": 350
     },
     {
-      "id": "Combined_M3U_131_aHR0cHM6",
+      "id": "Combined_M3U_132_aHR0cHM6",
       "name": "Sony Max HD",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
       "group": "Movies",
@@ -1467,10 +1478,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 163
+      "response_time_ms": 125
     },
     {
-      "id": "Combined_M3U_132_aHR0cHM6",
+      "id": "Combined_M3U_133_aHR0cHM6",
       "name": "Sony Max HD",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
       "group": "Movies",
@@ -1478,10 +1489,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 152
+      "response_time_ms": 107
     },
     {
-      "id": "Combined_M3U_133_aHR0cHM6",
+      "id": "Combined_M3U_134_aHR0cHM6",
       "name": "Sony Max HD",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
       "group": "Movies",
@@ -1489,10 +1500,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 50
+      "response_time_ms": 48
     },
     {
-      "id": "Combined_M3U_134_aHR0cDov",
+      "id": "Combined_M3U_135_aHR0cDov",
       "name": "Sony Max HD",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
       "group": "Movies",
@@ -1503,7 +1514,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_135_aHR0cHM6",
+      "id": "Combined_M3U_136_aHR0cHM6",
       "name": "Sony Entertainment Television HD",
       "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
       "group": "Hindi",
@@ -1511,10 +1522,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 150
+      "response_time_ms": 202
     },
     {
-      "id": "Combined_M3U_136_aHR0cHM6",
+      "id": "Combined_M3U_137_aHR0cHM6",
       "name": "Sony Entertainment Television HD",
       "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
       "group": "Hindi",
@@ -1522,10 +1533,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 282
+      "response_time_ms": 104
     },
     {
-      "id": "Combined_M3U_137_aHR0cHM6",
+      "id": "Combined_M3U_138_aHR0cHM6",
       "name": "Sony Entertainment Television HD",
       "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
       "group": "Hindi",
@@ -1533,10 +1544,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 55
+      "response_time_ms": 50
     },
     {
-      "id": "Combined_M3U_138_aHR0cHM6",
+      "id": "Combined_M3U_139_aHR0cHM6",
       "name": "Sony Entertainment Television HD",
       "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
       "group": "Hindi",
@@ -1545,10 +1556,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 810
+      "response_time_ms": 882
     },
     {
-      "id": "Combined_M3U_139_aHR0cHM6",
+      "id": "Combined_M3U_140_aHR0cHM6",
       "name": "STAR MOVIES HD",
       "logo": "http://picons.cmshulk.com/picons/282639.png",
       "group": "Movies",
@@ -1556,10 +1567,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 265
+      "response_time_ms": 157
     },
     {
-      "id": "Combined_M3U_140_aHR0cHM6",
+      "id": "Combined_M3U_141_aHR0cHM6",
       "name": "STAR MOVIES HD",
       "logo": "http://picons.cmshulk.com/picons/282639.png",
       "group": "Movies",
@@ -1567,10 +1578,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 254
+      "response_time_ms": 112
     },
     {
-      "id": "Combined_M3U_141_aHR0cHM6",
+      "id": "Combined_M3U_142_aHR0cHM6",
       "name": "STAR MOVIES HD",
       "logo": "http://picons.cmshulk.com/picons/282639.png",
       "group": "Movies",
@@ -1578,10 +1589,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 168
+      "response_time_ms": 197
     },
     {
-      "id": "Combined_M3U_142_aHR0cHM6",
+      "id": "Combined_M3U_143_aHR0cHM6",
       "name": "Sony Pix FHD",
       "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
       "group": "Movies",
@@ -1589,10 +1600,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 244
+      "response_time_ms": 182
     },
     {
-      "id": "Combined_M3U_143_aHR0cHM6",
+      "id": "Combined_M3U_144_aHR0cHM6",
       "name": "Sony Pix HD",
       "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
       "group": "Movies",
@@ -1600,10 +1611,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 144
+      "response_time_ms": 80
     },
     {
-      "id": "Combined_M3U_144_aHR0cHM6",
+      "id": "Combined_M3U_145_aHR0cHM6",
       "name": "Sony Pix FHD",
       "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
       "group": "Movies",
@@ -1611,10 +1622,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 407
+      "response_time_ms": 101
     },
     {
-      "id": "Combined_M3U_145_aHR0cHM6",
+      "id": "Combined_M3U_146_aHR0cHM6",
       "name": "Sony Pix SD",
       "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
       "group": "Movies",
@@ -1622,10 +1633,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 69
+      "response_time_ms": 49
     },
     {
-      "id": "Combined_M3U_146_aHR0cHM6",
+      "id": "Combined_M3U_147_aHR0cHM6",
       "name": "Sony Pix SD",
       "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
       "group": "Movies",
@@ -1634,10 +1645,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 813
+      "response_time_ms": 891
     },
     {
-      "id": "Combined_M3U_147_aHR0cHM6",
+      "id": "Combined_M3U_148_aHR0cHM6",
       "name": "NH Bolly Flix",
       "logo": "https://i.postimg.cc/CLPr6gq6/IMG-20220828-165715.jpg",
       "group": "Movies",
@@ -1645,10 +1656,32 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1116
+      "response_time_ms": 1017
     },
     {
-      "id": "Combined_M3U_148_aHR0cHM6",
+      "id": "Combined_M3U_149_aHR0cHM6",
+      "name": "& PICTURES FHD",
+      "logo": "https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png",
+      "group": "MOVIES",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/155997.m3u8",
+      "source": "Combined_M3U",
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 107
+    },
+    {
+      "id": "Combined_M3U_150_aHR0cHM6",
+      "name": "& PICTURES",
+      "logo": "https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png",
+      "group": "MOVIES",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/280744.m3u8",
+      "source": "Combined_M3U",
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 214
+    },
+    {
+      "id": "Combined_M3U_151_aHR0cHM6",
       "name": "& Pictures HD",
       "logo": "https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png",
       "group": "MOVIE",
@@ -1656,10 +1689,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 93
+      "response_time_ms": 49
     },
     {
-      "id": "Combined_M3U_149_aHR0cHM6",
+      "id": "Combined_M3U_152_aHR0cHM6",
       "name": "& Pictures HD",
       "logo": "https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png",
       "group": "MOVIE",
@@ -1668,10 +1701,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 1547
+      "response_time_ms": 882
     },
     {
-      "id": "Combined_M3U_150_aHR0cHM6",
+      "id": "Combined_M3U_153_aHR0cHM6",
       "name": "Star Gold HD",
       "logo": "https://i.ibb.co.com/chYLCJfN/star-gold.png",
       "group": "MOVIES",
@@ -1679,10 +1712,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 244
+      "response_time_ms": 96
     },
     {
-      "id": "Combined_M3U_151_aHR0cHM6",
+      "id": "Combined_M3U_154_aHR0cHM6",
       "name": "Star Gold HD",
       "logo": "https://i.ibb.co.com/chYLCJfN/star-gold.png",
       "group": "MOVIES",
@@ -1690,10 +1723,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 256
+      "response_time_ms": 72
     },
     {
-      "id": "Combined_M3U_152_aHR0cDov",
+      "id": "Combined_M3U_155_aHR0cDov",
       "name": "Star Gold HD",
       "logo": "https://i.ibb.co.com/chYLCJfN/star-gold.png",
       "group": "MOVIES",
@@ -1701,10 +1734,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5006
     },
     {
-      "id": "Combined_M3U_153_aHR0cHM6",
+      "id": "Combined_M3U_156_aHR0cHM6",
       "name": "AND EXPLORER HD",
       "logo": "http://picons.cmshulk.com/picons/209743.png",
       "group": "MOVIES",
@@ -1712,10 +1745,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 155
+      "response_time_ms": 94
     },
     {
-      "id": "Combined_M3U_154_aHR0cHM6",
+      "id": "Combined_M3U_157_aHR0cHM6",
       "name": "COLORS CINEPLEX FHD",
       "logo": "http://picons.cmshulk.com/picons/156003.png",
       "group": "MOVIES",
@@ -1723,10 +1756,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 147
+      "response_time_ms": 98
     },
     {
-      "id": "Combined_M3U_155_aHR0cHM6",
+      "id": "Combined_M3U_158_aHR0cHM6",
       "name": "COLORS CINEPLEX SD",
       "logo": "http://picons.cmshulk.com/picons/280749.png",
       "group": "MOVIES",
@@ -1734,10 +1767,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 219
+      "response_time_ms": 82
     },
     {
-      "id": "Combined_M3U_156_aHR0cHM6",
+      "id": "Combined_M3U_159_aHR0cHM6",
       "name": "STAR GOLD 2",
       "logo": "https://i.ibb.co.com/Qjj0d0Xs/star-gold-2.webp",
       "group": "MOVIES",
@@ -1745,10 +1778,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 168
+      "response_time_ms": 79
     },
     {
-      "id": "Combined_M3U_157_aHR0cHM6",
+      "id": "Combined_M3U_160_aHR0cHM6",
       "name": "STAR GOLD 2",
       "logo": "https://i.ibb.co.com/Qjj0d0Xs/star-gold-2.webp",
       "group": "MOVIES",
@@ -1756,21 +1789,21 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 208
+      "response_time_ms": 181
     },
     {
-      "id": "Combined_M3U_158_aHR0cHM6",
-      "name": "GOLD SELECT HD",
+      "id": "Combined_M3U_161_aHR0cHM6",
+      "name": "STARGOLD SELECT HD",
       "logo": "https://i.ibb.co.com/spn4T6Kq/STS.jpg",
       "group": "MOVIES",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/155970.m3u8",
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 255
+      "response_time_ms": 99
     },
     {
-      "id": "Combined_M3U_159_aHR0cHM6",
+      "id": "Combined_M3U_162_aHR0cHM6",
       "name": "STARGOLD SELECT HD",
       "logo": "https://i.ibb.co.com/spn4T6Kq/STS.jpg",
       "group": "MOVIES",
@@ -1778,10 +1811,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 184
+      "response_time_ms": 186
     },
     {
-      "id": "Combined_M3U_160_aHR0cHM6",
+      "id": "Combined_M3U_163_aHR0cHM6",
       "name": "Star Plus",
       "logo": "https://i.ibb.co.com/RTsxJDrx/Star-Plus-HD.png",
       "group": "Hindi",
@@ -1789,10 +1822,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 164
+      "response_time_ms": 209
     },
     {
-      "id": "Combined_M3U_161_aHR0cHM6",
+      "id": "Combined_M3U_164_aHR0cHM6",
       "name": "Star Plus",
       "logo": "https://i.ibb.co.com/RTsxJDrx/Star-Plus-HD.png",
       "group": "Hindi",
@@ -1800,10 +1833,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 164
+      "response_time_ms": 87
     },
     {
-      "id": "Combined_M3U_162_aHR0cDov",
+      "id": "Combined_M3U_165_aHR0cDov",
       "name": "Star Plus",
       "logo": "https://i.ibb.co.com/RTsxJDrx/Star-Plus-HD.png",
       "group": "Hindi",
@@ -1811,10 +1844,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 220
+      "response_time_ms": 225
     },
     {
-      "id": "Combined_M3U_163_aHR0cHM6",
+      "id": "Combined_M3U_166_aHR0cHM6",
       "name": "COLORS HD",
       "logo": "http://monirul.bro.bd/assets/images/COLORS HD1745031404.png",
       "group": "Hindi",
@@ -1822,10 +1855,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 218
+      "response_time_ms": 92
     },
     {
-      "id": "Combined_M3U_164_aHR0cHM6",
+      "id": "Combined_M3U_167_aHR0cHM6",
       "name": "COLORS HD",
       "logo": "http://monirul.bro.bd/assets/images/COLORS HD1745031404.png",
       "group": "Hindi",
@@ -1833,10 +1866,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 157
+      "response_time_ms": 89
     },
     {
-      "id": "Combined_M3U_165_aHR0cHM6",
+      "id": "Combined_M3U_168_aHR0cHM6",
       "name": "Hum TV HD",
       "logo": "https://i.ibb.co.com/Z6HYNVsD/download.jpg",
       "group": "Hindi",
@@ -1844,10 +1877,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 188
+      "response_time_ms": 93
     },
     {
-      "id": "Combined_M3U_166_aHR0cHM6",
+      "id": "Combined_M3U_169_aHR0cHM6",
       "name": "Hum TV HD",
       "logo": "https://i.ibb.co.com/Z6HYNVsD/download.jpg",
       "group": "Hindi",
@@ -1855,10 +1888,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 715
+      "response_time_ms": 361
     },
     {
-      "id": "Combined_M3U_167_aHR0cHM6",
+      "id": "Combined_M3U_170_aHR0cHM6",
       "name": "SONY SAB",
       "logo": "https://ah-media-eug.pages.dev/logos/SonySAB.png",
       "group": "Hindi",
@@ -1866,10 +1899,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 91
+      "response_time_ms": 56
     },
     {
-      "id": "Combined_M3U_168_aHR0cHM6",
+      "id": "Combined_M3U_171_aHR0cHM6",
       "name": "SONY SAB",
       "logo": "https://ah-media-eug.pages.dev/logos/SonySAB.png",
       "group": "Hindi",
@@ -1878,10 +1911,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 787
+      "response_time_ms": 862
     },
     {
-      "id": "Combined_M3U_169_aHR0cHM6",
+      "id": "Combined_M3U_172_aHR0cHM6",
       "name": "ZEE TV",
       "logo": "https://ah-media-eug.pages.dev/logos/ZeeTV.png",
       "group": "Hindi",
@@ -1889,10 +1922,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 664
+      "response_time_ms": 657
     },
     {
-      "id": "Combined_M3U_170_aHR0cHM6",
+      "id": "Combined_M3U_173_aHR0cHM6",
       "name": "ZEE TV",
       "logo": "https://ah-media-eug.pages.dev/logos/ZeeTV.png",
       "group": "Hindi",
@@ -1901,10 +1934,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 835
+      "response_time_ms": 2947
     },
     {
-      "id": "Combined_M3U_171_aHR0cHM6",
+      "id": "Combined_M3U_174_aHR0cHM6",
       "name": "& TV",
       "logo": "https://ah-media-eug.pages.dev/logos/%26TV.png",
       "group": "Hindi",
@@ -1912,10 +1945,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 689
+      "response_time_ms": 383
     },
     {
-      "id": "Combined_M3U_172_aHR0cHM6",
+      "id": "Combined_M3U_175_aHR0cHM6",
       "name": "& TV",
       "logo": "https://ah-media-eug.pages.dev/logos/%26TV.png",
       "group": "Hindi",
@@ -1924,10 +1957,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 799
+      "response_time_ms": 2831
     },
     {
-      "id": "Combined_M3U_173_aHR0cHM6",
+      "id": "Combined_M3U_176_aHR0cHM6",
       "name": "& TV",
       "logo": "https://ah-media-eug.pages.dev/logos/%26TV.png",
       "group": "Hindi",
@@ -1935,10 +1968,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 330
+      "response_time_ms": 150
     },
     {
-      "id": "Combined_M3U_174_aHR0cHM6",
+      "id": "Combined_M3U_177_aHR0cHM6",
       "name": "Zee One",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_One_Logo_2025.png",
       "group": "Hindi - Entertainment",
@@ -1946,10 +1979,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 413
+      "response_time_ms": 230
     },
     {
-      "id": "Combined_M3U_175_aHR0cHM6",
+      "id": "Combined_M3U_178_aHR0cHM6",
       "name": "Sony KAL Hindi",
       "logo": "https://i.ibb.co.com/HLWLfRZy/Sony-Kal-Logo.webp",
       "group": "Hindi - Entertainment",
@@ -1957,10 +1990,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 157
+      "response_time_ms": 204
     },
     {
-      "id": "Combined_M3U_176_aHR0cHM6",
+      "id": "Combined_M3U_179_aHR0cHM6",
       "name": "Sony KAL Hindi",
       "logo": "https://i.ibb.co.com/HLWLfRZy/Sony-Kal-Logo.webp",
       "group": "Hindi - Entertainment",
@@ -1968,10 +2001,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 300
+      "response_time_ms": 348
     },
     {
-      "id": "Combined_M3U_177_aHR0cHM6",
+      "id": "Combined_M3U_180_aHR0cHM6",
       "name": "9X Tashan",
       "logo": "https://vignette.wikia.nocookie.net/logopedia/images/5/56/9X_Tashan_Logo.jpg",
       "group": "Music",
@@ -1979,10 +2012,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 451
+      "response_time_ms": 722
     },
     {
-      "id": "Combined_M3U_178_aHR0cHM6",
+      "id": "Combined_M3U_181_aHR0cHM6",
       "name": "9X Tashan",
       "logo": "https://vignette.wikia.nocookie.net/logopedia/images/5/56/9X_Tashan_Logo.jpg",
       "group": "Music",
@@ -1990,10 +2023,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 895
+      "response_time_ms": 793
     },
     {
-      "id": "Combined_M3U_179_aHR0cDov",
+      "id": "Combined_M3U_182_aHR0cDov",
       "name": "Vision Beats",
       "logo": "https://imgur.com/79g2kMA.png",
       "group": "Music",
@@ -2001,10 +2034,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 196
+      "response_time_ms": 132
     },
     {
-      "id": "Combined_M3U_180_aHR0cHM6",
+      "id": "Combined_M3U_183_aHR0cHM6",
       "name": "9XM HD",
       "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "group": "Music",
@@ -2012,10 +2045,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 237
+      "response_time_ms": 562
     },
     {
-      "id": "Combined_M3U_181_aHR0cHM6",
+      "id": "Combined_M3U_184_aHR0cHM6",
       "name": "9XM HD",
       "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "group": "Music",
@@ -2023,10 +2056,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1034
+      "response_time_ms": 2817
     },
     {
-      "id": "Combined_M3U_182_aHR0cHM6",
+      "id": "Combined_M3U_185_aHR0cHM6",
       "name": "9XM HD",
       "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "group": "Music",
@@ -2034,10 +2067,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 665
+      "response_time_ms": 563
     },
     {
-      "id": "Combined_M3U_183_aHR0cHM6",
+      "id": "Combined_M3U_186_aHR0cHM6",
       "name": "9XM HD",
       "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "group": "Music",
@@ -2046,10 +2079,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 592
+      "response_time_ms": 510
     },
     {
-      "id": "Combined_M3U_184_aHR0cDov",
+      "id": "Combined_M3U_187_aHR0cDov",
       "name": "9XM HD",
       "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "group": "Music",
@@ -2057,10 +2090,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5003
     },
     {
-      "id": "Combined_M3U_185_aHR0cHM6",
+      "id": "Combined_M3U_188_aHR0cHM6",
       "name": "Zing",
       "logo": "https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a89a1e2e-677c-4a8a-9a66-dff5e0b921c8.png",
       "group": "Music",
@@ -2068,10 +2101,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 621
+      "response_time_ms": 368
     },
     {
-      "id": "Combined_M3U_186_aHR0cHM6",
+      "id": "Combined_M3U_189_aHR0cHM6",
       "name": "Saga Music Hindi",
       "logo": "https://yt3.googleusercontent.com/E3Mw-3r_cEYc29ivD-rRlhF9RkpgfhZ5BLgi9uFdnyImiUGLNVBv2s8rOxC3ig4iVfxrtxSE=s900-c-k-c0x00ffffff-no-rj",
       "group": "Music",
@@ -2079,10 +2112,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 609
+      "response_time_ms": 593
     },
     {
-      "id": "Combined_M3U_187_aHR0cHM6",
+      "id": "Combined_M3U_190_aHR0cHM6",
       "name": "Saga Music Haryani",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJbz501D3eMb5GnNPVnPNe_Bc-uCyZpo6qg&s",
       "group": "Music",
@@ -2090,10 +2123,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 546
+      "response_time_ms": 527
     },
     {
-      "id": "Combined_M3U_188_aHR0cHM6",
+      "id": "Combined_M3U_191_aHR0cHM6",
       "name": "Music Mastii",
       "logo": "https://imglink.cc/cdn/IYDn_LwwiV.png",
       "group": "Music",
@@ -2101,10 +2134,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 274
+      "response_time_ms": 170
     },
     {
-      "id": "Combined_M3U_189_aHR0cHM6",
+      "id": "Combined_M3U_192_aHR0cHM6",
       "name": "YRF Music",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/YRF_Music.png",
       "group": "Music",
@@ -2112,10 +2145,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 650
+      "response_time_ms": 499
     },
     {
-      "id": "Combined_M3U_190_aHR0cHM6",
+      "id": "Combined_M3U_193_aHR0cHM6",
       "name": "9X Jalwa",
       "logo": "https://i.ibb.co.com/XrwCkDY0/9x-jalwa.png",
       "group": "Music",
@@ -2123,10 +2156,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 252
+      "response_time_ms": 520
     },
     {
-      "id": "Combined_M3U_191_aHR0cHM6",
+      "id": "Combined_M3U_194_aHR0cHM6",
       "name": "9X Jalwa",
       "logo": "https://i.ibb.co.com/XrwCkDY0/9x-jalwa.png",
       "group": "Music",
@@ -2134,10 +2167,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1015
+      "response_time_ms": 998
     },
     {
-      "id": "Combined_M3U_192_aHR0cHM6",
+      "id": "Combined_M3U_195_aHR0cHM6",
       "name": "Epic Music",
       "logo": "https://i.postimg.cc/t47SV77h/image.png",
       "group": "𝐌𝐮𝐬𝐢𝐜",
@@ -2145,10 +2178,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1058
+      "response_time_ms": 1024
     },
     {
-      "id": "Combined_M3U_193_aHR0cHM6",
+      "id": "Combined_M3U_196_aHR0cHM6",
       "name": "9X Jhakaas",
       "logo": "https://i.ibb.co/f9Y7fyx/Picsart-23-07-17-01-06-02-939.png",
       "group": "Music",
@@ -2156,10 +2189,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 241
+      "response_time_ms": 525
     },
     {
-      "id": "Combined_M3U_194_aHR0cHM6",
+      "id": "Combined_M3U_197_aHR0cHM6",
       "name": "Sangeet Bhojpuri",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Sangeet_Bhojpuri.jpg",
       "group": "Music",
@@ -2167,10 +2200,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 771
+      "response_time_ms": 700
     },
     {
-      "id": "Combined_M3U_195_aHR0cHM6",
+      "id": "Combined_M3U_198_aHR0cHM6",
       "name": "Zoom Music",
       "logo": "https://i.pinimg.com/originals/45/7e/3a/457e3aaf075e58defea4d9455fd79004.jpg",
       "group": "Music",
@@ -2178,10 +2211,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 669
+      "response_time_ms": 431
     },
     {
-      "id": "Combined_M3U_196_aHR0cHM6",
+      "id": "Combined_M3U_199_aHR0cHM6",
       "name": "Zoom Music",
       "logo": "https://i.pinimg.com/originals/45/7e/3a/457e3aaf075e58defea4d9455fd79004.jpg",
       "group": "Music",
@@ -2189,10 +2222,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 652
+      "response_time_ms": 381
     },
     {
-      "id": "Combined_M3U_197_aHR0cHM6",
+      "id": "Combined_M3U_200_aHR0cHM6",
       "name": "Zoom Music",
       "logo": "https://i.pinimg.com/originals/45/7e/3a/457e3aaf075e58defea4d9455fd79004.jpg",
       "group": "Music",
@@ -2200,10 +2233,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 767
+      "response_time_ms": 710
     },
     {
-      "id": "Combined_M3U_198_aHR0cDov",
+      "id": "Combined_M3U_201_aHR0cDov",
       "name": "HINDI HITS HD",
       "logo": "https://static.vecteezy.com/system/resources/previews/000/579/872/non_2x/music-symbols-logo-and-icons-template-vector.jpg",
       "group": "Music",
@@ -2211,10 +2244,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 243
+      "response_time_ms": 177
     },
     {
-      "id": "Combined_M3U_199_aHR0cHM6",
+      "id": "Combined_M3U_202_aHR0cHM6",
       "name": "Bridge TV",
       "logo": "https://iptvx.one/picons/bridge-tv.png",
       "group": "Music",
@@ -2223,10 +2256,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 164
+      "response_time_ms": 166
     },
     {
-      "id": "Combined_M3U_200_aHR0cHM6",
+      "id": "Combined_M3U_203_aHR0cHM6",
       "name": "Bridge TV Classic",
       "logo": "https://iptvx.one/picons/bridge-tv-classic.png",
       "group": "Music",
@@ -2235,10 +2268,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 149
+      "response_time_ms": 71
     },
     {
-      "id": "Combined_M3U_201_aHR0cHM6",
+      "id": "Combined_M3U_204_aHR0cHM6",
       "name": "Bridge TV Deluxe",
       "logo": "https://iptvx.one/picons/bridge-hd.png",
       "group": "Music",
@@ -2247,21 +2280,22 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 176
+      "response_time_ms": 81
     },
     {
-      "id": "Combined_M3U_203_aHR0cHM6",
+      "id": "Combined_M3U_206_aHR0cHM6",
       "name": "KpopTV Play",
       "logo": "https://i.imgur.com/Tf0vweF.png",
       "group": "Music",
       "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 311
+      "status": "dead",
+      "http_code": 503,
+      "error": "HTTP 503",
+      "response_time_ms": 123
     },
     {
-      "id": "Combined_M3U_204_aHR0cHM6",
+      "id": "Combined_M3U_207_aHR0cHM6",
       "name": "Tele7 Music",
       "logo": "https://tele7music.ro/wp-content/uploads/2022/11/logo-tele7music-300x300.png",
       "group": "Music",
@@ -2269,10 +2303,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 801
+      "response_time_ms": 550
     },
     {
-      "id": "Combined_M3U_205_aHR0cHM6",
+      "id": "Combined_M3U_208_aHR0cHM6",
       "name": "Steelbird Music",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Steelbird_Music.png",
       "group": "Music",
@@ -2280,10 +2314,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1019
+      "response_time_ms": 865
     },
     {
-      "id": "Combined_M3U_206_aHR0cHM6",
+      "id": "Combined_M3U_209_aHR0cHM6",
       "name": "Vevo Pop (1080p)",
       "logo": "https://i.imgur.com/dZHktKR.png",
       "group": "Music",
@@ -2292,10 +2326,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -5] No address associated with hostname>",
-      "response_time_ms": 102
+      "response_time_ms": 109
     },
     {
-      "id": "Combined_M3U_207_aHR0cHM6",
+      "id": "Combined_M3U_210_aHR0cHM6",
       "name": "Vevo",
       "logo": "https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg",
       "group": "Music",
@@ -2304,10 +2338,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -5] No address associated with hostname>",
-      "response_time_ms": 103
+      "response_time_ms": 70
     },
     {
-      "id": "Combined_M3U_208_aHR0cHM6",
+      "id": "Combined_M3U_211_aHR0cHM6",
       "name": "Vevo",
       "logo": "https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg",
       "group": "Music",
@@ -2316,10 +2350,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -2] Name or service not known>",
-      "response_time_ms": 164
+      "response_time_ms": 143
     },
     {
-      "id": "Combined_M3U_209_aHR0cHM6",
+      "id": "Combined_M3U_212_aHR0cHM6",
       "name": "Trace UK",
       "logo": "https://a.jsrdn.com/hls/23073/trace-uk/logo_20240627_183320_70.png",
       "group": "Music",
@@ -2327,10 +2361,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 300
+      "response_time_ms": 184
     },
     {
-      "id": "Combined_M3U_210_aHR0cHM6",
+      "id": "Combined_M3U_213_aHR0cHM6",
       "name": "Trace Urban HD",
       "logo": "https://i.imgur.com/DLIbUMx.png",
       "group": "Music",
@@ -2338,10 +2372,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 579
+      "response_time_ms": 269
     },
     {
-      "id": "Combined_M3U_211_aHR0cHM6",
+      "id": "Combined_M3U_214_aHR0cHM6",
       "name": "Trace Urban HD",
       "logo": "https://i.imgur.com/DLIbUMx.png",
       "group": "Music",
@@ -2349,10 +2383,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 572
+      "response_time_ms": 285
     },
     {
-      "id": "Combined_M3U_212_aHR0cHM6",
+      "id": "Combined_M3U_215_aHR0cHM6",
       "name": "Trace Urban HD",
       "logo": "https://i.imgur.com/DLIbUMx.png",
       "group": "Music",
@@ -2360,10 +2394,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 466
+      "response_time_ms": 157
     },
     {
-      "id": "Combined_M3U_213_aHR0cHM6",
+      "id": "Combined_M3U_216_aHR0cHM6",
       "name": "Trace Mziki",
       "logo": "https://i.imgur.com/l3X9Gg4.png",
       "group": "Music",
@@ -2371,10 +2405,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 947
+      "response_time_ms": 809
     },
     {
-      "id": "Combined_M3U_214_aHR0cHM6",
+      "id": "Combined_M3U_217_aHR0cHM6",
       "name": "Trace Ayiti",
       "logo": "https://i.imgur.com/KkJ6fet.png",
       "group": "Music",
@@ -2382,10 +2416,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 909
+      "response_time_ms": 795
     },
     {
-      "id": "Combined_M3U_215_aHR0cHM6",
+      "id": "Combined_M3U_218_aHR0cHM6",
       "name": "Trace Brasil (1080p)",
       "logo": "https://i.imgur.com/DFBocPu.png",
       "group": "Music",
@@ -2393,10 +2427,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 513
+      "response_time_ms": 452
     },
     {
-      "id": "Combined_M3U_216_aHR0cHM6",
+      "id": "Combined_M3U_219_aHR0cHM6",
       "name": "DELUXE MUSIC HD (DE)",
       "logo": "https://iptvx.one/picons/deluxe-music-de.png",
       "group": "Music",
@@ -2404,10 +2438,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 806
+      "response_time_ms": 501
     },
     {
-      "id": "Combined_M3U_217_aHR0cHM6",
+      "id": "Combined_M3U_220_aHR0cHM6",
       "name": "DELUXE MUSIC DANCE (DE)",
       "logo": "https://i.ibb.co/Ybt9cyX/Deluxe-Dance.png",
       "group": "Music",
@@ -2415,10 +2449,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 471
+      "response_time_ms": 404
     },
     {
-      "id": "Combined_M3U_218_aHR0cHM6",
+      "id": "Combined_M3U_221_aHR0cHM6",
       "name": "DELUXE MUSIC DANCE (DE)",
       "logo": "https://i.ibb.co/Ybt9cyX/Deluxe-Dance.png",
       "group": "Music",
@@ -2426,10 +2460,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 727
+      "response_time_ms": 449
     },
     {
-      "id": "Combined_M3U_219_aHR0cHM6",
+      "id": "Combined_M3U_222_aHR0cHM6",
       "name": "POP World TV (ES)",
       "logo": "https://i.postimg.cc/d1zdj81J/POP-World-TV.png",
       "group": "Music",
@@ -2437,10 +2471,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 501
+      "response_time_ms": 614
     },
     {
-      "id": "Combined_M3U_220_aHR0cHM6",
+      "id": "Combined_M3U_223_aHR0cHM6",
       "name": "POWER Dance (TR)",
       "logo": "https://i.ibb.co/bm2sbh1/POWER-Dance-TR.png",
       "group": "Music",
@@ -2448,10 +2482,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1558
+      "response_time_ms": 1451
     },
     {
-      "id": "Combined_M3U_221_aHR0cHM6",
+      "id": "Combined_M3U_224_aHR0cHM6",
       "name": "POWER Dance (TR)",
       "logo": "https://i.ibb.co/bm2sbh1/POWER-Dance-TR.png",
       "group": "Music",
@@ -2459,10 +2493,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 2183
+      "response_time_ms": 1232
     },
     {
-      "id": "Combined_M3U_222_aHR0cHM6",
+      "id": "Combined_M3U_225_aHR0cHM6",
       "name": "Муз",
       "logo": "https://i.ibb.co.com/bjGXjRYD/897.png",
       "group": "Music",
@@ -2470,10 +2504,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1207
+      "response_time_ms": 1063
     },
     {
-      "id": "Combined_M3U_223_aHR0cHM6",
+      "id": "Combined_M3U_226_aHR0cHM6",
       "name": "МузТВ UZ",
       "logo": "https://i.ibb.co.com/bjGXjRYD/897.png",
       "group": "Music",
@@ -2481,10 +2515,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1195
+      "response_time_ms": 948
     },
     {
-      "id": "Combined_M3U_224_aHR0cHM6",
+      "id": "Combined_M3U_227_aHR0cHM6",
       "name": "RU.TV",
       "logo": "https://i.ibb.co.com/N6YhP9G2/2277.pngg",
       "group": "Music",
@@ -2492,10 +2526,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 2517
+      "response_time_ms": 964
     },
     {
-      "id": "Combined_M3U_225_aHR0cDov",
+      "id": "Combined_M3U_228_aHR0cDov",
       "name": "FON Music HD",
       "logo": "https://i.ibb.co.com/GvQpkKXG/680.png",
       "group": "Music",
@@ -2504,10 +2538,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 950
+      "response_time_ms": 463
     },
     {
-      "id": "Combined_M3U_226_aHR0cHM6",
+      "id": "Combined_M3U_229_aHR0cHM6",
       "name": "City Tv",
       "logo": "https://i.ibb.co.com/rRcRzqvk/4653.png",
       "group": "Music",
@@ -2515,10 +2549,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 695
+      "response_time_ms": 506
     },
     {
-      "id": "Combined_M3U_227_aHR0cHM6",
+      "id": "Combined_M3U_230_aHR0cHM6",
       "name": "MOVIES NOW",
       "logo": "https://i.ibb.co.com/RT7Y4FKF/MOVIES-NOW.png",
       "group": "Movies",
@@ -2526,10 +2560,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 243
+      "response_time_ms": 87
     },
     {
-      "id": "Combined_M3U_228_aHR0cDov",
+      "id": "Combined_M3U_231_aHR0cDov",
       "name": "MOVIES NOW",
       "logo": "https://i.ibb.co.com/RT7Y4FKF/MOVIES-NOW.png",
       "group": "Movies",
@@ -2537,10 +2571,21 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 521
+      "response_time_ms": 491
     },
     {
-      "id": "Combined_M3U_229_aHR0cDov",
+      "id": "Combined_M3U_232_aHR0cHM6",
+      "name": "MNX FHD",
+      "logo": "https://i.ibb.co.com/7JTW6kcw/j5Hfx-S.png",
+      "group": "MOVIES",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/156021.m3u8",
+      "source": "Combined_M3U",
+      "status": "working",
+      "http_code": 200,
+      "response_time_ms": 94
+    },
+    {
+      "id": "Combined_M3U_233_aHR0cDov",
       "name": "AXN",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
       "group": "Movies",
@@ -2551,7 +2596,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_230_aHR0cDov",
+      "id": "Combined_M3U_234_aHR0cDov",
       "name": "AXN",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
       "group": "Movies",
@@ -2559,10 +2604,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 523
+      "response_time_ms": 501
     },
     {
-      "id": "Combined_M3U_231_aHR0cDov",
+      "id": "Combined_M3U_235_aHR0cDov",
       "name": "AXN BLACK",
       "logo": "https://i.imgur.com/tJQckal.png",
       "group": "Movies",
@@ -2570,10 +2615,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 241
+      "response_time_ms": 175
     },
     {
-      "id": "Combined_M3U_232_aHR0cHM6",
+      "id": "Combined_M3U_236_aHR0cHM6",
       "name": "HBO",
       "logo": "https://i.ibb.co.com/8D4tGtyb/6451.png",
       "group": "Movies",
@@ -2581,10 +2626,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 248
+      "response_time_ms": 145
     },
     {
-      "id": "Combined_M3U_233_aHR0cHM6",
+      "id": "Combined_M3U_237_aHR0cHM6",
       "name": "HBO 2",
       "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
       "group": "Movies",
@@ -2592,10 +2637,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 872
+      "response_time_ms": 845
     },
     {
-      "id": "Combined_M3U_234_aHR0cHM6",
+      "id": "Combined_M3U_238_aHR0cHM6",
       "name": "HBO 2",
       "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
       "group": "Movies",
@@ -2604,10 +2649,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)>",
-      "response_time_ms": 490
+      "response_time_ms": 464
     },
     {
-      "id": "Combined_M3U_235_aHR0cHM6",
+      "id": "Combined_M3U_239_aHR0cHM6",
       "name": "HBO 2",
       "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
       "group": "Movies",
@@ -2615,10 +2660,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 156
+      "response_time_ms": 141
     },
     {
-      "id": "Combined_M3U_236_aHR0cHM6",
+      "id": "Combined_M3U_240_aHR0cHM6",
       "name": "HBO 3",
       "logo": "https://i.ibb.co.com/nqJh4SkK/hbo3hd.jpg",
       "group": "Movies",
@@ -2627,10 +2672,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)>",
-      "response_time_ms": 515
+      "response_time_ms": 483
     },
     {
-      "id": "Combined_M3U_237_aHR0cHM6",
+      "id": "Combined_M3U_241_aHR0cHM6",
       "name": "HBO 3",
       "logo": "https://i.ibb.co.com/nqJh4SkK/hbo3hd.jpg",
       "group": "Movies",
@@ -2638,10 +2683,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 263
+      "response_time_ms": 116
     },
     {
-      "id": "Combined_M3U_238_aHR0cHM6",
+      "id": "Combined_M3U_242_aHR0cHM6",
       "name": "Sky Sports Cricket",
       "logo": "https://i.ibb.co.com/ZRTSsqGS/sky-sports-cricket.png",
       "group": "SPORTS",
@@ -2650,10 +2695,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 441
+      "response_time_ms": 338
     },
     {
-      "id": "Combined_M3U_239_aHR0cHM6",
+      "id": "Combined_M3U_243_aHR0cHM6",
       "name": "Sky Sports Cricket",
       "logo": "https://i.ibb.co.com/ZRTSsqGS/sky-sports-cricket.png",
       "group": "SPORTS",
@@ -2661,10 +2706,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 136
+      "response_time_ms": 143
     },
     {
-      "id": "Combined_M3U_240_aHR0cHM6",
+      "id": "Combined_M3U_244_aHR0cHM6",
       "name": "CRICBUZZ",
       "logo": "https://i.ibb.co.com/ZRKWv0Z7/cricbuzz.png",
       "group": "SPORTS",
@@ -2672,10 +2717,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 282
+      "response_time_ms": 328
     },
     {
-      "id": "Combined_M3U_241_aHR0cHM6",
+      "id": "Combined_M3U_245_aHR0cHM6",
       "name": "CRICBUZZ",
       "logo": "https://i.ibb.co.com/ZRKWv0Z7/cricbuzz.png",
       "group": "SPORTS",
@@ -2683,10 +2728,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 141
+      "response_time_ms": 234
     },
     {
-      "id": "Combined_M3U_242_aHR0cHM6",
+      "id": "Combined_M3U_246_aHR0cHM6",
       "name": "FOX CRICKET",
       "logo": "http://picons.cmshulk.com/picons/1104678.png",
       "group": "SPORTS",
@@ -2694,10 +2739,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 164
+      "response_time_ms": 219
     },
     {
-      "id": "Combined_M3U_243_aHR0cHM6",
+      "id": "Combined_M3U_247_aHR0cHM6",
       "name": "Ten Cricket",
       "logo": "https://i.postimg.cc/0yzwt46Q/20241126-220214.png",
       "group": "𝐒𝐩𝐨𝐫𝐭𝐬",
@@ -2705,10 +2750,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 143
+      "response_time_ms": 273
     },
     {
-      "id": "Combined_M3U_244_aHR0cHM6",
+      "id": "Combined_M3U_248_aHR0cHM6",
       "name": "Ten Cricket",
       "logo": "https://i.postimg.cc/0yzwt46Q/20241126-220214.png",
       "group": "𝐒𝐩𝐨𝐫𝐭𝐬",
@@ -2717,10 +2762,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 838
+      "response_time_ms": 875
     },
     {
-      "id": "Combined_M3U_245_aHR0cHM6",
+      "id": "Combined_M3U_249_aHR0cHM6",
       "name": "GEO Super",
       "logo": "https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png",
       "group": "Sports",
@@ -2728,10 +2773,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 174
+      "response_time_ms": 207
     },
     {
-      "id": "Combined_M3U_246_aHR0cDov",
+      "id": "Combined_M3U_250_aHR0cDov",
       "name": "GEO Super",
       "logo": "https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png",
       "group": "Sports",
@@ -2739,10 +2784,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5002
+      "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_247_aHR0cHM6",
+      "id": "Combined_M3U_251_aHR0cHM6",
       "name": "GEO Super",
       "logo": "https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png",
       "group": "Sports",
@@ -2750,10 +2795,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 337
+      "response_time_ms": 114
     },
     {
-      "id": "Combined_M3U_248_aHR0cHM6",
+      "id": "Combined_M3U_252_aHR0cHM6",
       "name": "SKY SPORTS PREMIER LEAGUE",
       "logo": "https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg",
       "group": "SPORTS",
@@ -2761,10 +2806,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 223
+      "response_time_ms": 127
     },
     {
-      "id": "Combined_M3U_249_aHR0cHM6",
+      "id": "Combined_M3U_253_aHR0cHM6",
       "name": "SKY SPORTS PREMIER LEAGUE",
       "logo": "https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg",
       "group": "SPORTS",
@@ -2772,10 +2817,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 196
+      "response_time_ms": 115
     },
     {
-      "id": "Combined_M3U_250_aHR0cHM6",
+      "id": "Combined_M3U_254_aHR0cHM6",
       "name": "SKY SPORTS PREMIER LEAGUE",
       "logo": "https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg",
       "group": "SPORTS",
@@ -2783,10 +2828,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 319
+      "response_time_ms": 248
     },
     {
-      "id": "Combined_M3U_251_aHR0cHM6",
+      "id": "Combined_M3U_255_aHR0cHM6",
       "name": "SKY SPORTS FOOTBALL",
       "logo": "https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg",
       "group": "SPORTS",
@@ -2794,10 +2839,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 251
+      "response_time_ms": 131
     },
     {
-      "id": "Combined_M3U_252_aHR0cHM6",
+      "id": "Combined_M3U_256_aHR0cHM6",
       "name": "SKY SPORTS FOOTBALL",
       "logo": "https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg",
       "group": "SPORTS",
@@ -2805,10 +2850,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 297
+      "response_time_ms": 104
     },
     {
-      "id": "Combined_M3U_253_aHR0cHM6",
+      "id": "Combined_M3U_257_aHR0cHM6",
       "name": "SKY SPORTS FOOTBALL",
       "logo": "https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg",
       "group": "SPORTS",
@@ -2816,10 +2861,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 218
+      "response_time_ms": 268
     },
     {
-      "id": "Combined_M3U_254_aHR0cHM6",
+      "id": "Combined_M3U_258_aHR0cHM6",
       "name": "PREMIER SPORTS 1",
       "logo": "http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png",
       "group": "SPORTS",
@@ -2828,10 +2873,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 384
+      "response_time_ms": 312
     },
     {
-      "id": "Combined_M3U_255_aHR0cHM6",
+      "id": "Combined_M3U_259_aHR0cHM6",
       "name": "PREMIER SPORTS 2",
       "logo": "http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png",
       "group": "SPORTS",
@@ -2840,10 +2885,10 @@
       "status": "dead",
       "http_code": 403,
       "error": "HTTP 403",
-      "response_time_ms": 365
+      "response_time_ms": 295
     },
     {
-      "id": "Combined_M3U_256_aHR0cHM6",
+      "id": "Combined_M3U_260_aHR0cHM6",
       "name": "PREMIERE LEAGUE 1",
       "logo": "http://picons.cmshulk.com/picons/1660493.png",
       "group": "SPORTS",
@@ -2851,10 +2896,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 234
+      "response_time_ms": 143
     },
     {
-      "id": "Combined_M3U_257_aHR0cHM6",
+      "id": "Combined_M3U_261_aHR0cHM6",
       "name": "PREMIERE LEAGUE 2",
       "logo": "http://picons.cmshulk.com/picons/1660493.png",
       "group": "SPORTS",
@@ -2862,10 +2907,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 139
+      "response_time_ms": 150
     },
     {
-      "id": "Combined_M3U_258_aHR0cHM6",
+      "id": "Combined_M3U_262_aHR0cHM6",
       "name": "ASTRO Football",
       "logo": "https://i.ibb.co.com/LhJkvnMM/Astro-Football-2024.png",
       "group": "SPORTS",
@@ -2873,10 +2918,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 238
+      "response_time_ms": 138
     },
     {
-      "id": "Combined_M3U_259_aHR0cHM6",
+      "id": "Combined_M3U_263_aHR0cHM6",
       "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
       "group": "Sports",
@@ -2884,10 +2929,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 257
+      "response_time_ms": 105
     },
     {
-      "id": "Combined_M3U_260_aHR0cHM6",
+      "id": "Combined_M3U_264_aHR0cHM6",
       "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
       "group": "Sports",
@@ -2896,10 +2941,10 @@
       "status": "dead",
       "http_code": 404,
       "error": "HTTP 404",
-      "response_time_ms": 837
+      "response_time_ms": 856
     },
     {
-      "id": "Combined_M3U_261_aHR0cHM6",
+      "id": "Combined_M3U_265_aHR0cHM6",
       "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
       "group": "Sports",
@@ -2908,10 +2953,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 1891
+      "response_time_ms": 903
     },
     {
-      "id": "Combined_M3U_262_aHR0cDov",
+      "id": "Combined_M3U_266_aHR0cDov",
       "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
       "group": "Sports",
@@ -2922,7 +2967,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_263_aHR0cHM6",
+      "id": "Combined_M3U_267_aHR0cHM6",
       "name": "Star Sports 2",
       "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
       "group": "Sports",
@@ -2930,10 +2975,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 135
+      "response_time_ms": 179
     },
     {
-      "id": "Combined_M3U_264_aHR0cHM6",
+      "id": "Combined_M3U_268_aHR0cHM6",
       "name": "Star Sports 2",
       "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
       "group": "Sports",
@@ -2941,10 +2986,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 265
+      "response_time_ms": 99
     },
     {
-      "id": "Combined_M3U_265_aHR0cHM6",
+      "id": "Combined_M3U_269_aHR0cHM6",
       "name": "Star Sports 2",
       "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
       "group": "Sports",
@@ -2952,10 +2997,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 907
+      "response_time_ms": 839
     },
     {
-      "id": "Combined_M3U_266_aHR0cHM6",
+      "id": "Combined_M3U_270_aHR0cHM6",
       "name": "Star Sports 2",
       "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
       "group": "Sports",
@@ -2963,10 +3008,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 878
+      "response_time_ms": 828
     },
     {
-      "id": "Combined_M3U_267_aHR0cDov",
+      "id": "Combined_M3U_271_aHR0cDov",
       "name": "Star Sports 3",
       "logo": "https://i.ibb.co.com/67SCpBQ3/Star-Sports3-India.webp",
       "group": "Sports",
@@ -2974,10 +3019,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5004
+      "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_268_aHR0cHM6",
+      "id": "Combined_M3U_272_aHR0cHM6",
       "name": "Star Sports Select 1",
       "logo": "https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp",
       "group": "Sports",
@@ -2985,10 +3030,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 168
+      "response_time_ms": 193
     },
     {
-      "id": "Combined_M3U_269_aHR0cHM6",
+      "id": "Combined_M3U_273_aHR0cHM6",
       "name": "Star Sports Select 1",
       "logo": "https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp",
       "group": "Sports",
@@ -2996,10 +3041,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 316
+      "response_time_ms": 375
     },
     {
-      "id": "Combined_M3U_270_aHR0cDov",
+      "id": "Combined_M3U_274_aHR0cDov",
       "name": "Star Sports Select 1",
       "logo": "https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp",
       "group": "Sports",
@@ -3007,10 +3052,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5006
     },
     {
-      "id": "Combined_M3U_271_aHR0cHM6",
+      "id": "Combined_M3U_275_aHR0cHM6",
       "name": "Star Sports Select 2",
       "logo": "https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp",
       "group": "Sports",
@@ -3018,10 +3063,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 226
+      "response_time_ms": 90
     },
     {
-      "id": "Combined_M3U_272_aHR0cHM6",
+      "id": "Combined_M3U_276_aHR0cHM6",
       "name": "Star Sports Select 2",
       "logo": "https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp",
       "group": "Sports",
@@ -3029,10 +3074,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 292
+      "response_time_ms": 92
     },
     {
-      "id": "Combined_M3U_273_aHR0cHM6",
+      "id": "Combined_M3U_277_aHR0cHM6",
       "name": "Star Sports Select 2",
       "logo": "https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp",
       "group": "Sports",
@@ -3040,10 +3085,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 266
+      "response_time_ms": 82
     },
     {
-      "id": "Combined_M3U_274_aHR0cHM6",
+      "id": "Combined_M3U_278_aHR0cHM6",
       "name": "Star Sports Select 2",
       "logo": "https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp",
       "group": "Sports",
@@ -3052,10 +3097,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 790
+      "response_time_ms": 5957
     },
     {
-      "id": "Combined_M3U_275_aHR0cHM6",
+      "id": "Combined_M3U_279_aHR0cHM6",
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "group": "Sports",
@@ -3063,10 +3108,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 154
+      "response_time_ms": 95
     },
     {
-      "id": "Combined_M3U_276_aHR0cHM6",
+      "id": "Combined_M3U_280_aHR0cHM6",
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "group": "Sports",
@@ -3074,10 +3119,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 161
+      "response_time_ms": 212
     },
     {
-      "id": "Combined_M3U_277_aHR0cHM6",
+      "id": "Combined_M3U_281_aHR0cHM6",
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "group": "Sports",
@@ -3085,10 +3130,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 247
+      "response_time_ms": 211
     },
     {
-      "id": "Combined_M3U_278_aHR0cHM6",
+      "id": "Combined_M3U_282_aHR0cHM6",
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "group": "Sports",
@@ -3096,10 +3141,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 654
+      "response_time_ms": 377
     },
     {
-      "id": "Combined_M3U_279_aHR0cHM6",
+      "id": "Combined_M3U_283_aHR0cHM6",
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "group": "Sports",
@@ -3108,10 +3153,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 788
+      "response_time_ms": 1001
     },
     {
-      "id": "Combined_M3U_280_aHR0cDov",
+      "id": "Combined_M3U_284_aHR0cDov",
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "group": "Sports",
@@ -3122,7 +3167,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_281_aHR0cHM6",
+      "id": "Combined_M3U_285_aHR0cHM6",
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "group": "Sports",
@@ -3130,10 +3175,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 169
+      "response_time_ms": 88
     },
     {
-      "id": "Combined_M3U_282_aHR0cHM6",
+      "id": "Combined_M3U_286_aHR0cHM6",
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "group": "Sports",
@@ -3141,10 +3186,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 162
+      "response_time_ms": 80
     },
     {
-      "id": "Combined_M3U_283_aHR0cHM6",
+      "id": "Combined_M3U_287_aHR0cHM6",
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "group": "Sports",
@@ -3152,10 +3197,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 179
+      "response_time_ms": 80
     },
     {
-      "id": "Combined_M3U_284_aHR0cHM6",
+      "id": "Combined_M3U_288_aHR0cHM6",
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "group": "Sports",
@@ -3163,10 +3208,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 672
+      "response_time_ms": 384
     },
     {
-      "id": "Combined_M3U_285_aHR0cHM6",
+      "id": "Combined_M3U_289_aHR0cHM6",
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "group": "Sports",
@@ -3175,10 +3220,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 791
+      "response_time_ms": 892
     },
     {
-      "id": "Combined_M3U_286_aHR0cDov",
+      "id": "Combined_M3U_290_aHR0cDov",
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "group": "Sports",
@@ -3186,10 +3231,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 5005
+      "response_time_ms": 5004
     },
     {
-      "id": "Combined_M3U_287_aHR0cHM6",
+      "id": "Combined_M3U_291_aHR0cHM6",
       "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "group": "Sports",
@@ -3197,10 +3242,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 134
+      "response_time_ms": 114
     },
     {
-      "id": "Combined_M3U_288_aHR0cHM6",
+      "id": "Combined_M3U_292_aHR0cHM6",
       "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "group": "Sports",
@@ -3208,10 +3253,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 150
+      "response_time_ms": 201
     },
     {
-      "id": "Combined_M3U_289_aHR0cHM6",
+      "id": "Combined_M3U_293_aHR0cHM6",
       "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "group": "Sports",
@@ -3219,10 +3264,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 154
+      "response_time_ms": 102
     },
     {
-      "id": "Combined_M3U_290_aHR0cHM6",
+      "id": "Combined_M3U_294_aHR0cHM6",
       "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "group": "Sports",
@@ -3231,10 +3276,10 @@
       "status": "dead",
       "http_code": 404,
       "error": "HTTP 404",
-      "response_time_ms": 657
+      "response_time_ms": 377
     },
     {
-      "id": "Combined_M3U_291_aHR0cDov",
+      "id": "Combined_M3U_295_aHR0cDov",
       "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "group": "Sports",
@@ -3245,7 +3290,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_292_aHR0cHM6",
+      "id": "Combined_M3U_296_aHR0cHM6",
       "name": "Sony Ten 5",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
       "group": "Sports",
@@ -3253,10 +3298,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 131
+      "response_time_ms": 100
     },
     {
-      "id": "Combined_M3U_293_aHR0cHM6",
+      "id": "Combined_M3U_297_aHR0cHM6",
       "name": "Sony Ten 5",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
       "group": "Sports",
@@ -3264,10 +3309,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 624
+      "response_time_ms": 377
     },
     {
-      "id": "Combined_M3U_294_aHR0cHM6",
+      "id": "Combined_M3U_298_aHR0cHM6",
       "name": "PTV Sports",
       "logo": "https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png",
       "group": "Sports",
@@ -3275,10 +3320,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 158
+      "response_time_ms": 229
     },
     {
-      "id": "Combined_M3U_295_aHR0cHM6",
+      "id": "Combined_M3U_299_aHR0cHM6",
       "name": "PTV Sports",
       "logo": "https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png",
       "group": "Sports",
@@ -3287,10 +3332,10 @@
       "status": "dead",
       "http_code": 502,
       "error": "HTTP 502",
-      "response_time_ms": 1543
+      "response_time_ms": 986
     },
     {
-      "id": "Combined_M3U_296_aHR0cDov",
+      "id": "Combined_M3U_300_aHR0cDov",
       "name": "PTV Sports",
       "logo": "https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png",
       "group": "Sports",
@@ -3301,7 +3346,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_297_aHR0cHM6",
+      "id": "Combined_M3U_301_aHR0cHM6",
       "name": "A Sports",
       "logo": "https://i.ibb.co.com/35GSmGVJ/download.jpg",
       "group": "Sports",
@@ -3309,10 +3354,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 133
+      "response_time_ms": 112
     },
     {
-      "id": "Combined_M3U_298_aHR0cHM6",
+      "id": "Combined_M3U_302_aHR0cHM6",
       "name": "A Sports",
       "logo": "https://i.ibb.co.com/35GSmGVJ/download.jpg",
       "group": "Sports",
@@ -3320,10 +3365,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 123
+      "response_time_ms": 107
     },
     {
-      "id": "Combined_M3U_299_aHR0cDov",
+      "id": "Combined_M3U_303_aHR0cDov",
       "name": "A Sports",
       "logo": "https://i.ibb.co.com/35GSmGVJ/download.jpg",
       "group": "Sports",
@@ -3334,7 +3379,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_300_aHR0cHM6",
+      "id": "Combined_M3U_304_aHR0cHM6",
       "name": "Cricket Gold",
       "logo": "https://imglink.cc/cdn/HMfImxTUXS.jpg",
       "group": "Sports",
@@ -3342,10 +3387,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 326
+      "response_time_ms": 403
     },
     {
-      "id": "Combined_M3U_301_aHR0cHM6",
+      "id": "Combined_M3U_305_aHR0cHM6",
       "name": "WWE",
       "logo": "http://51.158.145.100/picons/logos/USA/45462.png",
       "group": "SPORTS",
@@ -3353,10 +3398,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 129
+      "response_time_ms": 197
     },
     {
-      "id": "Combined_M3U_302_aHR0cHM6",
+      "id": "Combined_M3U_306_aHR0cHM6",
       "name": "Sony YaY",
       "logo": "https://i.postimg.cc/jSBDsbBX/20240823_021324.png",
       "group": "𝐊𝐢𝐝𝐬",
@@ -3364,10 +3409,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 663
+      "response_time_ms": 371
     },
     {
-      "id": "Combined_M3U_303_aHR0cHM6",
+      "id": "Combined_M3U_307_aHR0cHM6",
       "name": "Discovery Kids",
       "logo": "https://i.postimg.cc/wTvMLMp2/20240823_021706.png",
       "group": "𝐊𝐢𝐝𝐬",
@@ -3375,10 +3420,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 662
+      "response_time_ms": 351
     },
     {
-      "id": "Combined_M3U_304_aHR0cHM6",
+      "id": "Combined_M3U_308_aHR0cHM6",
       "name": "Pogo",
       "logo": "https://i.postimg.cc/C1s5Hf5P/20240823_021444.png",
       "group": "𝐊𝐢𝐝𝐬",
@@ -3386,10 +3431,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1115
+      "response_time_ms": 373
     },
     {
-      "id": "Combined_M3U_305_aHR0cHM6",
+      "id": "Combined_M3U_309_aHR0cHM6",
       "name": "PBS Kids",
       "logo": "https://i.imgur.com/ubZMeQv.jpg",
       "group": "Kids",
@@ -3397,10 +3442,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 251
+      "response_time_ms": 225
     },
     {
-      "id": "Combined_M3U_306_aHR0cHM6",
+      "id": "Combined_M3U_310_aHR0cHM6",
       "name": "ZB Cartoon",
       "logo": "https://i.postimg.cc/FFwSjdzS/Pogo.jpg",
       "group": "Kids",
@@ -3408,10 +3453,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1161
+      "response_time_ms": 1132
     },
     {
-      "id": "Combined_M3U_307_aHR0cHM6",
+      "id": "Combined_M3U_311_aHR0cHM6",
       "name": "Jungle Book",
       "logo": "https://i.imgur.com/ubZMeQv.jpg",
       "group": "Kids",
@@ -3419,10 +3464,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 875
+      "response_time_ms": 856
     },
     {
-      "id": "Combined_M3U_308_aHR0cHM6",
+      "id": "Combined_M3U_312_aHR0cHM6",
       "name": "Gopal Bhar TV",
       "logo": "https://i.ibb.co.com/XkJhhwyW/Gopal-Bhar.jpg",
       "group": "Kids",
@@ -3430,10 +3475,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 207
+      "response_time_ms": 144
     },
     {
-      "id": "Combined_M3U_309_aHR0cHM6",
+      "id": "Combined_M3U_313_aHR0cHM6",
       "name": "Motu Patlu",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMZlR-p_9pXr2OOMq_Lepz5S0JSrzmdqZqLEgLka2V4ENku-ziREm3ck&s=10",
       "group": "Kids",
@@ -3441,10 +3486,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 207
+      "response_time_ms": 185
     },
     {
-      "id": "Combined_M3U_310_aHR0cHM6",
+      "id": "Combined_M3U_314_aHR0cHM6",
       "name": "Tom & Jerry TV",
       "logo": "https://i.ibb.co.com/v4kdKGZ6/yyyr.png",
       "group": "Kids",
@@ -3452,21 +3497,22 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 240
+      "response_time_ms": 129
     },
     {
-      "id": "Combined_M3U_311_aHR0cHM6",
+      "id": "Combined_M3U_315_aHR0cHM6",
       "name": "Bantul The Great",
       "logo": "https://upload.wikimedia.org/wikipedia/en/a/a1/Bantul_The_Great_logo.jpeg",
       "group": "Kids",
       "url": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 227
+      "status": "dead",
+      "http_code": 502,
+      "error": "HTTP 502",
+      "response_time_ms": 203
     },
     {
-      "id": "Combined_M3U_312_aHR0cHM6",
+      "id": "Combined_M3U_316_aHR0cHM6",
       "name": "Cartoon Network",
       "logo": "https://otapp.store/uploads/tv_image/sm/cartoon-network-hindi.png",
       "group": "Kids",
@@ -3474,10 +3520,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 627
+      "response_time_ms": 525
     },
     {
-      "id": "Combined_M3U_313_aHR0cHM6",
+      "id": "Combined_M3U_317_aHR0cHM6",
       "name": "Nickelodeon",
       "logo": "https://s3.aynaott.com/storage/bb2375af2d1ff8666f2c24fbcec3c541",
       "group": "Kids",
@@ -3485,10 +3531,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 913
+      "response_time_ms": 884
     },
     {
-      "id": "Combined_M3U_314_aHR0cHM6",
+      "id": "Combined_M3U_318_aHR0cHM6",
       "name": "Nick Jr",
       "logo": "https://s3.aynaott.com/storage/921409bfe77e2e3d32492116bc22fa3e",
       "group": "Kids",
@@ -3496,10 +3542,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1103
+      "response_time_ms": 831
     },
     {
-      "id": "Combined_M3U_315_aHR0cHM6",
+      "id": "Combined_M3U_319_aHR0cHM6",
       "name": "Teen Nick",
       "logo": "https://img.hidra.app/infantiles/teennick.png",
       "group": "Kids",
@@ -3507,10 +3553,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 926
+      "response_time_ms": 892
     },
     {
-      "id": "Combined_M3U_316_aHR0cHM6",
+      "id": "Combined_M3U_320_aHR0cHM6",
       "name": "Disney Jr",
       "logo": "https://s3.aynaott.com/storage/31a070024b6516e3738baec70168f0b6",
       "group": "Kids",
@@ -3518,10 +3564,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 870
+      "response_time_ms": 800
     },
     {
-      "id": "Combined_M3U_317_aHR0cHM6",
+      "id": "Combined_M3U_321_aHR0cHM6",
       "name": "Disney Jr",
       "logo": "https://s3.aynaott.com/storage/31a070024b6516e3738baec70168f0b6",
       "group": "Kids",
@@ -3529,10 +3575,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 829
+      "response_time_ms": 826
     },
     {
-      "id": "Combined_M3U_318_aHR0cHM6",
+      "id": "Combined_M3U_322_aHR0cHM6",
       "name": "Doraemon TV",
       "logo": "https://www.pngarts.com/files/8/Doraemon-Logo-PNG-Transparent-Image.png",
       "group": "Kids",
@@ -3540,21 +3586,22 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 237
+      "response_time_ms": 143
     },
     {
-      "id": "Combined_M3U_319_aHR0cHM6",
+      "id": "Combined_M3U_323_aHR0cHM6",
       "name": "Oggy and the Cockroaches",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Oggy_and_the_Cockroaches_Logo.webp",
       "group": "Kids",
       "url": "https://live20.bozztv.com/giatvplayout7/giatv-210728/tracks-v1a1/mono.ts.m3u8",
       "source": "Combined_M3U",
-      "status": "working",
-      "http_code": 200,
-      "response_time_ms": 213
+      "status": "dead",
+      "http_code": 502,
+      "error": "HTTP 502",
+      "response_time_ms": 113
     },
     {
-      "id": "Combined_M3U_320_aHR0cHM6",
+      "id": "Combined_M3U_324_aHR0cHM6",
       "name": "Mr Bean Animated",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKRWIv_ajERroUKOfPk98LuBAvgmS6XcZIMA&usqp=CAU",
       "group": "Kids",
@@ -3562,10 +3609,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 401
+      "response_time_ms": 263
     },
     {
-      "id": "Combined_M3U_321_aHR0cHM6",
+      "id": "Combined_M3U_325_aHR0cHM6",
       "name": "BBC Earth",
       "logo": "https://i.ibb.co.com/gbW1zqQ3/BBC-EARTH-RGB-GRAD-L.jpg",
       "group": "Documentary",
@@ -3573,10 +3620,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 626
+      "response_time_ms": 360
     },
     {
-      "id": "Combined_M3U_322_aHR0cHM6",
+      "id": "Combined_M3U_326_aHR0cHM6",
       "name": "BBC Earth",
       "logo": "https://i.ibb.co.com/gbW1zqQ3/BBC-EARTH-RGB-GRAD-L.jpg",
       "group": "Documentary",
@@ -3584,10 +3631,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 260
+      "response_time_ms": 304
     },
     {
-      "id": "Combined_M3U_323_aHR0cHM6",
+      "id": "Combined_M3U_327_aHR0cHM6",
       "name": "Wild Earth",
       "logo": "https://i.ibb.co.com/RGJzTtVG/unnamed.png",
       "group": "Documentary",
@@ -3595,10 +3642,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 343
+      "response_time_ms": 247
     },
     {
-      "id": "Combined_M3U_324_aHR0cHM6",
+      "id": "Combined_M3U_328_aHR0cHM6",
       "name": "Animal Planet",
       "logo": "https://imglink.cc/cdn/ebC033LNf2.png",
       "group": "Documentary",
@@ -3606,10 +3653,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 112
+      "response_time_ms": 48
     },
     {
-      "id": "Combined_M3U_325_aHR0cHM6",
+      "id": "Combined_M3U_329_aHR0cHM6",
       "name": "Animal Planet",
       "logo": "https://imglink.cc/cdn/ebC033LNf2.png",
       "group": "Documentary",
@@ -3618,10 +3665,10 @@
       "status": "dead",
       "http_code": 0,
       "error": "<urlopen error [Errno -2] Name or service not known>",
-      "response_time_ms": 77
+      "response_time_ms": 17
     },
     {
-      "id": "Combined_M3U_326_aHR0cHM6",
+      "id": "Combined_M3U_330_aHR0cHM6",
       "name": "Animal Planet",
       "logo": "https://imglink.cc/cdn/ebC033LNf2.png",
       "group": "Documentary",
@@ -3629,10 +3676,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1295
+      "response_time_ms": 560
     },
     {
-      "id": "Combined_M3U_327_aHR0cHM6",
+      "id": "Combined_M3U_331_aHR0cHM6",
       "name": "Discovery",
       "logo": "https://i.ibb.co.com/9kkTKjFS/di2.png",
       "group": "Documentary",
@@ -3640,10 +3687,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 403,
-      "response_time_ms": 59
+      "response_time_ms": 55
     },
     {
-      "id": "Combined_M3U_328_aHR0cHM6",
+      "id": "Combined_M3U_332_aHR0cHM6",
       "name": "National Geography",
       "logo": "https://i.ibb.co.com/v4Vs7JJ6/ns.webp",
       "group": "Documentary",
@@ -3651,10 +3698,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1200
+      "response_time_ms": 1106
     },
     {
-      "id": "Combined_M3U_329_aHR0cDov",
+      "id": "Combined_M3U_333_aHR0cDov",
       "name": "Nat Geo Wild",
       "logo": "https://iptvx.one/picons/nat-geo-wild.png",
       "group": "Documentary",
@@ -3665,7 +3712,7 @@
       "response_time_ms": 5005
     },
     {
-      "id": "Combined_M3U_330_aHR0cHM6",
+      "id": "Combined_M3U_334_aHR0cHM6",
       "name": "Discovery Channel",
       "logo": "https://iptvx.one/picons/discovery-channel.png",
       "group": "Documentary",
@@ -3673,10 +3720,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1153
+      "response_time_ms": 1066
     },
     {
-      "id": "Combined_M3U_331_aHR0cHM6",
+      "id": "Combined_M3U_335_aHR0cHM6",
       "name": "ZOOПАРК",
       "logo": "https://iptvx.one/picons/zoopark.png",
       "group": "Documentary",
@@ -3684,10 +3731,10 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 1105
+      "response_time_ms": 962
     },
     {
-      "id": "Combined_M3U_332_aHR0cDov",
+      "id": "Combined_M3U_336_aHR0cDov",
       "name": "Zoo Stream",
       "logo": "https://img.prosto.tv/storage/channel/logo/ch00314.png",
       "group": "Documentary",
@@ -3695,7 +3742,7 @@
       "source": "Combined_M3U",
       "status": "working",
       "http_code": 200,
-      "response_time_ms": 442
+      "response_time_ms": 467
     }
   ]
 }
