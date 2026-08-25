@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-08-25 01:13:26 UTC
-# Working Channels: 293 / Total Checked: 332
+# Automated Filtered IPTV Playlist - Last Updated: 2026-08-25 08:41:32 UTC
+# Working Channels: 292 / Total Checked: 332
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -82,9 +82,6 @@ https://stream.ottplus.live/live/desh_tv_abr/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_28_aHR0cDov" tvg-name="Desh TV" tvg-logo="https://i.postimg.cc/wvBbd56q/Desh-TV.jpg" group-title="Bangla",Desh TV
 http://103.89.248.130:8082/DESH/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_29_aHR0cHM6" tvg-name="MAASRANGA HD" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png" group-title="Bangla",MAASRANGA HD
-https://tvsen5.aynascope.net/maasrangatv/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_30_aHR0cHM6" tvg-name="MAASRANGA HD" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png" group-title="Bangla",MAASRANGA HD
 https://mtv.sunplex.live/MAASRANGA/index.m3u8
@@ -211,9 +208,6 @@ http://103.89.248.130:8082/MOHONA-TV/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_72_aHR0cHM6" tvg-name="Thikana TV" tvg-logo="https://imglink.cc/cdn/rw8iAU9ZcB.jpg" group-title="Bangla",Thikana TV
 https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_73_aHR0cHM6" tvg-name="Thikana TV" tvg-logo="https://imglink.cc/cdn/rw8iAU9ZcB.jpg" group-title="Bangla",Thikana TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/thikanatv.stream/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_74_aHR0cHM6" tvg-name="NRB" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10" group-title="Bangla",NRB
 https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8
@@ -769,6 +763,9 @@ http://103.89.248.130:8082/sony-ten3/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_292_aHR0cHM6" tvg-name="Sony Ten 5" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png" group-title="Sports",Sony Ten 5
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/1104671.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_293_aHR0cHM6" tvg-name="Sony Ten 5" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png" group-title="Sports",Sony Ten 5
+https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_294_aHR0cHM6" tvg-name="PTV Sports" tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports",PTV Sports
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/281089.m3u8
