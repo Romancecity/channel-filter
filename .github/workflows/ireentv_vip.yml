@@ -32,7 +32,7 @@ jobs:
           source_urls = [
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/working_playlist.m3u",
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u",
-               "https://raw.githubusercontent.com/ireentv/IreenTv-Auto-Update-Json-M3u-Playlist/refs/heads/main/Toffee_Playlist.m3u",
+               "https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u",
           ]
           output_file = "IreenTV_vip.m3u"
 
