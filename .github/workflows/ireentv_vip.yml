@@ -32,7 +32,7 @@ jobs:
           source_urls = [
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/working_playlist.m3u",
               "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/verify_mpd.m3u",
-               "https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u",
+              "https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u",
           ]
           output_file = "IreenTV_vip.m3u"
 
@@ -54,28 +54,35 @@ jobs:
 
               lines = content.splitlines()
               current_channel_block = []
+              channel_started = False
 
               for line in lines:
                   line_clean = line.strip()
                   if not line_clean:
                       continue
-                  # মাঝের ফাইলের #EXTM3U বাদ দেওয়া হচ্ছে
-                  if line_clean.startswith("#EXTM3U"):
+
+                  # শুধুমাত্র #EXTINF পেলেই চ্যানেলের ডাটা রিড করা শুরু করবে (আগের সব হেডার ও কমেন্ট বাদ যাবে)
+                  if line_clean.startswith("#EXTINF"):
+                      channel_started = True
+                      current_channel_block = [line_clean]
                       continue
 
-                  current_channel_block.append(line_clean)
+                  # চ্যানেল শুরু হওয়ার পর পরবর্তী লাইনগুলো (যেমন: KODIPROP, হেডার ট্যাগ বা স্ট্রিম URL) যুক্ত হবে
+                  if channel_started:
+                      current_channel_block.append(line_clean)
 
-                  # যখনই স্ট্রিম লিংক পাওয়া যাবে (যে লাইন # দিয়ে শুরু হয় না)
-                  if not line_clean.startswith("#"):
-                      # ব্লক লিস্টের লিংক চেক করা
-                      is_blocked = any(BLOCKED_KEYWORD in l for l in current_channel_block)
+                      # যখনই স্ট্রিম লিংক পাওয়া যাবে (যে লাইন # দিয়ে শুরু হয় না)
+                      if not line_clean.startswith("#"):
+                          # ব্লক লিস্টের লিংক চেক করা
+                          is_blocked = any(BLOCKED_KEYWORD in l for l in current_channel_block)
 
-                      if not is_blocked:
-                          merged_channels.extend(current_channel_block)
-                          channel_count += 1
-                      
-                      # পরবর্তী চ্যানেলের জন্য ব্লক খালি করা
-                      current_channel_block = []
+                          if not is_blocked:
+                              merged_channels.extend(current_channel_block)
+                              channel_count += 1
+
+                          # চ্যানেলের ব্লক ও স্টেট রিসেট করা
+                          current_channel_block = []
+                          channel_started = False
 
           # বাংলাদেশ সময় (BST / UTC+6) বের করা
           bd_time = datetime.now(timezone(timedelta(hours=6))).strftime("%d-%m-%Y | %I:%M:%S %p (BST)")
