@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-08-26 16:48:21 UTC
-# Working Channels: 294 / Total Checked: 336
+# Automated Filtered IPTV Playlist - Last Updated: 2026-08-27 07:45:53 UTC
+# Working Channels: 296 / Total Checked: 336
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -53,6 +53,9 @@ http://103.89.248.130:8082/NEWS-24/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_16_aHR0cDov" tvg-name="Atn News" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/NCLx35oBEef-9-uVh-Dg/posters/af9773c7-7971-41a2-9b78-121fcb240c48.png" group-title="Bangla",Atn News
 http://103.89.248.130:8082/ATN-NEWS/index.m3u8
 
+#EXTINF:-1 tvg-id="Combined_M3U_17_aHR0cHM6" tvg-name="Jago News 24" tvg-logo="https://i.ibb.co.com/KpRt3cT5/Jago-News-24.png" group-title="Bangla",Jago News 24
+https://app.ncare.live/live-orgin/jagonews24.stream/live-orgin/jagonews24.stream/chunks.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_18_aHR0cHM6" tvg-name="Ekhon TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="Bangla",Ekhon TV
 https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8
 
@@ -91,9 +94,6 @@ https://mtv.sunplex.live/MAASRANGA/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_32_aHR0cDov" tvg-name="MAASRANGA HD" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png" group-title="Bangla",MAASRANGA HD
 http://103.89.248.130:8082/MAASRANGA-TV/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_33_aHR0cHM6" tvg-name="GAZI TV" tvg-logo="https://i.ibb.co/pQGXzMP/images-1-removebg-preview.png" group-title="BANGLA",GAZI TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_34_aHR0cDov" tvg-name="GAZI TV" tvg-logo="https://i.ibb.co/pQGXzMP/images-1-removebg-preview.png" group-title="BANGLA",GAZI TV
 http://103.89.248.130:8082/GAZI-TV/index.m3u8
@@ -185,9 +185,6 @@ https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxI
 #EXTINF:-1 tvg-id="Combined_M3U_64_aHR0cHM6" tvg-name="G-Serise" tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png" group-title="Bangla",G-Serise
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_65_aHR0cHM6" tvg-name="Channel S" tvg-logo="https://i.ibb.co.com/Vp2HKT0s/Channel-S-TV.png" group-title="Bangla",Channel S
-https://app.ncare.live/live-orgin/channels.stream/live-orgin/channels.stream/chunks.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_66_aHR0cHM6" tvg-name="Ayna TV" tvg-logo="https://i.ibb.co.com/5hy7S3wB/Ayna-TV.png" group-title="Bangla",Ayna TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8
 
@@ -211,6 +208,9 @@ http://103.89.248.130:8082/MOHONA-TV/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_73_aHR0cHM6" tvg-name="Thikana TV" tvg-logo="https://imglink.cc/cdn/rw8iAU9ZcB.jpg" group-title="Bangla",Thikana TV
 https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_74_aHR0cHM6" tvg-name="Thikana TV" tvg-logo="https://imglink.cc/cdn/rw8iAU9ZcB.jpg" group-title="Bangla",Thikana TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/thikanatv.stream/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_75_aHR0cHM6" tvg-name="NRB" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10" group-title="Bangla",NRB
 https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8
@@ -551,6 +551,9 @@ https://d2esfk1pb9cdob.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_201_aHR0cDov" tvg-name="HINDI HITS HD" tvg-logo="https://static.vecteezy.com/system/resources/previews/000/579/872/non_2x/music-symbols-logo-and-icons-template-vector.jpg" group-title="Music",HINDI HITS HD
 http://146.59.253.52:8080/hindihitshd/index.m3u8
 
+#EXTINF:-1 tvg-id="Combined_M3U_206_aHR0cHM6" tvg-name="KpopTV Play" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music",KpopTV Play
+https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_207_aHR0cHM6" tvg-name="Tele7 Music" tvg-logo="https://tele7music.ro/wp-content/uploads/2022/11/logo-tele7music-300x300.png" group-title="Music",Tele7 Music
 https://live.tele7music.ro/hls/stream/index.m3u8
 
@@ -844,6 +847,9 @@ https://tvsen7.aynascope.net/disneyjr/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_321_aHR0cHM6" tvg-name="Disney Jr" tvg-logo="https://s3.aynaott.com/storage/31a070024b6516e3738baec70168f0b6" group-title="Kids",Disney Jr
 https://tvsen5.aynascope.net/disney/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_322_aHR0cHM6" tvg-name="Doraemon TV" tvg-logo="https://www.pngarts.com/files/8/Doraemon-Logo-PNG-Transparent-Image.png" group-title="Kids",Doraemon TV
+https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_323_aHR0cHM6" tvg-name="Oggy and the Cockroaches" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Oggy_and_the_Cockroaches_Logo.webp" group-title="Kids",Oggy and the Cockroaches
 https://live20.bozztv.com/giatvplayout7/giatv-210728/tracks-v1a1/mono.ts.m3u8
