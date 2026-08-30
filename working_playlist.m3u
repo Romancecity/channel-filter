@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-08-30 03:54:12 UTC
-# Working Channels: 336 / Total Checked: 366
+# Automated Filtered IPTV Playlist - Last Updated: 2026-08-30 13:35:59 UTC
+# Working Channels: 333 / Total Checked: 366
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -185,6 +185,9 @@ https://tvsen5.aynascope.net/atnbangla/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_62_aHR0cHM6" tvg-name="ATN UK" tvg-logo="https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg" group-title="Bangla",ATN UK
 https://app.ncare.live/live-orgin/atnbanglauk-off.stream/playlist.m3u8
 
+#EXTINF:-1 tvg-id="Combined_M3U_63_aHR0cHM6" tvg-name="ATN UK" tvg-logo="https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg" group-title="Bangla",ATN UK
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_64_aHR0cHM6" tvg-name="G-Serise" tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png" group-title="Bangla",G-Serise
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 
@@ -313,9 +316,6 @@ https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3
 
 #EXTINF:-1 tvg-id="Combined_M3U_111_aHR0cDov" tvg-name="Sangeet Bangla" tvg-logo="https://imglink.cc/cdn/LmVOSdl3ku.png" group-title="Music",Sangeet Bangla
 http://103.89.248.130:8082/SANGEET-BANGLA/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_112_aHR0cHM6" tvg-name="Sangeet Bangla" tvg-logo="https://imglink.cc/cdn/LmVOSdl3ku.png" group-title="Music",Sangeet Bangla
-https://cdn-4.pishow.tv/live/1143/master.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_113_aHR0cHM6" tvg-name="Sony Aath" tvg-logo="https://i.ibb.co.com/FLh8qFS9/Sony-AATH-Logo-2022.png" group-title="Bangla",Sony Aath
 https://stream.ottplus.bd/live/sony_aath_abr/live/sony_aath_720/chunks.m3u8
@@ -542,9 +542,6 @@ https://mumt04.tangotv.in/m18aqlK4EPICMUSIC/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_196_aHR0cHM6" tvg-name="9X Jhakaas" tvg-logo="https://i.ibb.co/f9Y7fyx/Picsart-23-07-17-01-06-02-939.png" group-title="Music",9X Jhakaas
 https://wiselp.wiseplayout.com/9X_Jhakaas/master.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_197_aHR0cHM6" tvg-name="Sangeet Bhojpuri" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1e/Sangeet_Bhojpuri.jpg" group-title="Music",Sangeet Bhojpuri
-https://cdn-4.pishow.tv/live/1293/master.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_198_aHR0cHM6" tvg-name="Zoom Music" tvg-logo="https://i.pinimg.com/originals/45/7e/3a/457e3aaf075e58defea4d9455fd79004.jpg" group-title="Music",Zoom Music
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
@@ -577,9 +574,6 @@ http://stream.mcquack.net/92/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_208_aHR0cHM6" tvg-name="Bridge Русс Хnt" tvg-logo="https://iptvx.one/picons/bridge-tv-ruxit.png" group-title="Music",Bridge Русс Хnt
 https://tinyurl.com/4tfv9tup/19226/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_210_aHR0cHM6" tvg-name="KpopTV Play" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music",KpopTV Play
-https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_211_aHR0cHM6" tvg-name="Tele7 Music" tvg-logo="https://tele7music.ro/wp-content/uploads/2022/11/logo-tele7music-300x300.png" group-title="Music",Tele7 Music
 https://live.tele7music.ro/hls/stream/index.m3u8
@@ -919,9 +913,6 @@ https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/manifest/611d79b11b7
 
 #EXTINF:-1 tvg-id="Combined_M3U_335_aHR0cHM6" tvg-name="WWE" tvg-logo="http://51.158.145.100/picons/logos/USA/45462.png" group-title="SPORTS",WWE
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia-v2/45462.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_336_aHR0cHM6" tvg-name="Sony YaY" tvg-logo="https://i.postimg.cc/jSBDsbBX/20240823_021324.png" group-title="𝐊𝐢𝐝𝐬",Sony YaY
-https://stream.ottplus.live/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_337_aHR0cHM6" tvg-name="Discovery Kids" tvg-logo="https://i.postimg.cc/wTvMLMp2/20240823_021706.png" group-title="𝐊𝐢𝐝𝐬",Discovery Kids
 https://stream.ottplus.live/live/discovery_kids_abr/index.m3u8
