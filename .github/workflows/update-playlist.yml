@@ -29,6 +29,6 @@ jobs:
       - name: Commit and push updated playlists
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add working_playlist.m3u all_channels_status.m3u channels_status.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update working IPTV playlist [$(date -u +'%Y-%m-%d %H:%M UTC')]" && git push)
