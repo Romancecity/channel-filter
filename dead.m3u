@@ -1,5 +1,9 @@
 #EXTM3U
 **************************************************Sports************************************************
+#EXTINF:-1 tvg-chno="75.10" channel-id="LaLiga TV Hypermotion HD" tvg-name="LaLiga TV Hypermotion HD"  tvg-logo="https://i.ibb.co.com/fzbfbtGB/La-Liga-TV-Hypermotion.png" group-title="Sports", LaLiga TV Hypermotion HD 🇪🇸
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a88617e904504ee291f49f0e60a51d49:17f92d59fde3b6d2bf4ffb48e8ca720a
+https://cache07.zapitv.com/live/eds_c2/HYPERMOTION1/dash_live_ez/HYPERMOTION1.mpd
 #EXTINF:-1 tvg-id="dsports" tvg-name="PARAMOUNT+" tvg-logo="https://i.ibb.co.com/fz2k6B0J/Paramount.webp" group-title="Sports",PARAMOUNT+ FHD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
