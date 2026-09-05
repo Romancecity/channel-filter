@@ -572,10 +572,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/zzhnlvao6q/out/v1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3290efe4c5cf67165e846a0742c22cd9:ddb94463c46af6037432fc026339c09d
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/gyczo3tdxu/out/v1/4e9f7dd1b08a404581818c3923af9a93/cenc.mpd
-#EXTINF:-1 tvg-id="AMC+.us" group-title="Movies" tvg-logo="https://i.imgur.com/tkFtkpx.png", AMC+
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=59a51164c2c915352f04066a06f6e807:eba5cc362d1d63c0fe6460febca0fd11
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0f5clvxn6o/out/v1/d5a953bb19734fa3baa1776266887fcb/cenc.mpd
 #EXTINF:-1 tvg-name="UniversalMovies.us" tvg-logo="https://iptv-epg.org/logos/USA/UniversalMovies.us.png" group-title="Movies",Universal Movies
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -771,11 +767,6 @@ https://tvcdn.tv.telia.lt/live/eds/Disney_Channel_H/DASH_5_CPIX_NPVR/Disney_Chan
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1ecc83e1cbb1f4c1bd3343845f55b361:560a022b2d0e0909420fd363101b2e3b
 https://tvcdn.tv.telia.lt/live/eds/Disney_Junior_H/DASH_5_CPIX_NPVR/Disney_Junior_H.mpd
-#EXTINF:-1 tvg-id="DisneyChannel.us" tvg-logo="https://iptv-epg.org/logos/USA/DisneyChannel.us.png" group-title="Kids",Disney HD
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=be9caaa813c5305e761c66ac63645901:3d40f2990ec5362ca5be3a3c9bb8f8b4
-https://a77aivottepl-a.akamaihd.net/pdx-nitro/live/clients/dash/enc/zuf794yutz/out/v1/ca3534bfe4f148298b36719204d108e0/cenc.mpd
 #EXTINF:-1 tvg-id="cnn" group-title="News" tvg-logo="https://freem3u.xyz/static/images/global/cnn.png", CNN News
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
