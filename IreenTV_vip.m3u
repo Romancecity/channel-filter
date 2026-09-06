@@ -1914,5 +1914,9 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/and_tv_hd/playlist.m3u8
 #EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1788890473:KeyName=prod_linear:Signature=1CCE3Jq92wV9byh_8ku9naSJMSFzn2KXsqeBNLg6spoE8onzUfrOArMRMStxOqvhLjVf91cM8CDgS5bNwqUlDA"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/andpicture_hd/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="My: Phoenix News HD" tvg-logo="http://fanc.tmsimg.com/assets/s24935_ll_h3_aa.png" group-title="Malaysia",My: Phoenix News HD
-http://mxonlive.xyz/live/xap/388787.m3u8?e=1788815187&token=fb0882c452df869e3ffa99f9fa30315377e64b8ed5c2b2a9fe6b9d4111c9300e
+#EXTINF:-1 group-title="test" tvg-id="TNTSports4.uk" tvg-logo="https://i.ibb.co.com/ZgQ5jVD/TNT4.png",tesss
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=bd1ea6a1c1fb5dcdb709434e0826bbc0:f57f22cba32739ce7beb1fab3f3d060b
+https://jiotvpllive.cdn.jio.com/bpk-tv/StarSportsHD2Hin_BTS/WDVLive/index.mpd
