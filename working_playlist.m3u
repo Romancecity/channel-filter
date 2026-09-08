@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-09-07 19:37:20 UTC
-# Working Channels: 350 / Total Checked: 455
+# Automated Filtered IPTV Playlist - Last Updated: 2026-09-08 03:17:41 UTC
+# Working Channels: 348 / Total Checked: 455
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -10,6 +10,9 @@ https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/sharjahtvquranpubl
 
 #EXTINF:-1 tvg-id="Combined_M3U_2_aHR0cHM6" tvg-name="BTV National" tvg-logo="https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png" group-title="Bangla",BTV National
 https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_3_aHR0cHM6" tvg-name="T Sports HD" tvg-logo="https://i.ibb.co.com/ymqQ0QZd/T-Sports-HD.png" group-title="Sports",T Sports HD
+https://tvsen3.aynaott.com/Sports1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_4_aHR0cHM6" tvg-name="T Sports HD" tvg-logo="https://i.ibb.co.com/ymqQ0QZd/T-Sports-HD.png" group-title="Sports",T Sports HD
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
@@ -95,9 +98,6 @@ https://app.ncare.live/live-orgin/jagonews24.stream/live-orgin/jagonews24.stream
 #EXTINF:-1 tvg-id="Combined_M3U_33_aHR0cHM6" tvg-name="Jago News 24" tvg-logo="https://i.ibb.co.com/KpRt3cT5/Jago-News-24.png" group-title="Bangla",Jago News 24
 https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_34_aHR0cHM6" tvg-name="Ekhon TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="Bangla",Ekhon TV
-https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_35_aHR0cHM6" tvg-name="Ekhon TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="Bangla",Ekhon TV
 https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8
 
@@ -169,9 +169,6 @@ https://playztv-apps.pages.dev/my-tv/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_62_aHR0cDov" tvg-name="My TV" tvg-logo="https://otapp.store/uploads/tv_image/sm/my-tv.png" group-title="BANGLA",My TV
 http://103.89.248.130:8082/MY-TV/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_63_aHR0cHM6" tvg-name="NEXUS TV" tvg-logo="https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png" group-title="Bangla",NEXUS TV
-https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_64_aHR0cHM6" tvg-name="NEXUS TV" tvg-logo="https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png" group-title="Bangla",NEXUS TV
 https://stream.ottplus.live/live/nexus_tv_abr/index.m3u8
@@ -277,9 +274,6 @@ https://app.ncare.live/live-orgin/channels.stream/live-orgin/channels.stream/chu
 
 #EXTINF:-1 tvg-id="Combined_M3U_103_aHR0cHM6" tvg-name="Ayna TV" tvg-logo="https://i.ibb.co.com/5hy7S3wB/Ayna-TV.png" group-title="Bangla",Ayna TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_104_aHR0cHM6" tvg-name="Global TV" tvg-logo="https://i.ibb.co.com/Q7Q7X64N/Global-TV.png" group-title="Bangla",Global TV
-https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_106_aHR0cHM6" tvg-name="Global TV" tvg-logo="https://i.ibb.co.com/Q7Q7X64N/Global-TV.png" group-title="Bangla",Global TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/tracks-v1a1/mono.m3u8
