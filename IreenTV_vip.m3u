@@ -1927,3 +1927,11 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTINF:-1 tvg-name="Mohona TV" tvg-logo="https://assets-prod.services.toffeelive.com/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png" group-title="Live Action",Mohona TV
 #EXTVLCOPT:http-cookie=Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789201607:KeyName=prod_linear:Signature=Q7aV_qGugM27NvSP7GC-vKUTqrIv6lnfhaz_4qlWaZdgjXgIO1KLQq2_I74py1oQ-KSReu4qAMXMPoJM3wllCg
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
+#EXTINF:-1 tvg-id="1647" tvg-name="MK Six" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/MK_Six.png" group-title="Other",MK Six 222
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=80ff89cbc91a55a087bccbdfc45acc1d:ea3de51dcc665bce0c12ca93ac8c9cce
+#EXTVLCOPT:http-user-agent=Droovy
+#EXTHTTP:{"cookie": "__hdnea__=st=1789032606~exp=1789054206~acl=/*~hmac=f4a303ee56503c04e903b5ed2ab3f084047ba4ffaa16613a6e8619696cf73772"}
+https://jiotvmblive.cdn.jio.com/bpk-tv/MK_Six_MOB/WDVLive/index.mpd
