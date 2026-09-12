@@ -1947,40 +1947,10 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTVLCOPT:http-cookie=Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789408487:KeyName=prod_linear:Signature=MfvFVvRwXFdMeMYblB9CwRACAWcCFpYJp-TRJKRMbsb9V9MtDVK1onfwIntNH7DBuW2DmstbwSGOV69LvvDZAQ
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
 
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Spain La Liga] Real Madrid vs Rayo Vallecano | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spain La Liga] Real Madrid vs Rayo Vallecano | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do2.m3u8?md5=kCyHwc6Ih5YkQRDFfosy5w&expires=1789253150
-
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Spain La Liga] Real Madrid vs Rayo Vallecano | FR (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spain La Liga] Real Madrid vs Rayo Vallecano | FR (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do59.m3u8?md5=TgeqbojVD7N8IutyWWftTg&expires=1789253151
-
-
-#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="NFL vs RedZone" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" group-title="American Football",NFL vs RedZone
-#EXTVLCOPT:http-referrer=https://exposestrat.st/
-#EXTVLCOPT:http-origin=https://exposestrat.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://lb2.strmd.st/secure/nDNfyItPgBeWKNHYPhmoeNtqlLkJYyKU/ingest/stream/nnflredzone/1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="Cincinnati Bengals - Tampa Bay Buccaneers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Cincinnati Bengals - Tampa Bay Buccaneers
-#EXTVLCOPT:http-referrer=https://exposestrat.st/
-#EXTVLCOPT:http-origin=https://exposestrat.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://lb5.strmd.st/secure/hhdJxIKtnHsLlnJDticOkdnCKFKZmUYg/ingest/stream/mcincinnatibengals/1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[NFL] NFL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5ed7ea60fe8e3842203b0741187f0fd7-thumbnail.jpg" group-title="NFL",[NFL] NFL Network (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=onURM4vGMviNE9tR6Fhr_g&e=1789283090
-
-#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[American Football] Western Kentucky Hilltoppers at Georgia Bulldogs (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/84146a88a13d014bbb82feb9c30efbcb-thumbnail.jpg" group-title="American Football",[American Football] Western Kentucky Hilltoppers at Georgia Bulldogs (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-12/wku-uga
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-12/wku-uga
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-12/wku-uga/playlist.m3u8?tk=FhRGm484WpI0ztf6qdEAww&e=1789283091
+#EXTINF:-1 tvg-name="[Rugby Friendly] [03:00 AM BD] [LIVE] South Africa vs New Zealand (FAWA)" tvg-logo="https://pbs.twimg.com/profile_images/1597190896885309440/ZVwKqVO3.jpg" group-title="live_sports",[Rugby Friendly] [03:00 AM BD] [LIVE] South Africa vs New Zealand (FAWA) rrrr
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0)%20Gecko%2F20100101%20Firefox%2F146.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+#KODIPROP:inputstream.adaptive.manifest_headers=Referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0)%20Gecko%2F20100101%20Firefox%2F146.0&Origin=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0)%20Gecko%2F20100101%20Firefox%2F146.0&Origin=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+http://193.47.62.44/hls/UUUU.m3u8|Referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0)%20Gecko%2F20100101%20Firefox%2F146.0&Origin=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 
