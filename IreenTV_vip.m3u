@@ -1942,3 +1942,13 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTINF:-1 tvg-name="Mohona TV" tvg-logo="https://assets-prod.services.toffeelive.com/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png" group-title="Live Action",Mohona TV
 #EXTVLCOPT:http-cookie=Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789373387:KeyName=prod_linear:Signature=tms1P_fsX9nH0cP_KpKkgocFv0C9sw4T11hh1BUxpu0SEFM00jrA1z4UK0YKy_ome9xkyaduBt-3x5rpcQCcBg
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
+
+
+#EXTINF:-1 tvg-chno="37" tvg-id="Live.Event.us" tvg-name="[Liverpool] Liverpool vs Fulham --- CH 1 (FAWA)" tvg-logo="https://pbs.twimg.com/profile_images/1605140132847403008/29zfnVM0_400x400.jpg" group-title="Live Events",[Liverpool] Liverpool vs Fulham --- CH 1 (FAWA)
+http://193.47.62.41/hls/YCCCQ.m3u8|referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-chno="38" tvg-id="Live.Event.us" tvg-name="[Liverpool] Liverpool vs Fulham --- CH 2 (FAWA)" tvg-logo="https://pbs.twimg.com/profile_images/1605140132847403008/29zfnVM0_400x400.jpg" group-title="Live Events",[Liverpool] Liverpool vs Fulham --- CH 2 (FAWA)
+http://193.47.62.44/hls/sOVVVAAAA.m3u8|referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-chno="39" tvg-id="Live.Event.us" tvg-name="[Chelsea] Chelsea vs Hull City --- CH 1 (FAWA)" tvg-logo="https://pbs.twimg.com/profile_images/1605140132847403008/29zfnVM0_400x400.jpg" group-title="Live Events",[Chelsea] Chelsea vs Hull City --- CH 1 (FAWA)
+https://www.rtmpcdn.com/live/8c44b23d-0d0d-4255-adae-30b2e41c971e.m3u8|referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-chno="40" tvg-id="Live.Event.us" tvg-name="[Chelsea] Chelsea vs Hull City --- CH 2 (FAWA)" tvg-logo="https://pbs.twimg.com/profile_images/1605140132847403008/29zfnVM0_400x400.jpg" group-title="Live Events",[Chelsea] Chelsea vs Hull City --- CH 2 (FAWA)
+http://193.47.62.44/hls/sOVVVAA.m3u8|referer=http://www.fawanews.sc/|origin=http://www.fawanews.sc/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
