@@ -1946,3 +1946,9 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTINF:-1 tvg-name="Mohona TV" tvg-logo="https://assets-prod.services.toffeelive.com/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png" group-title="Live Action",Mohona TV
 #EXTVLCOPT:http-cookie=Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789408487:KeyName=prod_linear:Signature=MfvFVvRwXFdMeMYblB9CwRACAWcCFpYJp-TRJKRMbsb9V9MtDVK1onfwIntNH7DBuW2DmstbwSGOV69LvvDZAQ
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Atalanta vs Cagliari (STGATE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Live Events",[Italian Serie A] Atalanta vs Cagliari (STGATE)
+#EXTVLCOPT:http-referrer=https://instream.click/jwp-us.php?stream=LHD9
+#EXTVLCOPT:http-origin=https://instream.click/jwp-us.php?stream=LHD9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://instreams.pro/live/LHD9/index.m3u8
