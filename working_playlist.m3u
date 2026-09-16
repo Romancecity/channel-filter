@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-09-16 03:34:44 UTC
-# Working Channels: 378 / Total Checked: 436
+# Automated Filtered IPTV Playlist - Last Updated: 2026-09-16 13:11:12 UTC
+# Working Channels: 376 / Total Checked: 436
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -128,8 +128,8 @@ https://stream.ottplus.live/live/asian_tv_abr/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_46_aHR0cHM6" tvg-name="Asian TV" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg" group-title="Bangla",Asian TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_47_aHR0cHM6" tvg-name="Green tv" tvg-logo="https://s3.aynaott.com/storage/499219599639007120dc540bdc6e7d9d" group-title="Bangla",Green tv
-https://tvsen6.aynaott.com/cLuA3hJR/index.m3u8
+#EXTINF:-1 tvg-id="Combined_M3U_49_aHR0cHM6" tvg-name="NAGORIK TV HD" tvg-logo="https://dl.dropbox.com/s/4av1om6yhu12w9j/nagorik-bd.png" group-title="BANGLA",NAGORIK TV HD
+https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_50_aHR0cDov" tvg-name="NAGORIK TV HD" tvg-logo="https://dl.dropbox.com/s/4av1om6yhu12w9j/nagorik-bd.png" group-title="BANGLA",NAGORIK TV HD
 http://103.89.248.130:8082/NAGORIK-TV/index.m3u8
@@ -290,9 +290,6 @@ https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxI
 #EXTINF:-1 tvg-id="Combined_M3U_106_aHR0cHM6" tvg-name="G-Serise" tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png" group-title="Bangla",G-Serise
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_108_aHR0cHM6" tvg-name="Ayna TV" tvg-logo="https://i.ibb.co.com/5hy7S3wB/Ayna-TV.png" group-title="Bangla",Ayna TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_109_aHR0cHM6" tvg-name="Global TV" tvg-logo="https://i.ibb.co.com/Q7Q7X64N/Global-TV.png" group-title="Bangla",Global TV
 https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
 
@@ -316,9 +313,6 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 tvg-id="Combined_M3U_116_aHR0cDov" tvg-name="Mohona TV" tvg-logo="https://i.ibb.co.com/Ndvm37Vr/Mohona-TV.png" group-title="Bangla",Mohona TV
 http://103.89.248.130:8082/MOHONA-TV/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_117_aHR0cHM6" tvg-name="Thikana TV" tvg-logo="https://imglink.cc/cdn/rw8iAU9ZcB.jpg" group-title="Bangla",Thikana TV
-https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_118_aHR0cHM6" tvg-name="Thikana TV" tvg-logo="https://imglink.cc/cdn/rw8iAU9ZcB.jpg" group-title="Bangla",Thikana TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/thikanatv.stream/tracks-v1a1/mono.m3u8
@@ -643,9 +637,6 @@ http://stream.mcquack.net/92/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_244_aHR0cHM6" tvg-name="Bridge Русс Хnt" tvg-logo="https://iptvx.one/picons/bridge-tv-ruxit.png" group-title="Music",Bridge Русс Хnt
 https://tinyurl.com/4tfv9tup/19226/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_246_aHR0cHM6" tvg-name="KpopTV Play" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music",KpopTV Play
-https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_247_aHR0cHM6" tvg-name="Tele7 Music" tvg-logo="https://tele7music.ro/wp-content/uploads/2022/11/logo-tele7music-300x300.png" group-title="Music",Tele7 Music
 https://live.tele7music.ro/hls/stream/index.m3u8
@@ -997,6 +988,9 @@ https://tvsen5.aynascope.net/cXPB2LKkErN9/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_372_aHR0cDov" tvg-name="Star Sports 3" tvg-logo="https://i.ibb.co.com/67SCpBQ3/Star-Sports3-India.webp" group-title="Sports",Star Sports 3
 http://103.89.248.130:8082/Star-sport-3/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_373_aHR0cHM6" tvg-name="Star Sports Select 1" tvg-logo="https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp" group-title="Sports",Star Sports Select 1
+https://flussonic.defineatoz.com/starsportsselect1/tracks-v1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_374_aHR0cDov" tvg-name="Star Sports Select 1" tvg-logo="https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp" group-title="Sports",Star Sports Select 1
 http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
