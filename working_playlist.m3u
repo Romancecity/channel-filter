@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-09-20 18:30:47 UTC
-# Working Channels: 384 / Total Checked: 443
+# Automated Filtered IPTV Playlist - Last Updated: 2026-09-21 03:34:26 UTC
+# Working Channels: 379 / Total Checked: 443
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -56,9 +56,6 @@ https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_21_aHR0cDov" tvg-name="DBC News HD" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png" group-title="Bangla",DBC News HD
 http://103.89.248.130:8082/DBC-NEWS/index.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_22_aHR0cHM6" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
-https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_23_aHR0cDov" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
 http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8
 
@@ -97,9 +94,6 @@ https://app.ncare.live/live-orgin/jagonews24.stream/live-orgin/jagonews24.stream
 
 #EXTINF:-1 tvg-id="Combined_M3U_36_aHR0cHM6" tvg-name="Jago News 24" tvg-logo="https://i.ibb.co.com/KpRt3cT5/Jago-News-24.png" group-title="Bangla",Jago News 24
 https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_37_aHR0cHM6" tvg-name="Ekhon TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="Bangla",Ekhon TV
-https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_38_aHR0cHM6" tvg-name="Ekhon TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="Bangla",Ekhon TV
 https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8
@@ -179,9 +173,6 @@ http://103.89.248.130:8082/MY-TV/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_67_aHR0cDov" tvg-name="My TV" tvg-logo="https://otapp.store/uploads/tv_image/sm/my-tv.png" group-title="BANGLA",My TV
 http://116.204.149.16/mytv/index.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_68_aHR0cHM6" tvg-name="NEXUS TV" tvg-logo="https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png" group-title="Bangla",NEXUS TV
-https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_69_aHR0cHM6" tvg-name="NEXUS TV" tvg-logo="https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png" group-title="Bangla",NEXUS TV
 https://stream.ottplus.live/live/nexus_tv_abr/index.m3u8
 
@@ -254,9 +245,6 @@ http://116.204.149.16/rtvhd/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_92_aHR0cHM6" tvg-name="RTV" tvg-logo="https://s4.gifyu.com/images/image29282f9d45a183d6.png" group-title="BANGLA",RTV
 https://tvsen6.aynaott.com/rtv/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-id="Combined_M3U_93_aHR0cHM6" tvg-name="RTV" tvg-logo="https://s4.gifyu.com/images/image29282f9d45a183d6.png" group-title="BANGLA",RTV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-id="Combined_M3U_94_aHR0cHM6" tvg-name="Deshi TV HD" tvg-logo="https://i.postimg.cc/t4cxjxRj/Deshi-TV.jpg" group-title="Bangla",Deshi TV HD
 https://deshitv.deshitv24.net/live/myStream/playlist.m3u8
 
@@ -290,6 +278,9 @@ http://103.165.93.31:8095/atnBangla/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_106_aHR0cHM6" tvg-name="ATN UK" tvg-logo="https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg" group-title="Bangla",ATN UK
 https://app.ncare.live/live-orgin/atnbanglauk-off.stream/playlist.m3u8
 
+#EXTINF:-1 tvg-id="Combined_M3U_107_aHR0cHM6" tvg-name="ATN UK" tvg-logo="https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg" group-title="Bangla",ATN UK
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_108_aHR0cHM6" tvg-name="G-Serise" tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png" group-title="Bangla",G-Serise
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 
@@ -298,9 +289,6 @@ https://app.ncare.live/live-orgin/channels.stream/live-orgin/channels.stream/chu
 
 #EXTINF:-1 tvg-id="Combined_M3U_110_aHR0cHM6" tvg-name="Ayna TV" tvg-logo="https://i.ibb.co.com/5hy7S3wB/Ayna-TV.png" group-title="Bangla",Ayna TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_111_aHR0cHM6" tvg-name="Global TV" tvg-logo="https://i.ibb.co.com/Q7Q7X64N/Global-TV.png" group-title="Bangla",Global TV
-https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_112_aHR0cHM6" tvg-name="Global TV" tvg-logo="https://i.ibb.co.com/Q7Q7X64N/Global-TV.png" group-title="Bangla",Global TV
 https://stream.ottplus.live/live/global_tv_abr/index.m3u8
@@ -358,6 +346,9 @@ https://live.cbntvusa.net/hls/cbntv/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_130_aHR0cHM6" tvg-name="JaTV" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3ABK7g4ZwY1Kre_fjEa2ItzSVcUFWhf6856ogWQEhbLS6I6Zrwfa40ctvKHFiv9d63aoJOekbffCjcdMXipWT2QWAHOUWgpgyk0Agodv-MwUqAvP57w92iu8nXQlViVICM6R98H5L0q-Wor0lf1umABAiveSXg6pYYegAJNsucF4SXwmv1j9b8BtWOA/s1080/1000060521.png" group-title="Bangla",JaTV
 https://iptv.porosh.com.bd/tmp_hls/86b122d4358357d834a87ce618a55de0/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_132_aHR0cHM6" tvg-name="Bengali Beats" tvg-logo="https://i.ibb.co.com/jPCD1N8z/Bengali-Beats.png" group-title="Bangla Music",Bengali Beats
+https://live20.bozztv.com/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_133_aHR0cHM6" tvg-name="MUSIC BANGLA" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/75/Music_Bangla_new.jpeg" group-title="Bangla Music",MUSIC BANGLA
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla2025.stream/playlist.m3u8
@@ -547,9 +538,6 @@ http://103.89.248.130:8082/star-gold/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_206_aHR0cDov" tvg-name="COLORS CINEPLEX FHD" tvg-logo="http://picons.cmshulk.com/picons/156003.png" group-title="Hindi Movies",COLORS CINEPLEX FHD
 http://202.70.146.135:8000/play/a04n/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_207_aHR0cHM6" tvg-name="COLORS CINEPLEX SD" tvg-logo="http://picons.cmshulk.com/picons/280749.png" group-title="Hindi Movies",COLORS CINEPLEX SD
-https://d1rc86nwwc9fag.cloudfront.net/260723/smil:rishteycineplexukdev.smil/chunklist_b1928000.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_208_aHR0cHM6" tvg-name="Epic Bhojpuri Movies HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0032BVJ8.png?lock=720x540" group-title="Movies",Epic Bhojpuri Movies HD
 https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/playlist.m3u8
@@ -748,9 +736,6 @@ http://stream.mcquack.net/92/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_280_aHR0cHM6" tvg-name="Bridge Русс Хnt" tvg-logo="https://iptvx.one/picons/bridge-tv-ruxit.png" group-title="Music",Bridge Русс Хnt
 https://tinyurl.com/4tfv9tup/19226/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_282_aHR0cHM6" tvg-name="KpopTV Play" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music",KpopTV Play
-https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_283_aHR0cHM6" tvg-name="Tele7 Music" tvg-logo="https://tele7music.ro/wp-content/uploads/2022/11/logo-tele7music-300x300.png" group-title="Music",Tele7 Music
 https://live.tele7music.ro/hls/stream/index.m3u8
