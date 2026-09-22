@@ -2015,50 +2015,22 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTHTTP:{"Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1790239821:KeyName=prod_linear:Signature=Y3f8gp89yWGVYiotdQXH9VWD_PBX9mj-qX5nmSuKKwIMf5aH_K3U41F5bYhr_9zU_5o22iOYOXle7u_oPFAgBg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="231" tvg-chno="605" tvg-name="sony-sports-1-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/09265de4-13e1-4ffe-b0fd-cd8556822c74.jpg" group-title="SPORTS", Sony Ten Sports 1 HD 11
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=0fefbba34e40497c9287631157e877e1:a7ab375761eb9e4777c1cad94f0412d9
-https://ottlive.dishhome.com.np/protected/hgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+#EXTINF:-1 tvg-id="max-hd.sonyliv" tvg-name="Sony MAX HD" tvg-logo="https://i.postimg.cc/RFhpxbKH/sonymaxhd.webp" group-title="SonyLIV Movies",Sony MAX HD 22
+#EXTVLCOPT:http-cookie=hdnea=exp=1790131226~acl=/*~id=17499600746070806303174288747369~hmac=4f90a5add212a7675c3031b15aae50d910d76f0438d354e110b416400d020f04
+#EXTVLCOPT:http-referrer=https://www.sonyliv.com/
+#EXTVLCOPT:http-user-agent=virat@10
+#EXTHTTP:{"User-Agent": "virat@10", "Referrer": "https://www.sonyliv.com/", "Origin": "https://www.sonyliv.com", "Cookie": "hdnea=exp=1790131226~acl=/*~id=17499600746070806303174288747369~hmac=4f90a5add212a7675c3031b15aae50d910d76f0438d354e110b416400d020f04"}
+https://dishmt.slivcdn.com/hls/live/2011670-b/SonyMaxhd/master.m3u8
 
-#EXTINF:-1 tvg-id="231" tvg-chno="605" tvg-name="sony-sports-1-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/09265de4-13e1-4ffe-b0fd-cd8556822c74.jpg" group-title="Sports", Sony Ten Sports 1 HD 22
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=0fefbba34e40497c9287631157e877e1:a7ab375761eb9e4777c1cad94f0412d9
-https://ottlive.dishhome.com.np/protected/hgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+#EXTINF:-1 tvg-id="pix-hd.sonyliv" tvg-name="Sony PIX HD" tvg-logo="https://i.postimg.cc/hGYnSKpg/SONY-PIX-HD.png" group-title="SonyLIV Movies",Sony PIX HD 222
+#EXTVLCOPT:http-cookie=hdnea=exp=1790131226~acl=/*~id=17499600746070806303174288747369~hmac=4f90a5add212a7675c3031b15aae50d910d76f0438d354e110b416400d020f04
+#EXTVLCOPT:http-referrer=https://www.sonyliv.com/
+#EXTVLCOPT:http-user-agent=virat@10
+#EXTHTTP:{"User-Agent": "virat@10", "Referrer": "https://www.sonyliv.com/", "Origin": "https://www.sonyliv.com", "Cookie": "hdnea=exp=1790131226~acl=/*~id=17499600746070806303174288747369~hmac=4f90a5add212a7675c3031b15aae50d910d76f0438d354e110b416400d020f04"}
+https://dishmt.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8
 
-#EXTINF:-1 tvg-id="1338" tvg-chno="606" tvg-name="sony-sports-2-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/ec239486-80f0-4a82-ae8e-cb416019f649.jpg" group-title="SPORTS", Sony Ten Sports 2 HD 11
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b97896105a843968d423d19ace1a168:d5dc232816c06aa316d1e5f3a96b1043
-https://ottlive.dishhome.com.np/protected/hwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-id="1338" tvg-chno="606" tvg-name="sony-sports-2-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/ec239486-80f0-4a82-ae8e-cb416019f649.jpg" group-title="Sports", Sony Ten Sports 2 HD 22
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b97896105a843968d423d19ace1a168:d5dc232816c06aa316d1e5f3a96b1043
-https://ottlive.dishhome.com.np/protected/hwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-id="3175" tvg-chno="610" tvg-name="a-sports" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/4442d302-99bd-4ed1-89ab-0194ce4ef719.jpg" group-title="SPORTS", A Sports 11
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=1d359456523a4b85bfe966c4af08ed4e:de96747721d077f896cb1d51e98c884e
-https://ottlive.dishhome.com.np/protected/iwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-id="3175" tvg-chno="610" tvg-name="a-sports" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/4442d302-99bd-4ed1-89ab-0194ce4ef719.jpg" group-title="Sports", A Sports 22
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=1d359456523a4b85bfe966c4af08ed4e:de96747721d077f896cb1d51e98c884e
-https://ottlive.dishhome.com.np/protected/iwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-id="230" tvg-chno="611" tvg-name="dd-sports-1-0" tvg-language="HIN" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/44c5d57c-c3bd-4ea6-a367-52c4388e5287.jpg" group-title="SPORTS", DD Sports 1.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=e13ae85417414468842cf8de441822af:978d6d696c8b097bc86e7b92b9e43c96
-https://ottlive.dishhome.com.np/protected/jATOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-id="230" tvg-chno="611" tvg-name="dd-sports-1-0" tvg-language="HIN" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/44c5d57c-c3bd-4ea6-a367-52c4388e5287.jpg" group-title="Sports", DD Sports 1.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=e13ae85417414468842cf8de441822af:978d6d696c8b097bc86e7b92b9e43c96
-https://ottlive.dishhome.com.np/protected/jATOzZkB0RDJ74Ryniuo/dash/manifest.mpd
