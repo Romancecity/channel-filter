@@ -2015,20 +2015,50 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTHTTP:{"Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1790239821:KeyName=prod_linear:Signature=Y3f8gp89yWGVYiotdQXH9VWD_PBX9mj-qX5nmSuKKwIMf5aH_K3U41F5bYhr_9zU_5o22iOYOXle7u_oPFAgBg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="237" tvg-chno="608" tvg-name="sony-sports-5-hd" tvg-language="HIN" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/90c7b1fd-2cdc-431b-abc2-ca6775eaa85f.jpg" group-title="Sports", S 5 HD
+#EXTINF:-1 tvg-id="231" tvg-chno="605" tvg-name="sony-sports-1-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/09265de4-13e1-4ffe-b0fd-cd8556822c74.jpg" group-title="SPORTS", Sony Ten Sports 1 HD 11
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://billatv.modsdone.com/k.php?kid=780ce39406914cb6bf049655284d3fbd&key=f99dffe075bc1446dca786c4849d2ecb
-#EXTHTTP:{"cookie":"defaultLanguage=eng; defaultDirection=ltr"}
-#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 12; SM-A546E Build/9624a8d.0)
-#EXTVLCOPT:http-origin=https://dishhomego.com.np
-#EXTVLCOPT:http-referrer=https://dishhomego.com.np/
-https://ottlive.dishhome.com.np/protected/iQTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+#KODIPROP:inputstream.adaptive.license_key=0fefbba34e40497c9287631157e877e1:a7ab375761eb9e4777c1cad94f0412d9
+https://ottlive.dishhome.com.np/protected/hgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-id="230" tvg-chno="609" tvg-name="dd-sports" tvg-language="HIN" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/aa1a644e-88d4-42a1-a9f4-7071e6a00f1a.jpg" group-title="Sports", DD S
+#EXTINF:-1 tvg-id="231" tvg-chno="605" tvg-name="sony-sports-1-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/09265de4-13e1-4ffe-b0fd-cd8556822c74.jpg" group-title="Sports", Sony Ten Sports 1 HD 22
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=37bef186f9534561b32530074539766f:de40706695243fca2781b9a5a8929ef7
+#KODIPROP:inputstream.adaptive.license_key=0fefbba34e40497c9287631157e877e1:a7ab375761eb9e4777c1cad94f0412d9
+https://ottlive.dishhome.com.np/protected/hgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-https://ottlive.dishhome.com.np/protected/igTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+#EXTINF:-1 tvg-id="1338" tvg-chno="606" tvg-name="sony-sports-2-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/ec239486-80f0-4a82-ae8e-cb416019f649.jpg" group-title="SPORTS", Sony Ten Sports 2 HD 11
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=4b97896105a843968d423d19ace1a168:d5dc232816c06aa316d1e5f3a96b1043
+https://ottlive.dishhome.com.np/protected/hwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
+#EXTINF:-1 tvg-id="1338" tvg-chno="606" tvg-name="sony-sports-2-hd" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/ec239486-80f0-4a82-ae8e-cb416019f649.jpg" group-title="Sports", Sony Ten Sports 2 HD 22
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=4b97896105a843968d423d19ace1a168:d5dc232816c06aa316d1e5f3a96b1043
+https://ottlive.dishhome.com.np/protected/hwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+
+#EXTINF:-1 tvg-id="3175" tvg-chno="610" tvg-name="a-sports" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/4442d302-99bd-4ed1-89ab-0194ce4ef719.jpg" group-title="SPORTS", A Sports 11
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1d359456523a4b85bfe966c4af08ed4e:de96747721d077f896cb1d51e98c884e
+https://ottlive.dishhome.com.np/protected/iwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+
+#EXTINF:-1 tvg-id="3175" tvg-chno="610" tvg-name="a-sports" tvg-language="ENG" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/4442d302-99bd-4ed1-89ab-0194ce4ef719.jpg" group-title="Sports", A Sports 22
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1d359456523a4b85bfe966c4af08ed4e:de96747721d077f896cb1d51e98c884e
+https://ottlive.dishhome.com.np/protected/iwTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+
+#EXTINF:-1 tvg-id="230" tvg-chno="611" tvg-name="dd-sports-1-0" tvg-language="HIN" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/44c5d57c-c3bd-4ea6-a367-52c4388e5287.jpg" group-title="SPORTS", DD Sports 1.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=e13ae85417414468842cf8de441822af:978d6d696c8b097bc86e7b92b9e43c96
+https://ottlive.dishhome.com.np/protected/jATOzZkB0RDJ74Ryniuo/dash/manifest.mpd
+
+#EXTINF:-1 tvg-id="230" tvg-chno="611" tvg-name="dd-sports-1-0" tvg-language="HIN" tvg-logo="https://assets.dishhomego.com.np/f_webp,q_85,w_250/dhome/posters/44c5d57c-c3bd-4ea6-a367-52c4388e5287.jpg" group-title="Sports", DD Sports 1.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=e13ae85417414468842cf8de441822af:978d6d696c8b097bc86e7b92b9e43c96
+https://ottlive.dishhome.com.np/protected/jATOzZkB0RDJ74Ryniuo/dash/manifest.mpd
