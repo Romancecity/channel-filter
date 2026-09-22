@@ -2018,3 +2018,17 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
 #EXTVLCOPT:http-cookie=Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1790264894:KeyName=prod_linear:Signature=Bzt0jwA70vxB-jjtP4k0fOWRpFEK5VrAN6_m_LM6vPCuYEe2W5woZQ1IaerFv01pRdCsEx0vJPI-v7O_wkiSAg
 #EXTHTTP:{"Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1790264894:KeyName=prod_linear:Signature=Bzt0jwA70vxB-jjtP4k0fOWRpFEK5VrAN6_m_LM6vPCuYEe2W5woZQ1IaerFv01pRdCsEx0vJPI-v7O_wkiSAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
+
+
+#EXTINF:-1, SKY SPORTS Mix
+http://172.110.221.91:8080/live/3TJy9l2stY/g1naiv5qZ5/103987.ts
+#EXTINF:-1, SKY SPORTS Premier League
+http://172.110.221.91:8080/live/3TJy9l2stY/g1naiv5qZ5/100773.ts
+#EXTINF:-1, SKY SPORTS NEWS
+http://172.110.221.91:8080/live/3TJy9l2stY/g1naiv5qZ5/100772.ts
+#EXTINF:-1, SKY SPORTS MAIN EVENT
+http://172.110.221.91:8080/live/3TJy9l2stY/g1naiv5qZ5/100770.ts
+#EXTINF:-1, SKY SPORTS Golf
+http://172.110.221.91:8080/live/3TJy9l2stY/g1naiv5qZ5/100768.ts
+#EXTINF:-1, SKY SPORTS Football
+http://172.110.221.91:8080/live/3TJy9l2stY/g1naiv5qZ5/100767.ts
