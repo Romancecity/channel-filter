@@ -1938,3 +1938,17 @@ https://prod-linear-media.toffeelive.com/cdn/live/desh_tv/playlist.m3u8?edge-cac
 https://prod-linear-media.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8?edge-cache-token=Expires=1790263821~Starts=1790260221~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=RcaaBPSvZhbq5xnV2gwX9QJzlk6JPo2bXHJ_-RlAKjSJlL2CTgdhs9ht-bDy2-ybyDsSWRk0zNL5CDX6he0oDA
 #EXTINF:-1 tvg-name="Mohona TV" tvg-logo="https://assets-prod.services.toffeelive.com/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png" group-title="Live Action" ,Mohona TV
 https://prod-linear-media.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8?edge-cache-token=Expires=1790263821~Starts=1790260221~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=RcaaBPSvZhbq5xnV2gwX9QJzlk6JPo2bXHJ_-RlAKjSJlL2CTgdhs9ht-bDy2-ybyDsSWRk0zNL5CDX6he0oDA
+
+#EXTINF:-1 tvg-id="set-hd.sonyliv" tvg-name="SET HD" group-title="SonyLIV Entertainment",SET HD 444
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.sonyliv.com/
+#EXTVLCOPT:http-cookie=hdnea=exp=1790304232~acl=/*~id=06468425154171394233308275415013~hmac=426e5ef8d0707785227be2a24b02f3554069aaca853dd339b94b8f816166702f
+#EXTHTTP:{"User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36","Referrer":"https://www.sonyliv.com/","Origin":"https://www.sonyliv.com","Cookie":"hdnea=exp=1790304232~acl=/*~id=06468425154171394233308275415013~hmac=426e5ef8d0707785227be2a24b02f3554069aaca853dd339b94b8f816166702f"}
+https://dishmt.slivcdn.com/hls/live/2011671/SETHD/master.m3u8
+
+#EXTINF:-1 tvg-id="sab-hd.sonyliv" tvg-name="Sony SAB HD" group-title="SonyLIV Entertainment",Sony SAB HD 555
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.sonyliv.com/
+#EXTVLCOPT:http-cookie=hdnea=exp=1790304232~acl=/*~id=06468425154171394233308275415013~hmac=426e5ef8d0707785227be2a24b02f3554069aaca853dd339b94b8f816166702f
+#EXTHTTP:{"User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36","Referrer":"https://www.sonyliv.com/","Origin":"https://www.sonyliv.com","Cookie":"hdnea=exp=1790304232~acl=/*~id=06468425154171394233308275415013~hmac=426e5ef8d0707785227be2a24b02f3554069aaca853dd339b94b8f816166702f"}
+https://dishmt.slivcdn.com/hls/live/2011749/SABHD/master.m3u8
