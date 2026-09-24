@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-09-24 10:56:22 UTC
-# Working Channels: 409 / Total Checked: 489
+# Automated Filtered IPTV Playlist - Last Updated: 2026-09-24 16:19:08 UTC
+# Working Channels: 411 / Total Checked: 489
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -58,6 +58,9 @@ https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_22_aHR0cDov" tvg-name="DBC News HD" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png" group-title="Bangla",DBC News HD
 http://103.89.248.130:8082/DBC-NEWS/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_23_aHR0cHM6" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
+https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_24_aHR0cDov" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
 http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8
@@ -130,6 +133,9 @@ https://stream.ottplus.live/live/asian_tv_abr/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_49_aHR0cHM6" tvg-name="Asian TV" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg" group-title="Bangla",Asian TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_50_aHR0cHM6" tvg-name="Green tv" tvg-logo="https://s3.aynaott.com/storage/499219599639007120dc540bdc6e7d9d" group-title="Bangla",Green tv
+https://tvsen6.aynaott.com/cLuA3hJR/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_51_aHR0cHM6" tvg-name="Green tv" tvg-logo="https://s3.aynaott.com/storage/499219599639007120dc540bdc6e7d9d" group-title="Bangla",Green tv
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/chunks.m3u8
@@ -235,12 +241,6 @@ http://alvetv.com/moviebanglatv/8080/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_86_aHR0cHM6" tvg-name="Movie Bangla" tvg-logo="https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png" group-title="Bangla",Movie Bangla
 https://stream.ottplus.live/live/movie_bangla_abr/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_87_aHR0cHM6" tvg-name="Ekushey TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla",Ekushey TV
-https://tvsen6.aynaott.com/y4mEVZNAbeNWTbd6Z2Pw/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_88_aHR0cHM6" tvg-name="Ekushey TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla",Ekushey TV
-https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_89_aHR0cDov" tvg-name="Ekushey TV" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla",Ekushey TV
 http://103.89.248.130:8082/EKUSHEY-TV/index.m3u8
@@ -872,6 +872,12 @@ https://tv.city.bg/play/tshls/citytv/2.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_340_aHR0cDov" tvg-name="MOVIES NOW" tvg-logo="https://i.ibb.co.com/RT7Y4FKF/MOVIES-NOW.png" group-title="Movies",MOVIES NOW
 http://rgkkw.live:8080/live/4dfoydR2gZ/clever3still/152387.ts
 
+#EXTINF:-1 tvg-id="Combined_M3U_341_aHR0cDov" tvg-name="MOVIES NOW" tvg-logo="https://i.ibb.co.com/RT7Y4FKF/MOVIES-NOW.png" group-title="Movies",MOVIES NOW
+http://27.124.71.27/Movies_Now/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_344_aHR0cHM6" tvg-name="Best Action Movies" tvg-logo="https://cdn.neotvapp.com/file/quickfox/top-tv/channels/BST-1737589548317.jpg" group-title="Movies",Best Action Movies
+https://streams2.sofast.tv/ptnr-Khabriya/title-BEST_ACTION_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/46d81239-7803-45e2-9341-99ca0226fb62/manifest.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_345_aHR0cHM6" tvg-name="Yes Movies Action HD" tvg-logo="https://i.ibb.co.com/rKntnjVH/2966.png" group-title="MOVIES",Yes Movies Action HD
 https://tinyurl.com/4tfv9tup/12280/index.m3u8
 
@@ -1085,6 +1091,9 @@ http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_420_aHR0cDov" tvg-name="Star Sports Select 2" tvg-logo="https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp" group-title="Sports",Star Sports Select 2
 http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/9401.ts
 
+#EXTINF:-1 tvg-id="Combined_M3U_421_aHR0cHM6" tvg-name="Star Sports Select 2" tvg-logo="https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp" group-title="Sports",Star Sports Select 2
+https://flussonic.defineatoz.com/starsportsselect2sw/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_423_aHR0cHM6" tvg-name="Sony Ten Sports 1" tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports",Sony Ten Sports 1
 https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
 
@@ -1159,9 +1168,6 @@ http://livetv.akr4m.com:8080/bdtv/restrem/53.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_457_aHR0cHM6" tvg-name="WOW Kidz" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="𝐊𝐢𝐝𝐬",WOW Kidz
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidzhindi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-
-#EXTINF:-1 tvg-id="Combined_M3U_458_aHR0cHM6" tvg-name="ZB Cartoon" tvg-logo="https://i.postimg.cc/FFwSjdzS/Pogo.jpg" group-title="Kids",ZB Cartoon
-https://server.zillarbarta.com/zbcatun/video.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_459_aHR0cHM6" tvg-name="Jungle Book" tvg-logo="https://i.imgur.com/ubZMeQv.jpg" group-title="Kids",Jungle Book
 https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8
