@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-09-26 20:31:49 UTC
-# Working Channels: 428 / Total Checked: 502
+# Automated Filtered IPTV Playlist - Last Updated: 2026-09-27 03:07:11 UTC
+# Working Channels: 426 / Total Checked: 502
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -58,9 +58,6 @@ https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_22_aHR0cDov" tvg-name="DBC News HD" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png" group-title="Bangla",DBC News HD
 http://103.89.248.130:8082/DBC-NEWS/index.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_23_aHR0cHM6" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
-https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_24_aHR0cDov" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
 http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8
@@ -427,9 +424,6 @@ http://rgkkw.live:8080/live/4dfoydR2gZ/clever3still/198.ts
 
 #EXTINF:-1 tvg-id="Combined_M3U_154_aHR0cHM6" tvg-name="Star Jalsha" tvg-logo="https://i.imgur.com/IlufzR5.png" group-title="Bangla",Star Jalsha
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_155_aHR0cDov" tvg-name="Star Jalsha" tvg-logo="https://i.imgur.com/IlufzR5.png" group-title="Bangla",Star Jalsha
-http://filex.me:8080/akkvdGtMUWkvVnMvaWx3V2hXa2Nab05VZXFnaEtDN24xQWNxQm5pMVZZY0dqYlZNUFYweExnT3NtUHFpWTFrbA
 
 #EXTINF:-1 tvg-id="Combined_M3U_156_aHR0cDov" tvg-name="Star Jalsha" tvg-logo="https://i.imgur.com/IlufzR5.png" group-title="Bangla",Star Jalsha
 http://livetv.akr4m.com:8080/bdtv/restrem/33.m3u8
@@ -887,6 +881,9 @@ http://27.124.71.27/Movies_Now/index.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_343_aHR0cDov" tvg-name="MOVIES NOW" tvg-logo="https://i.ibb.co.com/RT7Y4FKF/MOVIES-NOW.png" group-title="Movies",MOVIES NOW
 http://202.70.146.135:8000/play/a057/index.m3u8
 
+#EXTINF:-1 tvg-id="Combined_M3U_345_aHR0cHM6" tvg-name="Best Action Movies" tvg-logo="https://cdn.neotvapp.com/file/quickfox/top-tv/channels/BST-1737589548317.jpg" group-title="Movies",Best Action Movies
+https://streams2.sofast.tv/ptnr-Khabriya/title-BEST_ACTION_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/46d81239-7803-45e2-9341-99ca0226fb62/manifest.m3u8
+
 #EXTINF:-1 tvg-id="Combined_M3U_346_aHR0cHM6" tvg-name="Yes Movies Action HD" tvg-logo="https://i.ibb.co.com/rKntnjVH/2966.png" group-title="MOVIES",Yes Movies Action HD
 https://tinyurl.com/4tfv9tup/12280/index.m3u8
 
@@ -1102,9 +1099,6 @@ https://baila-lentoo.pages.dev/all-sp/373202.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_422_aHR0cHM6" tvg-name="Star Sports Select 1" tvg-logo="https://i.postimg.cc/mrxRcQ17/20260918-111059.png" group-title="Sports",Star Sports Select 1
 https://baila-lentoo.pages.dev/all-sp/809383.m3u8
-
-#EXTINF:-1 tvg-id="Combined_M3U_423_aHR0cHM6" tvg-name="Star Sports Select 1" tvg-logo="https://i.postimg.cc/mrxRcQ17/20260918-111059.png" group-title="Sports",Star Sports Select 1
-https://flussonic.defineatoz.com/starsportsselect1/tracks-v1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_424_aHR0cDov" tvg-name="Star Sports Select 1" tvg-logo="https://i.postimg.cc/mrxRcQ17/20260918-111059.png" group-title="Sports",Star Sports Select 1
 http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
