@@ -1964,3 +1964,8 @@ https://prod-linear-media.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8?edg
 https://prod-linear-media.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8?edge-cache-token=Expires=1790850620~Starts=1790847020~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=1-h05Xx3hLg9A9i_s0DNwdMCRDo9sbmdnd9QAS3pEZFDZyrp6XKyQ89WZiwpFavotVY2wHV5jc5DMvzERIu4AQ
 #EXTINF:-1 tvg-name="Mohona TV" tvg-logo="https://assets-prod.services.toffeelive.com/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png" group-title="Live Action" ,Mohona TV
 https://prod-linear-media.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8?edge-cache-token=Expires=1790850620~Starts=1790847020~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=1-h05Xx3hLg9A9i_s0DNwdMCRDo9sbmdnd9QAS3pEZFDZyrp6XKyQ89WZiwpFavotVY2wHV5jc5DMvzERIu4AQ
+
+#EXTINF:-1 group-title="Drama" tvg-logo="https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/5638c4e8-36ba-4e8e-848e-233183b3ec17.png",jjaaa
+#EXTVLCOPT:http-user-agent=okhttp/5.1.0
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1785211289:KeyName=prod_linear:Signature=qd7sZtUBuYLIw5dBGYBrE0wI_aHgDNLGNCSpeE3JODW7U9aG0R4GdrnpOL44ZmpuHQZ2bojrFCFOH9YcgsrmDQ"}
+https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8
