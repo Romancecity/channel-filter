@@ -6,23 +6,23 @@
 # Developer: IreenTechnology
 # Version: 1.0
 # Channels Amount: 1060
-# Last Update: 04-10-2026 | 05:52:42 PM (BST)
+# Last Update: 04-10-2026 | 06:33:27 PM (BST)
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/8C2gLZX9/SS-Fancode.png" group-title="Live",Fancode Live 1
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/8C2gLZX9/SS-Fancode.png" group-title="Sports",Fancode Live 1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/8C2gLZX9/SS-Fancode.png" group-title="Live",Fancode Live 2
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/8C2gLZX9/SS-Fancode.png" group-title="Sports",Fancode Live 2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1994b1df7dfd2e8a8d7b9bf3fb900285:22a1444b3da18e139191665b3d652835
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
-#EXTINF:-1 tvg-id="tapmad-15382" tvg-logo="https://i.ibb.co.com/G4JbPXdw/tapmad.png" group-title="Live", Tapmad Live Feed 1
+#EXTINF:-1 tvg-id="tapmad-15382" tvg-logo="https://i.ibb.co.com/G4JbPXdw/tapmad.png" group-title="Sports", Tapmad Live Feed 1
 https://serieAleague.akamaized.net/hls/live/2107107/tap-BK-PSL-D1-E/master.m3u8
-#EXTINF:-1 tvg-id="tapmad-15383" tvg-logo="https://i.ibb.co.com/G4JbPXdw/tapmad.png" group-title="Live", Tapmad Live Feed 2
+#EXTINF:-1 tvg-id="tapmad-15383" tvg-logo="https://i.ibb.co.com/G4JbPXdw/tapmad.png" group-title="Sports", Tapmad Live Feed 2
 https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8
-#EXTINF:-1 tvg-id="tapmad-15385" tvg-logo="https://i.ibb.co.com/G4JbPXdw/tapmad.png" group-title="Live", Tapmad Live Feed 3
+#EXTINF:-1 tvg-id="tapmad-15385" tvg-logo="https://i.ibb.co.com/G4JbPXdw/tapmad.png" group-title="Sports", Tapmad Live Feed 3
 https://seriealeague.akamaized.net/hls/live/2107107/Tapmad-KjL52/master.m3u8
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
