@@ -24,18 +24,6 @@ https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/uiffe4jhf0/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=73912c0660cc814ef7d9033d87c45c16:1a212fd533e2660b7eae0a033d9a1813
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/rzoyb9fllc/out/v1/8926eb65b8f64effb889daad38114562/cenc.mpd
-#EXTINF:-1 group-title="SPORTS" tvg-logo="https://i.postimg.cc/NF489yZJ/STABLE-SPORTS1.png",CRICBUZZ 1 HD
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=88108f87e67cd151f9519101fc80c467:7f2ef277964796a9fb76afe361e2344c
-https://cbuzz1.starzplayarabia.com/out/v1/f017da8419e0495784291700c11700a5/index.mpd
-#EXTINF:-1 group-title="SPORTS" tvg-logo="https://i.postimg.cc/tRhBGJvV/STABLE-SPORTS2.png",CRICBUZZ 2 HD
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=037798d4da2472201e564323244afc49:c8888c4644cef0a5f130afa32d919fc4
-https://cbuzz2.starzplayarabia.com/out/v1/c6320ac38c774e66b60dbf4d0e7d16ab/index.mpd
 #EXTINF:-1 group-title="Sports"tvg-id="" tvg-logo="https://cdn.broadbandtvnews.com/wp-content/uploads/2025/02/24171333/Eurosport-image.jpg",EuroSport 1
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -231,6 +219,12 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemalu/default/main.mpd
 #KODIPROP:inputstream.adaptive.license_key=50e714b65ead453cbfab9b20bed5c79d:bc08e108b9ee4f65b99cb9dad9532f3f
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeekannada/default/main.mpd
 **************************************************Movies************************************************
+#EXTINF:-1 tvg-id="AMC+.us" group-title="Movies" tvg-logo="https://i.imgur.com/tkFtkpx.png", AMC+
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=59a51164c2c915352f04066a06f6e807:eba5cc362d1d63c0fe6460febca0fd11
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0f5clvxn6o/out/v1/d5a953bb19734fa3baa1776266887fcb/cenc.mpd
 #EXTINF:-1 tvg-id="ReelzChannel.us" tvg-logo="https://m.media-amazon.com/images/G/01/digital/video/Linear_Clean_Slate/Carbon_Integration_Station_Image_Update/Reelz_Channel_1920x1080._SL170_FMpng_.png" group-title="Movies",REELZ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
