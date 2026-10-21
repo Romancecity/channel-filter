@@ -2750,3 +2750,20 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c7ba46086dda345a929e29bf155e459c:d374b8f39904bf572689ea347ae86591
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
+
+
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="STC",[American Football] Massachusetts Minutemen vs. Rutgers Scarlet Knights | English (STRMCNTR)
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="STC",[American Football] Bethune-Cookman Wildcats vs. UCF Knights | English (STRMCNTR)
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/sfjnzabacah31.m3u8
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="STC",[American Football] Akron Zips vs. Wake Forest Demon Deacons | English (STRMCNTR)
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/qsdnajbq32.m3u8
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="STC",[American Football] Merrimack Warriors vs. Delaware Blue Hens | English (STRMCNTR)
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/oipozuezeji33.m3u8
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="STC",[American Football] West Georgia Wolves vs. Kennesaw State Owls | English (STRMCNTR)
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/uheyztezgj34.m3u8
