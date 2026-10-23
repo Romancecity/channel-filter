@@ -2802,18 +2802,11 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
 
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/Qv41gDKh/Volleyball.jpg" group-title="UEFA Champions League",1
+#EXTINF:-1 tvg-id="us" tvg-logo="https://i.ibb.co.com/Qv41gDKh/Volleyball.jpg" group-title="sports", nnny
 #EXTVLCOPT:http-referrer=https://dembed.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://windnew.newkso.ru/wind/premium474/mono.m3u8
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/cSMrGjnb/Football.png" group-title="Premier League",2
-#EXTVLCOPT:http-referrer=https://dembed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://windnew.newkso.ru/wind/premium37/mono.m3u8
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/cSMrGjnb/Football.png" group-title="Premier League",3
-#EXTVLCOPT:http-referrer=https://dembed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://windnew.newkso.ru/wind/premium641/mono.m3u8
+https://edge.cowedd4855ws.sbs/premium31/index.m3u8
+
 
 
 
