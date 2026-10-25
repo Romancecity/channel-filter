@@ -3036,3 +3036,7 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c7ba46086dda345a929e29bf155e459c:d374b8f39904bf572689ea347ae86591
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
+
+#EXTINF:-1 tvg-id="bbcnews" group-title="sports" tvg-logo="https://freem3u.xyz/static/images/global/bbc-news.png", Bbb
+https://edge.cowedd4855ws.sbs/premium40/index.m3u8?t=1792935948.50cf63b3d24af38b60b033a07b01b688&_=1792935898885|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Referer=https://dembed.st/&Origin=https://dembed.st
+
