@@ -3038,27 +3038,9 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
 
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/404d95b9-08fb-4f2a-80b6-11f85d1daa7a.webp" group-title="sports", hyh
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream3.pro/sh/cdn/hls/wnbcnxbcs12.m3u8
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/401bb7dd-310b-4d47-9227-dbff4c61961e.webp" group-title="sports", hyh
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream3.pro/sh/cdn/hls/wnbcnxbcs13.m3u8
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/f49b67ae-bb69-4e68-a904-bc6636cd5e74.webp" group-title="sports", hyh
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream3.pro/sh/cdn/hls/wnbcnxbcs7.m3u8
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/27c99d7a-1216-4659-8f34-c39e0dfb72c6.webp" group-title="sports", hyh
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream3.pro/sh/cdn/hls/wnbcnxbcs14.m3u8
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/432e4acb-e313-4c47-90c4-90208b95ed75.webp" group-title="sports", hyh
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream3.pro/sh/cdn/hls/wnbcnxbcs16.m3u8
-
+#EXTINF:-1 tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1792396651951.png" group-title="Entertainment",tesee
+#EXTHTTP:{"cookie":"Edge-Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODgyNTMyMzd9fX1dfQ;Edge-Signature=V3G6GBiA2N6wlM8aLqfdsv1kOW8Z1pxEZgL9GwEuiIs"}
+https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8
 
 
 
