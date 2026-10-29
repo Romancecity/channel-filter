@@ -3092,7 +3092,7 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
 
-#EXTINF:-1 tvg-logo="https://www.ooredoo.qa/web/wp-content/uploads/2026/05/395_STARZPLAY-Cricket.jpg" group-title="Sports", 2
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0ae4f162eec3e6f2b580a5bf0f4a64d4:03483335db81cba5bbcf51b6d31196d9
-https://d1ifzl5cnhi7bu.cloudfront.net/out/v1/45ba30e075ad455a8767d3f33e67ea3d/index.mpd
+#EXTINF:-1 group-title="sports" tvg-name="Gloria Bistrita vs FCSB" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh72lfEXHAV6Sys1IXKs0lCQjqqQ7LtkmK-ScPX1anPusVvLakJL_b5jbTLWkyqaWKSfVss70-S6d9ddnDwr7o0-Bn2rboSvKpr9JxRJqwjM_q5rY5MwOSK3klCRGiQ5vBk2vh3oV1NMpRXsyXOf3h2277KTh-aOHTzG3nBNsMshyphenhyphenhbLtXxpqe8vR8kzZE/s1600/ghGZsBoQ_400x400.jpg",mtt
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-origin=https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1793302526&sig=z6AySOFnXJbpikUeeYfFHfhu3_up0rMvDHyQaH9987w
