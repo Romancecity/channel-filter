@@ -3165,8 +3165,8 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=c7ba46086dda345a929e29bf155e459c:d374b8f39904bf572689ea347ae86591
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/JwDc9ckh/Football.png" group-title="sports",LIVE
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/JwDc9ckh/Football.png" group-title="sports", mmm
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-origin=https://matchli.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://hls.lshls.st/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8
+https://hls.lshls.st/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8\u0026e=1793370193\u0026sig=8yplM7LtiMksNevfsvuE6BhmHcP4GBIHEgy1_uRHGBo
