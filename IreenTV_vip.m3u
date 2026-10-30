@@ -3165,10 +3165,7 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=c7ba46086dda345a929e29bf155e459c:d374b8f39904bf572689ea347ae86591
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="" group-title="sports", myyu kk
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-origin=https://matchli.st
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp" group-title="sports", Le
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://hls.lshls.st/secure_hls.php?path=dad368e7f07d489edc4ab114e3571a3c%2Findex.m3u8&e=1793373531&sig=LEd_qvKrOMHV1zQ5M6wqV1_-ZSyfYk48k1OyE6yCl0E
-
-
+#EXTVLCOPT:http-referrer=https://embedcenter.st
+https://edgestream7.pro/hls/dza5z8f69.m3u8?st=6BlYUk_9rv90r2WBH8X5H8ytLpXEHaD8n43urNzbjZM
