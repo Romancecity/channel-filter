@@ -3165,8 +3165,8 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=c7ba46086dda345a929e29bf155e459c:d374b8f39904bf572689ea347ae86591
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/JwDc9ckh/Football.png" group-title="sports", ggg
-#EXTVLCOPT:https://dervlin.me/
-#EXTVLCOPT:https://dervlin.me
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://i.ibb.co.com/JwDc9ckh/Football.png" group-title="sports",LIVE
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-origin=https://matchli.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://s-c7.owledge.cc/viktor/4az0pituxe40pe8ekoka/master.m3u8?ssid=sv2.1793372870.700bd99bd46a2220a941d32b40401cf337eb55d35c526e4bb0a7ab7d2f2a5d8c&session_id=a6d82254d79918e524571b2ca61a3d7e&u_id=stlan-a633b6e587091b98b76e76899cf5896a4ad312efa6c93bec46b3eb022cf935ac
+https://hls.lshls.st/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8
