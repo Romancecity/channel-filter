@@ -3170,3 +3170,20 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 #EXTVLCOPT:http-origin=https://matchli.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
 https://hls.lshls.st/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8\u0026e=1793370193\u0026sig=8yplM7LtiMksNevfsvuE6BhmHcP4GBIHEgy1_uRHGBo
+
+
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="" group-title="sports", dfg
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-origin=https://matchli.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+https://hls.lshls.st/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8&e=1793371462&sig=rzUSL8G5_yX1gGO-NebGXmbe0VEXQaYTwhe_HsOKBn4
+
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="" group-title="sports", lkj
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-origin=https://matchli.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+https://hls.lshls.st/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8&e=1793370879&sig=R-s_1q96ie3uBYhW9dmQBAvzIeFYFfV0g2NF_XDQuzM
+
+
+
+
