@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url=""
-# Automated Filtered IPTV Playlist - Last Updated: 2026-11-01 21:36:40 UTC
-# Working Channels: 1050 / Total Checked: 1245
+# Automated Filtered IPTV Playlist - Last Updated: 2026-11-02 03:54:02 UTC
+# Working Channels: 1056 / Total Checked: 1245
 
 #EXTINF:-1 tvg-id="Combined_M3U_0_aHR0cHM6" tvg-name="IreenTV Promo" tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="Bangla",IreenTV Promo
 https://ireentvlive.pages.dev/promo/master.m3u8
@@ -133,6 +133,9 @@ https://nkafmbewiff.gpcdn.net/tile_7/master.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_48_aHR0cDov" tvg-name="Channel 9" tvg-logo="https://i.postimg.cc/gkTGp9Y8/20260918-105823.png" group-title="Bangla",Channel 9
 http://premiumtvs.space/live/YqXTywueEV/damp2purchase/434.ts
+
+#EXTINF:-1 tvg-id="Combined_M3U_49_aHR0cHM6" tvg-name="Channel 9" tvg-logo="https://i.postimg.cc/gkTGp9Y8/20260918-105823.png" group-title="Bangla",Channel 9
+https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_52_aHR0cHM6" tvg-name="Channel i" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png" group-title="Bangla",Channel i
 https://nkafmbewiff.gpcdn.net/tile_5/master.m3u8
@@ -268,6 +271,9 @@ http://103.89.248.130:8082/GLOBAL-TV/index.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_101_aHR0cDov" tvg-name="Independent TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png" group-title="Bangla",Independent TV
 http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8
+
+#EXTINF:-1 tvg-id="Combined_M3U_102_aHR0cHM6" tvg-name="Jago News 24" tvg-logo="https://i.ibb.co.com/KpRt3cT5/Jago-News-24.png" group-title="Bangla",Jago News 24
+https://app.ncare.live/live-orgin/jagonews24.stream/live-orgin/jagonews24.stream/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Combined_M3U_103_aHR0cHM6" tvg-name="Jago News 24" tvg-logo="https://i.ibb.co.com/KpRt3cT5/Jago-News-24.png" group-title="Bangla",Jago News 24
 https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8
@@ -1724,6 +1730,12 @@ https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
 #EXTINF:-1 tvg-id="Example_M3U_1_23_aHR0cHM6" tvg-name="Bijoy TV [Backup 1]" tvg-logo="https://i.imgur.com/Faetm0C.png" group-title="Bangladesh",Bijoy TV [Backup 1]
 https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8
 
+#EXTINF:-1 tvg-id="Example_M3U_1_32_aHR0cHM6" tvg-name="BTV National" tvg-logo="https://i.imgur.com/5OE2FDt.png" group-title="Bangladesh",BTV National
+https://btv.hridoytv-channel.workers.dev/btv.m3u8
+
+#EXTINF:-1 tvg-id="Example_M3U_1_33_aHR0cHM6" tvg-name="BTV News" tvg-logo="https://i.postimg.cc/28VMF8hx/btv-news.png" group-title="Bangladesh",BTV News
+https://btv.hridoytv-channel.workers.dev/news.m3u8
+
 #EXTINF:-1 tvg-id="Example_M3U_1_34_aHR0cDov" tvg-name="BTV News [Backup 1]" tvg-logo="https://i.postimg.cc/28VMF8hx/btv-news.png" group-title="Bangladesh",BTV News [Backup 1]
 http://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvbd-office-sg.stream/index.m3u8
 
@@ -2048,17 +2060,20 @@ https://vods2.aynaott.com/hindimovies/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="Example_M3U_1_241_aHR0cHM6" tvg-name="Goldmines" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Indian Movies",Goldmines
 https://streams.tangotv.in/GOLDMINES/ORIGIN/index.m3u8
 
+#EXTINF:-1 tvg-id="Example_M3U_1_242_aHR0cHM6" tvg-name="Goldmines [Backup 1]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Indian Movies",Goldmines [Backup 1]
+https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
+
 #EXTINF:-1 tvg-id="Example_M3U_1_243_aHR0cHM6" tvg-name="Goldmines Bollywood" tvg-logo="https://i.imgur.com/6mNQ9mM.png" group-title="Indian Movies",Goldmines Bollywood
 https://streams.tangotv.in/GOLDMINESBOLLYWOOD/ORIGIN/index.m3u8
 
 #EXTINF:-1 tvg-id="Example_M3U_1_244_aHR0cHM6" tvg-name="Goldmines Bollywood [Backup 1]" tvg-logo="https://i.imgur.com/6mNQ9mM.png" group-title="Indian Movies",Goldmines Bollywood [Backup 1]
 https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
 
+#EXTINF:-1 tvg-id="Example_M3U_1_245_aHR0cHM6" tvg-name="Goldmines Bollywood [Backup 2]" tvg-logo="https://i.imgur.com/6mNQ9mM.png" group-title="Indian Movies",Goldmines Bollywood [Backup 2]
+https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
+
 #EXTINF:-1 tvg-id="Example_M3U_1_246_aHR0cHM6" tvg-name="Goldmines Movies" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" group-title="Indian Movies",Goldmines Movies
 https://streams.tangotv.in/GOLDMINEMOVIES/ORIGIN/index.m3u8
-
-#EXTINF:-1 tvg-id="Example_M3U_1_247_aHR0cHM6" tvg-name="Goldmines Movies [Backup 1]" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" group-title="Indian Movies",Goldmines Movies [Backup 1]
-https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
 
 #EXTINF:-1 tvg-id="Example_M3U_1_249_aHR0cHM6" tvg-name="Hindi Movies" tvg-logo="https://www.google.com/s2/favicons?domain=bozztv.com&sz=256" group-title="Indian Movies",Hindi Movies
 https://live20.bozztv.com/giatvplayout7/giatv-209612/tracks-v1a1/mono.ts.m3u8
@@ -2080,6 +2095,9 @@ https://vg-pitaaratvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413
 
 #EXTINF:-1 tvg-id="Example_M3U_1_258_aHR0cHM6" tvg-name="Public Movies" tvg-logo="https://dtil.tmsimg.com/assets/s143686_ld_h9_aa.png?lock=720x540" group-title="Indian Movies",Public Movies
 https://mumt04.tangotv.in/m18aqlK4PUBLICMOVIES/index.m3u8
+
+#EXTINF:-1 tvg-id="Example_M3U_1_259_aHR0cHM6" tvg-name="Raj Digital Plus" tvg-logo="https://dtil.tmsimg.com/assets/s143704_ld_h15_ab.png?lock=720x540" group-title="Indian Movies",Raj Digital Plus
+https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
 
 #EXTINF:-1 tvg-id="Example_M3U_1_260_aHR0cHM6" tvg-name="Roja Movies" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/rojamovies.png" group-title="Indian Movies",Roja Movies
 https://stream.rojatv.cloud/rojatv/rojatv/index.m3u8
@@ -2320,12 +2338,6 @@ https://stream.ottplus.bd/live/sub_hd_abr/index.m3u8
 
 #EXTINF:-1 tvg-id="Example_M3U_1_385_aHR0cDov" tvg-name="&TV [Backup 2]" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/%26TV_Transparent_c5cc189b-8493-48d2-b07c-3fa4f92d754a.png" group-title="Indian Entertainment",&TV [Backup 2]
 http://202.70.146.135:8000/play/a06c/index.m3u8
-
-#EXTINF:-1 tvg-id="Example_M3U_1_386_aHR0cDov" tvg-name="Zee Anmol" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00260HWS.png?lock=720x540" group-title="Indian Entertainment",Zee Anmol
-http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/203.ts
-
-#EXTINF:-1 tvg-id="Example_M3U_1_387_aHR0cDov" tvg-name="Zee Anmol [Backup 1]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00260HWS.png?lock=720x540" group-title="Indian Entertainment",Zee Anmol [Backup 1]
-http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/203.ts
 
 #EXTINF:-1 tvg-id="Example_M3U_1_392_aHR0cHM6" tvg-name="Zee TV HD [DE]" tvg-logo="https://i.postimg.cc/x8BwX6QW/20240823_022929.png" group-title="Indian Entertainment",Zee TV HD [DE]
 https://d47ddb99.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1kZV9aZWVUVkhEVUtHZXJtYW55X0hMUw/playlist.m3u8
@@ -2726,6 +2738,9 @@ https://s.emisoras.tv:8081/diostevekids/index.m3u8
 #EXTINF:-1 tvg-id="Example_M3U_1_555_aHR0cHM6" tvg-name="Doraemon" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/01/Doraemon_Merch_EN_Logo.svg" group-title="Kids",Doraemon
 https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
 
+#EXTINF:-1 tvg-id="Example_M3U_1_556_aHR0cHM6" tvg-name="Doraemon [Backup 1]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/01/Doraemon_Merch_EN_Logo.svg" group-title="Kids",Doraemon [Backup 1]
+https://live20.bozztv.com/giatvplayout7/giatv-209902/index.m3u8
+
 #EXTINF:-1 tvg-id="Example_M3U_1_557_aHR0cHM6" tvg-name="Duck TV" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA3400004MA_20260421T140719SQUARE.png" group-title="Kids",Duck TV
 https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n0stmvwxmsf5c/playlist.m3u8
 
@@ -2986,6 +3001,9 @@ https://nhl-firetv.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Example_M3U_1_686_aHR0cHM6" tvg-name="Oman Sports TV" tvg-logo="https://s3.aynaott.com/storage/33f87783637fc95fdb8837ba9344c9e9" group-title="Sports",Oman Sports TV
 https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Example_M3U_1_689_aHR0cHM6" tvg-name="PTV Sports" tvg-logo="https://i.imgur.com/CPm6GHA.png" group-title="Sports",PTV Sports
+https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
 
 #EXTINF:-1 tvg-id="Example_M3U_1_692_aHR0cDov" tvg-name="Sky Sport Bundesliga 1 HD" tvg-logo="https://i.ibb.co.com/C53q8BDh/1.png" group-title="Sports",Sky Sport Bundesliga 1 HD
 http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/2480/index.m3u8
