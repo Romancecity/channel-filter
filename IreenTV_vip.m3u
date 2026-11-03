@@ -3282,9 +3282,19 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
 
-#EXTINF:-1 tvg-id="null" tvg-name="PTV Sports 4K Ultra HD" tvg-logo="https://lh3.googleusercontent.com/rrlbBpemNMC7TQGb9AoL8jXXQ1dXXwYb-nCRrtNdZp1twkqQE9flw2ka6MI70a5pPA" group-title="SPORTS", HD
-http://bosstv.click:8080/live/18012689/77561563/75438.ts
-#EXTINF:-1 tvg-id="null" tvg-name="Geo Super 4K Ultra HD" tvg-logo="http://bostv.one:8080/images/fa5fda8475d2bccee7c6f39854bf057b.png" group-title="SPORTS", HD
-http://bosstv.click:8080/live/18012689/77561563/81552.ts
-#EXTINF:-1 tvg-id="null" tvg-name="Ten Sports 4K Ultra HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNaicott6RUuaQXsm0YUZ9Ora2ErkD6MDgbg&usqp=CAU" group-title="SPORTS", HD
-http://bosstv.click:8080/live/18012689/77561563/74238.ts
+#EXTINF:-1 tvg-id="null" tvg-name="TEN SPORTS |SERVER 1|" tvg-logo="https://jacreation.com/sports/tensports.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157348.ts
+#EXTINF:-1 tvg-id="null" tvg-name="TEN SPORTS |SERVER 2|" tvg-logo="https://jacreation.com/sports/tensports.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157349.ts
+#EXTINF:-1 tvg-id="null" tvg-name="PTV SPORTS |SERVER 1|" tvg-logo="https://jacreation.com/sports/ptv.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157350.ts
+#EXTINF:-1 tvg-id="null" tvg-name="PTV SPORTS |SERVER 2|" tvg-logo="https://jacreation.com/sports/ptv.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157351.ts
+#EXTINF:-1 tvg-id="null" tvg-name="A SPORTS |SERVER 1|" tvg-logo="https://img.jacreation.com/ib/mWDVE2d8BP.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157352.ts
+#EXTINF:-1 tvg-id="null" tvg-name="A SPORTS |SERVER 2|" tvg-logo="https://img.jacreation.com/ib/mWDVE2d8BP.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157353.ts
+#EXTINF:-1 tvg-id="null" tvg-name="GEO SUPER |SERVER 1|" tvg-logo="https://logo.m3uassets.com/geosuper.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157354.ts
+#EXTINF:-1 tvg-id="null" tvg-name="GEO SUPER |SERVER 2|" tvg-logo="https://logo.m3uassets.com/geosuper.png" group-title="sports",GEO
+http://bosstv.click:8080/live/18012689/77561563/157355.ts
