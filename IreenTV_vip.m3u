@@ -3282,19 +3282,12 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/bbcworldnews.smil/manifest.mpd
 
 
-#EXTINF:-1 tvg-id="null" tvg-name="TEN SPORTS |SERVER 1|" tvg-logo="https://jacreation.com/sports/tensports.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157348.ts
-#EXTINF:-1 tvg-id="null" tvg-name="TEN SPORTS |SERVER 2|" tvg-logo="https://jacreation.com/sports/tensports.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157349.ts
-#EXTINF:-1 tvg-id="null" tvg-name="PTV SPORTS |SERVER 1|" tvg-logo="https://jacreation.com/sports/ptv.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157350.ts
-#EXTINF:-1 tvg-id="null" tvg-name="PTV SPORTS |SERVER 2|" tvg-logo="https://jacreation.com/sports/ptv.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157351.ts
-#EXTINF:-1 tvg-id="null" tvg-name="A SPORTS |SERVER 1|" tvg-logo="https://img.jacreation.com/ib/mWDVE2d8BP.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157352.ts
-#EXTINF:-1 tvg-id="null" tvg-name="A SPORTS |SERVER 2|" tvg-logo="https://img.jacreation.com/ib/mWDVE2d8BP.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157353.ts
-#EXTINF:-1 tvg-id="null" tvg-name="GEO SUPER |SERVER 1|" tvg-logo="https://logo.m3uassets.com/geosuper.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157354.ts
-#EXTINF:-1 tvg-id="null" tvg-name="GEO SUPER |SERVER 2|" tvg-logo="https://logo.m3uassets.com/geosuper.png" group-title="sports",GEO
-http://bosstv.click:8080/live/18012689/77561563/157355.ts
+#EXTINF:-1 group-title="Family" tvg-logo="https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",Toffee TV
+https://prod-linear-media.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8?edge-cache-token=Expires=1793728844~Starts=1793725244~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=fQhvsDe4BSM4eSFtSTvPfh9qU6cSounIpZPDd-2fcqZ2gS7jJgNfr2b-_42pLNm4gpVMeXx-yBL59VmNczoWDA
+
+#EXTINF:-1 group-title="Movies" tvg-logo="https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",Toffee Movies
+https://prod-linear-media.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8?edge-cache-token=Expires=1793728844~Starts=1793725244~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=fQhvsDe4BSM4eSFtSTvPfh9qU6cSounIpZPDd-2fcqZ2gS7jJgNfr2b-_42pLNm4gpVMeXx-yBL59VmNczoWDA
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",WC Match Recap
+https://prod-linear-media.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8?edge-cache-token=Expires=1793728844~Starts=1793725244~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=fQhvsDe4BSM4eSFtSTvPfh9qU6cSounIpZPDd-2fcqZ2gS7jJgNfr2b-_42pLNm4gpVMeXx-yBL59VmNczoWDA
+
