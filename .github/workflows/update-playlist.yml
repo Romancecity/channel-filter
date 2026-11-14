@@ -1,14 +1,18 @@
-name: IPTV Playlist 24-Hour Auto Update Bot
+name: IPTV Playlist Hourly Auto Update Bot
 
 on:
   schedule:
-    # Runs automatically once every 12 hours
-    - cron: '0 * * * *'
+    # প্রতি ১ ঘণ্টা পরপর অটো রান হবে (GitHub-এর পিক-আওয়ার লোড এড়াতে 0 মিনিটের বদলে 17 মিনিট দেওয়া হয়েছে)
+    - cron: '17 * * * *'
   workflow_dispatch:
     # Allows manual trigger anytime from GitHub Actions tab
 
 permissions:
   contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   update-playlist:
