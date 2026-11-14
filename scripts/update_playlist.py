@@ -2,16 +2,14 @@
 """
 IPTV Playlist Auto-Updater & Health Checker Bot
 Fetches playlist channels from Combined M3U & BDIX JSON sources,
-deep-probes stream & HLS segment status with per-host rate limiting,
-and outputs filtered working_playlist.m3u & status reports.
+deep-probes stream & HLS segment status, and outputs filtered
+working_playlist.m3u & status reports.
 Designed to run via GitHub Actions every 1 hour or manually.
 """
 
-import ipaddress
 import json
 import re
 import ssl
-import threading
 import time
 import base64
 import urllib.request
@@ -44,40 +42,20 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
 ]
 
-# Domains or specific IPs that work locally on BD internet but block GitHub Actions IPs (403/Timeout).
-# Only add hosts here if you verified they work locally but fail on GitHub Actions.
+# Domains that often geo-block / rate-limit GitHub Actions datacenter IPs (403/Timeout),
+# while still working on local user networks. (404 / DNS failures will still be marked DEAD)
 GEO_BLOCKED_DOMAINS = [
     "tvhunter.top",
-    "103.89.248.130",
     "ziboplay.co",
 ]
 
 TIMEOUT_SECONDS = 10
 MAX_WORKERS = 20
-MAX_CONCURRENT_PER_HOST = 2  # Prevents hitting one IPTV server with 20 connections at once
 
 # Disable strict SSL verification for streaming servers with self-signed/expired certs
 SSL_CONTEXT = ssl.create_default_context()
 SSL_CONTEXT.check_hostname = False
 SSL_CONTEXT.verify_mode = ssl.CERT_NONE
-
-# Per-host semaphore map to avoid overloading single IPTV servers
-HOST_SEMAPHORES = {}
-HOST_SEM_LOCK = threading.Lock()
-CGNAT_NET = ipaddress.ip_network("100.64.0.0/10")
-
-
-def get_host_semaphore(url_str):
-    try:
-        parsed = urllib.parse.urlparse(url_str)
-        host_key = f"{(parsed.hostname or '').lower()}:{parsed.port or ''}"
-    except Exception:
-        host_key = "default"
-
-    with HOST_SEM_LOCK:
-        if host_key not in HOST_SEMAPHORES:
-            HOST_SEMAPHORES[host_key] = threading.Semaphore(MAX_CONCURRENT_PER_HOST)
-        return HOST_SEMAPHORES[host_key]
 
 
 def is_valid_http_url(url):
@@ -138,6 +116,7 @@ def parse_m3u(m3u_text, source="Combined_M3U"):
             group = group_match.group(1) if group_match else "General"
             name = name_match.group(1).strip() if name_match else "Unknown Channel"
 
+            # Handle inline pipe options like url|User-Agent=...&Referer=...
             probe_url = raw_url
             url_ua = custom_ua
             url_ref = custom_ref
@@ -214,25 +193,21 @@ def parse_json(json_text, source="BDIX_JSON"):
     return channels
 
 
-def is_local_only_bdix_host(url_str):
-    """
-    Only returns True for true local/private BDIX IPs (10.x, 192.168.x, 172.16-31.x, 100.64.x)
-    or .bd / bdix hostnames. Public IPs are NOT blindly bypassed anymore so dead servers are caught.
-    """
+def is_direct_ip_or_bdix_stream(url_str):
     try:
         parsed = urllib.parse.urlparse(url_str)
-        host = (parsed.hostname or "").lower()
-        if not host:
-            return False
-
-        if "bdix" in host or host.endswith(".bd") or "local" in host:
-            return True
-
-        try:
-            ip_obj = ipaddress.ip_address(host)
-            return ip_obj.is_private or ip_obj.is_loopback or ip_obj in CGNAT_NET
-        except ValueError:
-            return False
+        host = parsed.hostname or ""
+        is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
+        is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
+        is_stream_path = (
+            parsed.path.endswith(".m3u8")
+            or parsed.path.endswith(".ts")
+            or "index" in parsed.path.lower()
+            or "live" in parsed.path.lower()
+            or "stream" in parsed.path.lower()
+            or parsed.port is not None
+        )
+        return (is_ip or is_bdix) and is_stream_path
     except Exception:
         return False
 
@@ -265,24 +240,29 @@ def probe_url_request(url, user_agent, referer=None, max_bytes=2048):
     if referer:
         headers["Referer"] = referer
 
-    sem = get_host_semaphore(url)
-    with sem:
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS, context=SSL_CONTEXT) as response:
-            code = response.getcode()
-            final_url = response.geturl()
-            content_type = (response.headers.get("Content-Type") or "").lower()
-            raw_bytes = response.read(max_bytes)
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS, context=SSL_CONTEXT) as response:
+        code = response.getcode()
+        final_url = response.geturl()
+        content_type = (response.headers.get("Content-Type") or "").lower()
+        raw_bytes = response.read(max_bytes)
 
-            head_text = raw_bytes.decode("utf-8", errors="ignore").lower()
-            if "#extm3u" in head_text or "#ext-x-" in head_text or "mpegurl" in content_type:
-                extra_bytes = response.read(131072)
-                raw_bytes += extra_bytes
+        # If it looks like an HLS playlist, read the rest (up to 128KB) to get child/segment URLs
+        head_text = raw_bytes.decode("utf-8", errors="ignore").lower()
+        if "#extm3u" in head_text or "#ext-x-" in head_text or "mpegurl" in content_type:
+            extra_bytes = response.read(131072)
+            raw_bytes += extra_bytes
 
-            return code, final_url, content_type, raw_bytes
+        return code, final_url, content_type, raw_bytes
 
 
 def check_bypass_rules(target_url, http_code, error_msg):
+    is_bdix = is_direct_ip_or_bdix_stream(target_url)
+    is_geo = is_geo_blocked_domain(target_url)
+
+    if is_bdix and (http_code in (403, 502, 503, 504) or http_code == 0):
+        return True, "BDIX bypass"
+
     err_low = (error_msg or "").lower()
     is_timeout = "timed out" in err_low or "timeout" in err_low
     is_dns_or_refused = (
@@ -290,27 +270,24 @@ def check_bypass_rules(target_url, http_code, error_msg):
         or "getaddrinfo failed" in err_low
         or "connection refused" in err_low
     )
-
-    if is_dns_or_refused:
-        return False, ""
-
-    is_firewall_or_geo_err = http_code in (401, 403, 405, 429, 503) or is_timeout
-    if not is_firewall_or_geo_err:
-        return False, ""
-
-    if is_geo_blocked_domain(target_url):
+    if is_geo and not is_dns_or_refused and (
+        http_code in (401, 403, 405, 429, 503) or is_timeout
+    ):
         return True, f"Geo-block bypass ({error_msg})"
-
-    if is_local_only_bdix_host(target_url):
-        return True, f"Local BDIX bypass ({error_msg})"
 
     return False, ""
 
 
 def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth=0):
+    """
+    Deep-verifies an HLS (.m3u8) playlist by checking its child variant playlist
+    or media (.ts/.m4s/.aac) segment URLs so dead static playlists are caught.
+    Returns: (is_working, http_code, note_or_error, retryable_with_next_ua)
+    """
     if depth > 2:
         return False, 0, "Too many nested HLS playlists", False
 
+    # Collect non-comment URI lines inside the playlist
     uris = []
     for line in playlist_text.splitlines():
         line = line.strip()
@@ -323,6 +300,7 @@ def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth
     is_master = "#ext-x-stream-inf" in playlist_text.lower()
 
     if is_master:
+        # Test up to 2 variant playlists
         last_code = 0
         last_err = "All HLS variants failed"
         retryable = False
@@ -349,7 +327,7 @@ def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth
                 if bypassed:
                     return True, e.code, note, False
                 last_code, last_err = e.code, f"Dead HLS variant: HTTP {e.code}"
-                retryable = e.code in (400, 401, 403, 406, 429, 503)
+                retryable = e.code in (400, 401, 403, 406, 429)
             except Exception as e:
                 bypassed, note = check_bypass_rules(variant_url, 0, str(e))
                 if bypassed:
@@ -385,7 +363,7 @@ def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth
             if bypassed:
                 return True, e.code, note, False
             last_code, last_err = e.code, f"Dead HLS segment: HTTP {e.code}"
-            retryable = e.code in (400, 401, 403, 406, 429, 503)
+            retryable = e.code in (400, 401, 403, 406, 429)
         except Exception as e:
             bypassed, note = check_bypass_rules(seg_url, 0, str(e))
             if bypassed:
@@ -402,14 +380,12 @@ def check_stream(channel):
     custom_ref = channel.get("custom_ref")
     start_time = time.time()
 
-    ua_list = [custom_ua, custom_ua] if custom_ua else USER_AGENTS
+    is_bdix = is_direct_ip_or_bdix_stream(url)
+    ua_list = [custom_ua] if custom_ua else USER_AGENTS
     last_http_code = 0
     last_error = ""
 
-    for idx, ua in enumerate(ua_list):
-        if idx > 0:
-            time.sleep(0.5)  # Brief pause before retrying to avoid server rate limits
-
+    for ua in ua_list:
         try:
             code, final_url, content_type, raw_bytes = probe_url_request(url, ua, custom_ref)
             last_http_code = code
@@ -437,9 +413,10 @@ def check_stream(channel):
                         break
                     continue
 
+                # Non-HLS direct stream (e.g. .ts / .aac / octet-stream)
                 if len(raw_bytes) == 0:
                     last_error = "Empty stream response (0 bytes)"
-                    continue
+                    break
 
                 if is_html_error_body(lower_body) or content_type.startswith("text/"):
                     last_error = "HTML / Plain-text Error Page (not a media stream)"
@@ -453,14 +430,14 @@ def check_stream(channel):
         except urllib.error.HTTPError as e:
             last_http_code = e.code
             last_error = f"HTTP {e.code}"
-            if e.code in (400, 401, 403, 406, 429, 503):
+            if e.code in (400, 401, 403, 406, 429):
                 continue
             break
 
         except Exception as e:
             last_http_code = 0
             last_error = str(e)
-            if "timed out" in last_error.lower() or "name or service not known" in last_error.lower():
+            if is_bdix:
                 break
             continue
 
