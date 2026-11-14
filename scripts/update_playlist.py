@@ -48,6 +48,7 @@ USER_AGENTS = [
 # Only add hosts here if you verified they work locally but fail on GitHub Actions.
 GEO_BLOCKED_DOMAINS = [
     "tvhunter.top",
+    "103.89.248.130",
     "ziboplay.co",
 ]
 
