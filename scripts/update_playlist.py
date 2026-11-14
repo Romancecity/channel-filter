@@ -10,8 +10,12 @@ import json
 import re
 import sys
 import time
+import ssl
+import socket
+import http.client
 import urllib.request
 import urllib.error
+import urllib.parse
 import base64
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
@@ -33,14 +37,29 @@ EXTRA_SOURCES = [
     {"url": "#", "type": "json", "name": "Example_JSON_5"},
 ]
 
-USER_AGENT = "VLC/3.0.18 LibVLC/3.0.18 (GitHubActionBot)"
-TIMEOUT_SECONDS = 5
+USER_AGENT = "VLC/3.0.20 LibVLC/3.0.20"
+FALLBACK_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+TIMEOUT_SECONDS = 8
 MAX_WORKERS = 15
+
+SSL_CONTEXT = ssl.create_default_context()
+SSL_CONTEXT.check_hostname = False
+SSL_CONTEXT.verify_mode = ssl.CERT_NONE
+
+
+class _RedirectTracker(urllib.request.HTTPRedirectHandler):
+    def __init__(self):
+        self.final_url = None
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        self.final_url = newurl
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
 
 def fetch_content(url):
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=10) as response:
+        with urllib.request.urlopen(req, timeout=10, context=SSL_CONTEXT) as response:
             return response.read().decode('utf-8', errors='ignore')
     except Exception as e:
         print(f"Error fetching {url}: {e}")
@@ -114,63 +133,221 @@ def parse_json(json_text, source="BDIX_JSON"):
 
     return channels
 
+def parse_stream_url_and_headers(raw_url):
+    if "|" not in raw_url:
+        return raw_url, {}
+    clean_url, param_str = raw_url.split("|", 1)
+    headers = {}
+    parts = re.split(
+        r'\||&(?=(?:referer|referrer|user-agent|user_agent|ua|origin|cookie|authorization)=)',
+        param_str,
+        flags=re.IGNORECASE,
+    )
+    for part in parts:
+        if "=" not in part:
+            continue
+        k, v = part.split("=", 1)
+        k_lower = k.strip().lower()
+        v = v.strip()
+        if not v:
+            continue
+        if k_lower in ("referer", "referrer"):
+            headers["Referer"] = v
+        elif k_lower in ("user-agent", "user_agent", "ua"):
+            headers["User-Agent"] = v
+        elif k_lower == "origin":
+            headers["Origin"] = v
+        elif k_lower == "cookie":
+            headers["Cookie"] = v
+        elif k_lower == "authorization":
+            headers["Authorization"] = v
+        else:
+            headers[k.strip()] = v
+    return clean_url.strip(), headers
+
+def is_stream_path_url(url_str):
+    try:
+        clean_url, _ = parse_stream_url_and_headers(url_str)
+        parsed = urllib.parse.urlparse(clean_url)
+        path_lower = parsed.path.lower()
+        return (
+            path_lower.endswith(".m3u8")
+            or path_lower.endswith(".ts")
+            or "index" in path_lower
+            or "live" in path_lower
+            or "stream" in path_lower
+            or parsed.port is not None
+        )
+    except Exception:
+        return False
+
+def host_resolves(url_str):
+    try:
+        clean_url, _ = parse_stream_url_and_headers(url_str)
+        host = urllib.parse.urlparse(clean_url).hostname
+        if not host:
+            return False
+        socket.getaddrinfo(host, None)
+        return True
+    except Exception:
+        return False
+
 def is_direct_ip_or_bdix_stream(url_str):
     try:
-        parsed = urllib.parse.urlparse(url_str)
-        host = parsed.hostname or ""
+        clean_url, _ = parse_stream_url_and_headers(url_str)
+        parsed = urllib.parse.urlparse(clean_url)
+        host = (parsed.hostname or "").lower()
         is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
-        is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
-        is_stream_path = parsed.path.endswith(".m3u8") or parsed.path.endswith(".ts") or "index" in parsed.path.lower() or "live" in parsed.path.lower() or "stream" in parsed.path.lower() or parsed.port is not None
-        return (is_ip or is_bdix) and is_stream_path
+        is_bdix = (
+            "bdix" in host
+            or host.endswith(".bd")
+            or "local" in host
+            or host.startswith("bd")
+            or any(tag in host for tag in ("tvhunter", "ziboplay", "techandeat"))
+        )
+        return (is_ip or is_bdix) and is_stream_path_url(clean_url)
     except Exception:
         return False
 
 def check_stream(channel):
-    url = channel["url"]
+    raw_url = channel["url"]
+    clean_url, custom_headers = parse_stream_url_and_headers(raw_url)
     start_time = time.time()
-    is_bdix = is_direct_ip_or_bdix_stream(url)
+    is_bdix = is_direct_ip_or_bdix_stream(clean_url)
 
-    try:
-        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-        with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as response:
-            code = response.getcode()
-            response_time = int((time.time() - start_time) * 1000)
-            if 200 <= code < 400:
-                initial_bytes = response.read(512).decode('utf-8', errors='ignore').lower()
-                if "<html" in initial_bytes or "<!doctype html" in initial_bytes or "access denied" in initial_bytes or "403 forbidden" in initial_bytes:
-                    if is_bdix:
+    if "User-Agent" in custom_headers:
+        user_agents = [custom_headers["User-Agent"]]
+    else:
+        user_agents = [USER_AGENT, FALLBACK_USER_AGENT]
+
+    last_error = None
+    last_code = 0
+
+    for idx, ua in enumerate(user_agents):
+        is_last_attempt = (idx == len(user_agents) - 1)
+        redirect_tracker = _RedirectTracker()
+        opener = urllib.request.build_opener(
+            urllib.request.HTTPSHandler(context=SSL_CONTEXT),
+            redirect_tracker,
+        )
+
+        req_headers = {
+            "User-Agent": ua,
+            "Accept": "*/*",
+            "Connection": "close",
+        }
+        req_headers.update(custom_headers)
+
+        try:
+            req = urllib.request.Request(clean_url, headers=req_headers)
+            with opener.open(req, timeout=TIMEOUT_SECONDS) as response:
+                code = response.getcode()
+                response_time = int((time.time() - start_time) * 1000)
+                final_url = redirect_tracker.final_url or response.geturl() or clean_url
+                final_is_bdix = is_bdix or is_direct_ip_or_bdix_stream(final_url)
+
+                if 200 <= code < 400:
+                    try:
+                        raw_bytes = response.read(1024)
+                    except http.client.IncompleteRead as ic_err:
+                        raw_bytes = ic_err.partial
+                    initial_bytes = raw_bytes.decode('utf-8', errors='ignore').lower()
+
+                    if "#extm3u" in initial_bytes or "#extinf" in initial_bytes:
                         channel["status"] = "working"
                         channel["http_code"] = code
                         channel["response_time_ms"] = response_time
-                    else:
-                        channel["status"] = "dead"
-                        channel["http_code"] = code
-                        channel["error"] = "HTML Error Page / Access Denied"
-                else:
-                    channel["status"] = "working"
-                    channel["http_code"] = code
-                    channel["response_time_ms"] = response_time
-                return channel
-    except urllib.error.HTTPError as e:
-        if is_bdix and e.code in [403, 502, 503, 504]:
-            channel["status"] = "working"
-            channel["http_code"] = e.code
-            channel["response_time_ms"] = int((time.time() - start_time) * 1000)
-            return channel
-        channel["status"] = "dead"
-        channel["http_code"] = e.code
-        channel["error"] = f"HTTP {e.code}"
-    except Exception as e:
-        if is_bdix:
-            # BDIX direct IP streams (e.g. 27.124.71.27, 103.89.248.130) block foreign cloud runners but work locally
-            channel["status"] = "working"
-            channel["http_code"] = 200
-            channel["response_time_ms"] = int((time.time() - start_time) * 1000)
-            return channel
-        channel["status"] = "dead"
-        channel["http_code"] = 0
-        channel["error"] = str(e)
+                        return channel
 
+                    resp_headers_str = str(response.headers).lower() if response.headers else ""
+                    is_cf = (
+                        "cloudflare" in resp_headers_str
+                        or "cf-ray" in resp_headers_str
+                        or "just a moment" in initial_bytes
+                        or "cf-browser-verification" in initial_bytes
+                    )
+                    is_html_err = (
+                        "<html" in initial_bytes
+                        or "<!doctype html" in initial_bytes
+                        or "access denied" in initial_bytes
+                        or "403 forbidden" in initial_bytes
+                    )
+
+                    if is_html_err:
+                        if not is_last_attempt and not final_is_bdix:
+                            last_code = code
+                            last_error = "HTML Error Page / Access Denied"
+                            continue
+                        if final_is_bdix or (is_cf and is_stream_path_url(final_url)):
+                            channel["status"] = "working"
+                            channel["http_code"] = code
+                            channel["response_time_ms"] = response_time
+                        else:
+                            channel["status"] = "dead"
+                            channel["http_code"] = code
+                            channel["error"] = "HTML Error Page / Access Denied"
+                            channel["response_time_ms"] = response_time
+                    else:
+                        channel["status"] = "working"
+                        channel["http_code"] = code
+                        channel["response_time_ms"] = response_time
+                    return channel
+
+        except urllib.error.HTTPError as e:
+            last_code = e.code
+            last_error = f"HTTP {e.code}"
+            final_url = redirect_tracker.final_url or clean_url
+            final_is_bdix = is_bdix or is_direct_ip_or_bdix_stream(final_url)
+            resp_headers_str = str(e.headers).lower() if e.headers else ""
+            is_cf = (
+                "cloudflare" in resp_headers_str
+                or "cf-ray" in resp_headers_str
+                or "cf-mitigated" in resp_headers_str
+            )
+
+            if e.code in [403, 406, 429, 503] and not is_last_attempt:
+                continue
+
+            if (final_is_bdix and e.code in [403, 502, 503, 504]) or (
+                is_cf and e.code in [403, 429, 503] and is_stream_path_url(final_url)
+            ):
+                channel["status"] = "working"
+                channel["http_code"] = e.code
+                channel["response_time_ms"] = int((time.time() - start_time) * 1000)
+                return channel
+
+            channel["status"] = "dead"
+            channel["http_code"] = e.code
+            channel["error"] = f"HTTP {e.code}"
+            channel["response_time_ms"] = int((time.time() - start_time) * 1000)
+            return channel
+
+        except Exception as e:
+            last_code = 0
+            last_error = str(e)
+            final_url = redirect_tracker.final_url or clean_url
+            final_is_bdix = is_bdix or is_direct_ip_or_bdix_stream(final_url)
+            is_dns_error = isinstance(e, urllib.error.URLError) and isinstance(e.reason, socket.gaierror)
+
+            if not is_dns_error and final_is_bdix and host_resolves(final_url):
+                # BDIX / BD geo-restricted streams block foreign cloud runners but work locally
+                channel["status"] = "working"
+                channel["http_code"] = 200
+                channel["response_time_ms"] = int((time.time() - start_time) * 1000)
+                return channel
+
+            if not is_last_attempt and not is_dns_error:
+                continue
+
+            channel["status"] = "dead"
+            channel["http_code"] = 0
+            channel["error"] = str(e)
+            channel["response_time_ms"] = int((time.time() - start_time) * 1000)
+            return channel
+
+    channel["status"] = "dead"
+    channel["http_code"] = last_code
+    channel["error"] = last_error or "Unknown Error"
     channel["response_time_ms"] = int((time.time() - start_time) * 1000)
     return channel
 
