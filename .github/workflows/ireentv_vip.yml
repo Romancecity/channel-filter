@@ -2,9 +2,12 @@ name: Update IreenTV VIP Playlist
 
 on:
   schedule:
-    # প্রতি ৬ ঘণ্টা পর পর অটোমেটিক রান হবে
-     - cron: '*/30 * * * *'
+    # প্রতি ৩০ মিনিট পর পর অটোমেটিক রান হবে (প্রতি ঘণ্টার ৫ ও ৩৫ মিনিটে)
+    - cron: '5,35 * * * *'
   workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+  push:
+    paths:
+      - '.github/workflows/**' # এই yml ফাইল আপডেট করলে সাথে সাথেই একবার রান হবে
 
 permissions:
   contents: write
@@ -61,26 +64,24 @@ jobs:
                   if not line_clean:
                       continue
 
-                  # শুধুমাত্র #EXTINF পেলেই চ্যানেলের ডাটা রিড করা শুরু করবে (আগের সব হেডার ও কমেন্ট বাদ যাবে)
+                  # শুধুমাত্র #EXTINF পেলেই চ্যানেলের ডাটা রিড করা শুরু করবে
                   if line_clean.startswith("#EXTINF"):
                       channel_started = True
                       current_channel_block = [line_clean]
                       continue
 
-                  # চ্যানেল শুরু হওয়ার পর পরবর্তী লাইনগুলো (যেমন: KODIPROP, হেডার ট্যাগ বা স্ট্রিম URL) যুক্ত হবে
+                  # চ্যানেল শুরু হওয়ার পর পরবর্তী লাইনগুলো যুক্ত হবে
                   if channel_started:
                       current_channel_block.append(line_clean)
 
-                      # যখনই স্ট্রিম লিংক পাওয়া যাবে (যে লাইন # দিয়ে শুরু হয় না)
+                      # যখনই স্ট্রিম লিংক পাওয়া যাবে
                       if not line_clean.startswith("#"):
-                          # ব্লক লিস্টের লিংক চেক করা
                           is_blocked = any(BLOCKED_KEYWORD in l for l in current_channel_block)
 
                           if not is_blocked:
                               merged_channels.extend(current_channel_block)
                               channel_count += 1
 
-                          # চ্যানেলের ব্লক ও স্টেট রিসেট করা
                           current_channel_block = []
                           channel_started = False
 
@@ -114,4 +115,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add IreenTV_vip.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update IreenTV vip playlist [skip ci]" && git push)
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto update IreenTV vip playlist [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
