@@ -21,7 +21,7 @@ JSON_URL = "#"
 
 # Add any additional playlist sources here if needed
 EXTRA_SOURCES = [
-    {"url": "#", "type": "m3u", "name": "Example_M3U_1"},
+    {"url": "https://raw.githubusercontent.com/ahmedstore75/Iptvbdlive/refs/heads/main/BDIX-Playlist.m3u", "type": "m3u", "name": "Example_M3U_1"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_2"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_3"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_4"},
