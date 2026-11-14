@@ -3,18 +3,19 @@
 IPTV Playlist Auto-Updater & Health Checker Bot
 Fetches playlist channels from Combined M3U & BDIX JSON sources,
 probes stream status, and outputs filtered working_playlist.m3u & status reports.
-Designed to run via GitHub Actions every 6 hours or manually.
+Designed to run via GitHub Actions every 1 hour, manually, or in --loop mode on a server.
 """
 
+import argparse
+import base64
 import json
 import re
-import sys
 import time
-import urllib.request
 import urllib.error
-import base64
+import urllib.parse
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
+from datetime import datetime, timezone
 
 M3U_URL = "https://raw.githubusercontent.com/Romancecity/pl_vip/refs/heads/main/playlist_vip.m3u"
 JSON_URL = "#"
@@ -36,18 +37,37 @@ EXTRA_SOURCES = [
 USER_AGENT = "VLC/3.0.18 LibVLC/3.0.18 (GitHubActionBot)"
 TIMEOUT_SECONDS = 5
 MAX_WORKERS = 15
+CHECK_INTERVAL_SECONDS = 3600  # ১ ঘণ্টা (৩৬০০ সেকেন্ড)
+
+
+def is_valid_source_url(url):
+    return bool(url and url.strip() != "#" and url.strip().startswith(("http://", "https://")))
+
 
 def fetch_content(url):
+    if not is_valid_source_url(url):
+        return ""
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        # ক্যাশ এড়াতে এবং ফ্রেশ ডাটা পেতে User-Agent ও Cache-Control হেডার ব্যবহার
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            },
+        )
         with urllib.request.urlopen(req, timeout=10) as response:
-            return response.read().decode('utf-8', errors='ignore')
+            return response.read().decode("utf-8", errors="ignore")
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         return ""
 
+
 def parse_m3u(m3u_text, source="Combined_M3U"):
     channels = []
+    if not m3u_text:
+        return channels
     lines = m3u_text.splitlines()
     current_extinf = None
 
@@ -71,21 +91,24 @@ def parse_m3u(m3u_text, source="Combined_M3U"):
                 "logo": logo,
                 "group": group,
                 "url": url,
-                "source": source
+                "source": source,
             })
             current_extinf = None
 
     return channels
 
+
 def parse_json(json_text, source="BDIX_JSON"):
     channels = []
+    if not json_text:
+        return channels
     try:
         data = json.loads(json_text)
         items = []
         if isinstance(data, list):
             items = data
         elif isinstance(data, dict):
-            for k, v in data.items():
+            for _, v in data.items():
                 if isinstance(v, list):
                     items = v
                     break
@@ -107,12 +130,13 @@ def parse_json(json_text, source="BDIX_JSON"):
                 "logo": logo,
                 "group": group,
                 "url": url,
-                "source": source
+                "source": source,
             })
     except Exception as e:
-        print(f"Error parsing JSON: {e}")
+        print(f"Error parsing JSON ({source}): {e}")
 
     return channels
+
 
 def is_direct_ip_or_bdix_stream(url_str):
     try:
@@ -120,10 +144,18 @@ def is_direct_ip_or_bdix_stream(url_str):
         host = parsed.hostname or ""
         is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
         is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
-        is_stream_path = parsed.path.endswith(".m3u8") or parsed.path.endswith(".ts") or "index" in parsed.path.lower() or "live" in parsed.path.lower() or "stream" in parsed.path.lower() or parsed.port is not None
+        is_stream_path = (
+            parsed.path.endswith(".m3u8")
+            or parsed.path.endswith(".ts")
+            or "index" in parsed.path.lower()
+            or "live" in parsed.path.lower()
+            or "stream" in parsed.path.lower()
+            or parsed.port is not None
+        )
         return (is_ip or is_bdix) and is_stream_path
     except Exception:
         return False
+
 
 def check_stream(channel):
     url = channel["url"]
@@ -131,13 +163,18 @@ def check_stream(channel):
     is_bdix = is_direct_ip_or_bdix_stream(url)
 
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as response:
             code = response.getcode()
             response_time = int((time.time() - start_time) * 1000)
             if 200 <= code < 400:
-                initial_bytes = response.read(512).decode('utf-8', errors='ignore').lower()
-                if "<html" in initial_bytes or "<!doctype html" in initial_bytes or "access denied" in initial_bytes or "403 forbidden" in initial_bytes:
+                initial_bytes = response.read(512).decode("utf-8", errors="ignore").lower()
+                if (
+                    "<html" in initial_bytes
+                    or "<!doctype html" in initial_bytes
+                    or "access denied" in initial_bytes
+                    or "403 forbidden" in initial_bytes
+                ):
                     if is_bdix:
                         channel["status"] = "working"
                         channel["http_code"] = code
@@ -162,7 +199,6 @@ def check_stream(channel):
         channel["error"] = f"HTTP {e.code}"
     except Exception as e:
         if is_bdix:
-            # BDIX direct IP streams (e.g. 27.124.71.27, 103.89.248.130) block foreign cloud runners but work locally
             channel["status"] = "working"
             channel["http_code"] = 200
             channel["response_time_ms"] = int((time.time() - start_time) * 1000)
@@ -174,30 +210,31 @@ def check_stream(channel):
     channel["response_time_ms"] = int((time.time() - start_time) * 1000)
     return channel
 
-def main():
+
+def run_check():
     print("🚀 Starting IPTV Playlist Update & Health Probe...")
-    
+
     fetched_channels = []
 
     # 1. Fetch default playlists
-    m3u_raw = fetch_content(M3U_URL)
-    json_raw = fetch_content(JSON_URL)
+    if is_valid_source_url(M3U_URL):
+        m3u_raw = fetch_content(M3U_URL)
+        m3u_channels = parse_m3u(m3u_raw, "Combined_M3U")
+        fetched_channels.extend(m3u_channels)
+        print(f"📥 Fetched {len(m3u_channels)} channels from M3U")
 
-    m3u_channels = parse_m3u(m3u_raw, "Combined_M3U")
-    json_channels = parse_json(json_raw, "BDIX_JSON")
-
-    fetched_channels.extend(m3u_channels)
-    fetched_channels.extend(json_channels)
-
-    print(f"📥 Fetched {len(m3u_channels)} channels from M3U")
-    print(f"📥 Fetched {len(json_channels)} channels from JSON")
+    if is_valid_source_url(JSON_URL):
+        json_raw = fetch_content(JSON_URL)
+        json_channels = parse_json(json_raw, "BDIX_JSON")
+        fetched_channels.extend(json_channels)
+        print(f"📥 Fetched {len(json_channels)} channels from JSON")
 
     # Fetch extra custom sources
     for src in EXTRA_SOURCES:
         url = src.get("url")
         s_type = src.get("type", "m3u")
         s_name = src.get("name", "Extra_Source")
-        if not url:
+        if not is_valid_source_url(url):
             continue
         raw_text = fetch_content(url)
         if s_type == "json":
@@ -228,12 +265,12 @@ def main():
 
     print(f"✅ Probe finished: {len(working_channels)} WORKING (🟢) | {len(dead_channels)} DEAD (❌)")
 
-    now_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
-    # 3. Write working_playlist.m3u (clean channel names, no [WORKING] tag suffix)
+    # 3. Write working_playlist.m3u
     with open("working_playlist.m3u", "w", encoding="utf-8") as f:
-        f.write("#EXTM3U x-tvg-url=\"\"\n")
-        f.write(f"# Automated Filtered IPTV Playlist - Last Updated: {now_str}\n")
+        f.write('#EXTM3U x-tvg-url=""\n')
+        f.write(f"# Automated Filtered IPTV Playlist - Last Checked: {now_str}\n")
         f.write(f"# Working Channels: {len(working_channels)} / Total Checked: {len(all_channels)}\n\n")
         for ch in working_channels:
             f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}\n')
@@ -241,8 +278,8 @@ def main():
 
     # 4. Write all_channels_status.m3u
     with open("all_channels_status.m3u", "w", encoding="utf-8") as f:
-        f.write("#EXTM3U x-tvg-url=\"\"\n")
-        f.write(f"# IPTV Playlist with Live Health Status - Last Updated: {now_str}\n\n")
+        f.write('#EXTM3U x-tvg-url=""\n')
+        f.write(f"# IPTV Playlist with Live Health Status - Last Checked: {now_str}\n\n")
         for ch in probed_channels:
             tag = "🟢 [WORKING]" if ch["status"] == "working" else "❌ [DEAD]"
             f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]} {tag}\n')
@@ -254,14 +291,36 @@ def main():
         "stats": {
             "total": len(all_channels),
             "working": len(working_channels),
-            "dead": len(dead_channels)
+            "dead": len(dead_channels),
         },
-        "channels": probed_channels
+        "channels": probed_channels,
     }
     with open("channels_status.json", "w", encoding="utf-8") as f:
         json.dump(output_json, f, indent=2, ensure_ascii=False)
 
     print("🎉 Output files generated successfully: working_playlist.m3u, all_channels_status.m3u, channels_status.json")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="IPTV Playlist Auto-Updater")
+    parser.add_argument(
+        "--loop",
+        action="store_true",
+        help="Run continuously every 1 hour (use this for VPS/PC; do not use in GitHub Actions)",
+    )
+    args = parser.parse_args()
+
+    if args.loop:
+        while True:
+            try:
+                run_check()
+            except Exception as e:
+                print(f"❌ Unexpected error during run: {e}")
+            print(f"⏳ Waiting {CHECK_INTERVAL_SECONDS // 60} minutes before next check...\n")
+            time.sleep(CHECK_INTERVAL_SECONDS)
+    else:
+        run_check()
+
 
 if __name__ == "__main__":
     main()
