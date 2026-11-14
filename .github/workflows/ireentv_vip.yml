@@ -3,7 +3,7 @@ name: Update IreenTV VIP Playlist
 on:
   schedule:
     # প্রতি ৬ ঘণ্টা পর পর অটোমেটিক রান হবে
-    - cron: '0 */3 * * *'
+     - cron: '*/30 * * * *'
   workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
 
 permissions:
