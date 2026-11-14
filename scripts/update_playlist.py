@@ -2,7 +2,8 @@
 """
 IPTV Playlist Auto-Updater & Health Checker Bot
 Fetches playlist channels from Combined M3U & BDIX JSON sources,
-probes stream status, and outputs filtered working_playlist.m3u & status reports.
+deep-probes stream & HLS segment status, and outputs filtered
+working_playlist.m3u & status reports.
 Designed to run via GitHub Actions every 1 hour or manually.
 """
 
@@ -219,7 +220,18 @@ def is_geo_blocked_domain(url_str):
         return False
 
 
-def probe_once(url, user_agent, referer=None):
+def is_html_error_body(lower_body):
+    return (
+        "<html" in lower_body
+        or "<!doctype html" in lower_body
+        or "access denied" in lower_body
+        or "403 forbidden" in lower_body
+        or "404 not found" in lower_body
+        or "attention required! | cloudflare" in lower_body
+    )
+
+
+def probe_url_request(url, user_agent, referer=None, max_bytes=2048):
     headers = {
         "User-Agent": user_agent,
         "Accept": "*/*",
@@ -231,9 +243,135 @@ def probe_once(url, user_agent, referer=None):
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS, context=SSL_CONTEXT) as response:
         code = response.getcode()
+        final_url = response.geturl()
         content_type = (response.headers.get("Content-Type") or "").lower()
-        initial_bytes = response.read(2048).decode("utf-8", errors="ignore")
-        return code, content_type, initial_bytes
+        raw_bytes = response.read(max_bytes)
+
+        # If it looks like an HLS playlist, read the rest (up to 128KB) to get child/segment URLs
+        head_text = raw_bytes.decode("utf-8", errors="ignore").lower()
+        if "#extm3u" in head_text or "#ext-x-" in head_text or "mpegurl" in content_type:
+            extra_bytes = response.read(131072)
+            raw_bytes += extra_bytes
+
+        return code, final_url, content_type, raw_bytes
+
+
+def check_bypass_rules(target_url, http_code, error_msg):
+    is_bdix = is_direct_ip_or_bdix_stream(target_url)
+    is_geo = is_geo_blocked_domain(target_url)
+
+    if is_bdix and (http_code in (403, 502, 503, 504) or http_code == 0):
+        return True, "BDIX bypass"
+
+    err_low = (error_msg or "").lower()
+    is_timeout = "timed out" in err_low or "timeout" in err_low
+    is_dns_or_refused = (
+        "name or service not known" in err_low
+        or "getaddrinfo failed" in err_low
+        or "connection refused" in err_low
+    )
+    if is_geo and not is_dns_or_refused and (
+        http_code in (401, 403, 405, 429, 503) or is_timeout
+    ):
+        return True, f"Geo-block bypass ({error_msg})"
+
+    return False, ""
+
+
+def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth=0):
+    """
+    Deep-verifies an HLS (.m3u8) playlist by checking its child variant playlist
+    or media (.ts/.m4s/.aac) segment URLs so dead static playlists are caught.
+    Returns: (is_working, http_code, note_or_error, retryable_with_next_ua)
+    """
+    if depth > 2:
+        return False, 0, "Too many nested HLS playlists", False
+
+    # Collect non-comment URI lines inside the playlist
+    uris = []
+    for line in playlist_text.splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            uris.append(urllib.parse.urljoin(base_url, line))
+
+    if not uris:
+        return False, 200, "Empty M3U8 playlist (no stream/segments)", False
+
+    is_master = "#ext-x-stream-inf" in playlist_text.lower()
+
+    if is_master:
+        # Test up to 2 variant playlists
+        last_code = 0
+        last_err = "All HLS variants failed"
+        retryable = False
+        for variant_url in uris[:2]:
+            try:
+                v_code, v_final, v_ctype, v_bytes = probe_url_request(variant_url, user_agent, referer)
+                v_text = v_bytes.decode("utf-8", errors="ignore")
+                v_low = v_text.lower()
+
+                if 200 <= v_code < 400:
+                    if "#extm3u" in v_low or "#ext-x-" in v_low or "mpegurl" in v_ctype:
+                        ok, sub_code, sub_msg, sub_retry = verify_hls_playlist(
+                            v_text, v_final, user_agent, referer, depth + 1
+                        )
+                        if ok:
+                            return True, sub_code, sub_msg, False
+                        last_code, last_err, retryable = sub_code, sub_msg, sub_retry
+                    elif not is_html_error_body(v_low) and len(v_bytes) > 0 and not v_ctype.startswith("text/"):
+                        return True, v_code, "", False
+                    else:
+                        last_code, last_err, retryable = v_code, "Invalid HLS variant response", True
+            except urllib.error.HTTPError as e:
+                bypassed, note = check_bypass_rules(variant_url, e.code, f"HTTP {e.code}")
+                if bypassed:
+                    return True, e.code, note, False
+                last_code, last_err = e.code, f"Dead HLS variant: HTTP {e.code}"
+                retryable = e.code in (400, 401, 403, 406, 429)
+            except Exception as e:
+                bypassed, note = check_bypass_rules(variant_url, 0, str(e))
+                if bypassed:
+                    return True, 200, note, False
+                last_code, last_err = 0, f"Dead HLS variant: {e}"
+                retryable = True
+        return False, last_code, last_err, retryable
+
+    # Media playlist: test the freshest (last) segment, and fallback to the first segment
+    candidates = [uris[-1]]
+    if len(uris) > 1 and uris[0] != uris[-1]:
+        candidates.append(uris[0])
+
+    last_code = 0
+    last_err = "Dead HLS segments"
+    retryable = False
+
+    for seg_url in candidates:
+        try:
+            s_code, _, s_ctype, s_bytes = probe_url_request(seg_url, user_agent, referer, max_bytes=1024)
+            s_low = s_bytes.decode("utf-8", errors="ignore").lower()
+
+            if 200 <= s_code < 400:
+                if len(s_bytes) == 0:
+                    last_code, last_err = s_code, "Empty HLS segment (0 bytes)"
+                    continue
+                if is_html_error_body(s_low) or (s_ctype.startswith("text/") and "#extm3u" not in s_low):
+                    last_code, last_err, retryable = s_code, "Dead HLS segment (HTML/Text error)", True
+                    continue
+                return True, s_code, "", False
+        except urllib.error.HTTPError as e:
+            bypassed, note = check_bypass_rules(seg_url, e.code, f"HTTP {e.code}")
+            if bypassed:
+                return True, e.code, note, False
+            last_code, last_err = e.code, f"Dead HLS segment: HTTP {e.code}"
+            retryable = e.code in (400, 401, 403, 406, 429)
+        except Exception as e:
+            bypassed, note = check_bypass_rules(seg_url, 0, str(e))
+            if bypassed:
+                return True, 200, note, False
+            last_code, last_err = 0, f"Dead HLS segment: {e}"
+            retryable = True
+
+    return False, last_code, last_err, retryable
 
 
 def check_stream(channel):
@@ -243,42 +381,55 @@ def check_stream(channel):
     start_time = time.time()
 
     is_bdix = is_direct_ip_or_bdix_stream(url)
-    is_geo_domain = is_geo_blocked_domain(url)
-
     ua_list = [custom_ua] if custom_ua else USER_AGENTS
     last_http_code = 0
     last_error = ""
 
     for ua in ua_list:
         try:
-            code, content_type, initial_bytes = probe_once(url, ua, custom_ref)
+            code, final_url, content_type, raw_bytes = probe_url_request(url, ua, custom_ref)
             last_http_code = code
-            lower_body = initial_bytes.lower()
+            text_body = raw_bytes.decode("utf-8", errors="ignore")
+            lower_body = text_body.lower()
 
             if 200 <= code < 400:
-                is_hls = "#extm3u" in lower_body or "mpegurl" in content_type
-                is_html_error = (
-                    "<html" in lower_body
-                    or "<!doctype html" in lower_body
-                    or "access denied" in lower_body
-                    or "403 forbidden" in lower_body
-                    or "attention required! | cloudflare" in lower_body
-                )
+                is_hls = "#extm3u" in lower_body or "#ext-x-" in lower_body or "mpegurl" in content_type
 
-                if is_hls or not is_html_error:
-                    channel["status"] = "working"
-                    channel["http_code"] = code
-                    channel["response_time_ms"] = int((time.time() - start_time) * 1000)
-                    return cleanup_channel_dict(channel)
+                if is_hls:
+                    ok, hls_code, hls_msg, retryable = verify_hls_playlist(
+                        text_body, final_url, ua, custom_ref
+                    )
+                    if ok:
+                        channel["status"] = "working"
+                        channel["http_code"] = hls_code
+                        if hls_msg:
+                            channel["note"] = hls_msg
+                        channel["response_time_ms"] = int((time.time() - start_time) * 1000)
+                        return cleanup_channel_dict(channel)
 
-                last_error = "HTML Error Page / Access Denied"
-                # Try next UA if blocked by WAF/HTML page
-                continue
+                    last_http_code = hls_code
+                    last_error = hls_msg
+                    if not retryable:
+                        break
+                    continue
+
+                # Non-HLS direct stream (e.g. .ts / .aac / octet-stream)
+                if len(raw_bytes) == 0:
+                    last_error = "Empty stream response (0 bytes)"
+                    break
+
+                if is_html_error_body(lower_body) or content_type.startswith("text/"):
+                    last_error = "HTML / Plain-text Error Page (not a media stream)"
+                    continue
+
+                channel["status"] = "working"
+                channel["http_code"] = code
+                channel["response_time_ms"] = int((time.time() - start_time) * 1000)
+                return cleanup_channel_dict(channel)
 
         except urllib.error.HTTPError as e:
             last_http_code = e.code
             last_error = f"HTTP {e.code}"
-            # Retry with another User-Agent on 400/401/403/406/429
             if e.code in (400, 401, 403, 406, 429):
                 continue
             break
@@ -286,35 +437,16 @@ def check_stream(channel):
         except Exception as e:
             last_http_code = 0
             last_error = str(e)
-            # If timeout or connection reset, no need to spam retries for BDIX
             if is_bdix:
                 break
             continue
 
-    # Fallback evaluation if all UAs failed
     elapsed_ms = int((time.time() - start_time) * 1000)
-
-    # 1. BDIX / direct IP streams block foreign cloud runners
-    if is_bdix and (last_http_code in (403, 502, 503, 504) or last_http_code == 0):
+    bypassed, note = check_bypass_rules(url, last_http_code, last_error)
+    if bypassed:
         channel["status"] = "working"
         channel["http_code"] = last_http_code or 200
-        channel["note"] = "BDIX bypass"
-        channel["response_time_ms"] = elapsed_ms
-        return cleanup_channel_dict(channel)
-
-    # 2. Known geo-blocked domains (only bypass WAF/403/503 or timeout; 404/DNS errors still mark DEAD)
-    is_timeout = "timed out" in last_error.lower() or "timeout" in last_error.lower()
-    is_dns_or_refused = (
-        "name or service not known" in last_error.lower()
-        or "getaddrinfo failed" in last_error.lower()
-        or "connection refused" in last_error.lower()
-    )
-    if is_geo_domain and not is_dns_or_refused and (
-        last_http_code in (401, 403, 405, 429, 503) or is_timeout
-    ):
-        channel["status"] = "working"
-        channel["http_code"] = last_http_code or 200
-        channel["note"] = f"Geo-block bypass ({last_error})"
+        channel["note"] = note
         channel["response_time_ms"] = elapsed_ms
         return cleanup_channel_dict(channel)
 
@@ -326,7 +458,6 @@ def check_stream(channel):
 
 
 def cleanup_channel_dict(channel):
-    # Remove internal probe helper keys before saving JSON
     channel.pop("probe_url", None)
     channel.pop("custom_ua", None)
     channel.pop("custom_ref", None)
@@ -338,7 +469,6 @@ def main():
 
     fetched_channels = []
 
-    # 1. Fetch default playlists
     m3u_raw = fetch_content(M3U_URL)
     json_raw = fetch_content(JSON_URL)
 
@@ -352,7 +482,6 @@ def main():
     if is_valid_http_url(JSON_URL):
         print(f"📥 Fetched {len(json_channels)} channels from JSON")
 
-    # Fetch extra custom sources
     for src in EXTRA_SOURCES:
         url = src.get("url")
         s_type = src.get("type", "m3u")
@@ -367,7 +496,6 @@ def main():
         fetched_channels.extend(extra_parsed)
         print(f"📥 Fetched {len(extra_parsed)} channels from extra source ({s_name})")
 
-    # Deduplicate by URL
     url_map = {}
     for ch in fetched_channels:
         if ch["url"] not in url_map:
@@ -376,7 +504,6 @@ def main():
     all_channels = list(url_map.values())
     print(f"🔍 Testing stream status for {len(all_channels)} total unique channels...")
 
-    # 2. Probe streams concurrently
     probed_channels = []
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = [executor.submit(check_stream, ch) for ch in all_channels]
@@ -390,7 +517,6 @@ def main():
 
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
-    # 3. Write working_playlist.m3u
     with open("working_playlist.m3u", "w", encoding="utf-8") as f:
         f.write('#EXTM3U x-tvg-url=""\n')
         f.write(f"# Automated Filtered IPTV Playlist - Last Updated: {now_str}\n")
@@ -399,7 +525,6 @@ def main():
             f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}\n')
             f.write(f'{ch["url"]}\n\n')
 
-    # 4. Write all_channels_status.m3u
     with open("all_channels_status.m3u", "w", encoding="utf-8") as f:
         f.write('#EXTM3U x-tvg-url=""\n')
         f.write(f"# IPTV Playlist with Live Health Status - Last Updated: {now_str}\n\n")
@@ -408,7 +533,6 @@ def main():
             f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]} {tag}\n')
             f.write(f'{ch["url"]}\n\n')
 
-    # 5. Write channels_status.json
     output_json = {
         "last_updated": now_str,
         "stats": {
