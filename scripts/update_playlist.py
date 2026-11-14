@@ -2,14 +2,16 @@
 """
 IPTV Playlist Auto-Updater & Health Checker Bot
 Fetches playlist channels from Combined M3U & BDIX JSON sources,
-deep-probes stream & HLS segment status, and outputs filtered
-working_playlist.m3u & status reports.
+deep-probes stream & HLS segment status, verifies real BD IPs for BDIX bypass,
+and outputs filtered working_playlist.m3u & status reports.
 Designed to run via GitHub Actions every 1 hour or manually.
 """
 
+import ipaddress
 import json
 import re
 import ssl
+import threading
 import time
 import base64
 import urllib.request
@@ -56,6 +58,11 @@ MAX_WORKERS = 20
 SSL_CONTEXT = ssl.create_default_context()
 SSL_CONTEXT.check_hostname = False
 SSL_CONTEXT.verify_mode = ssl.CERT_NONE
+
+# Thread-safe cache for IP country lookups
+IP_COUNTRY_CACHE = {}
+IP_CACHE_LOCK = threading.Lock()
+CGNAT_NET = ipaddress.ip_network("100.64.0.0/10")
 
 
 def is_valid_http_url(url):
@@ -193,21 +200,56 @@ def parse_json(json_text, source="BDIX_JSON"):
     return channels
 
 
-def is_direct_ip_or_bdix_stream(url_str):
+def get_ip_country(ip_str):
+    """Returns ISO country code (e.g. 'BD', 'US') or 'LOCAL' for private/CGNAT IPs."""
+    with IP_CACHE_LOCK:
+        if ip_str in IP_COUNTRY_CACHE:
+            return IP_COUNTRY_CACHE[ip_str]
+
+        country = "UNKNOWN"
+        try:
+            ip_obj = ipaddress.ip_address(ip_str)
+            if ip_obj.is_private or ip_obj.is_loopback or ip_obj in CGNAT_NET:
+                country = "LOCAL"
+            else:
+                # Primary fast GeoIP lookup
+                for api_url, key in [
+                    (f"https://api.country.is/{ip_str}", "country"),
+                    (f"http://ip-api.com/json/{ip_str}?fields=status,countryCode", "countryCode"),
+                ]:
+                    try:
+                        req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0"})
+                        with urllib.request.urlopen(req, timeout=4, context=SSL_CONTEXT) as resp:
+                            data = json.loads(resp.read().decode("utf-8", errors="ignore"))
+                            val = data.get(key)
+                            if val:
+                                country = str(val).upper()
+                                break
+                    except Exception:
+                        continue
+        except ValueError:
+            pass
+
+        IP_COUNTRY_CACHE[ip_str] = country
+        return country
+
+
+def is_bdix_host(url_str):
+    """Checks if host is a BDIX domain or an actual Bangladeshi / local ISP IP."""
     try:
         parsed = urllib.parse.urlparse(url_str)
-        host = parsed.hostname or ""
-        is_ip = bool(re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', host))
-        is_bdix = "bdix" in host.lower() or host.lower().endswith(".bd") or "local" in host.lower()
-        is_stream_path = (
-            parsed.path.endswith(".m3u8")
-            or parsed.path.endswith(".ts")
-            or "index" in parsed.path.lower()
-            or "live" in parsed.path.lower()
-            or "stream" in parsed.path.lower()
-            or parsed.port is not None
-        )
-        return (is_ip or is_bdix) and is_stream_path
+        host = (parsed.hostname or "").lower()
+        if not host:
+            return False
+
+        if "bdix" in host or host.endswith(".bd") or "local" in host:
+            return True
+
+        if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", host):
+            country = get_ip_country(host)
+            return country in ("BD", "LOCAL")
+
+        return False
     except Exception:
         return False
 
@@ -247,7 +289,6 @@ def probe_url_request(url, user_agent, referer=None, max_bytes=2048):
         content_type = (response.headers.get("Content-Type") or "").lower()
         raw_bytes = response.read(max_bytes)
 
-        # If it looks like an HLS playlist, read the rest (up to 128KB) to get child/segment URLs
         head_text = raw_bytes.decode("utf-8", errors="ignore").lower()
         if "#extm3u" in head_text or "#ext-x-" in head_text or "mpegurl" in content_type:
             extra_bytes = response.read(131072)
@@ -257,12 +298,11 @@ def probe_url_request(url, user_agent, referer=None, max_bytes=2048):
 
 
 def check_bypass_rules(target_url, http_code, error_msg):
-    is_bdix = is_direct_ip_or_bdix_stream(target_url)
-    is_geo = is_geo_blocked_domain(target_url)
-
-    if is_bdix and (http_code in (403, 502, 503, 504) or http_code == 0):
-        return True, "BDIX bypass"
-
+    """
+    Only bypasses firewall/geo-block errors (Timeout, 401, 403, 503) for verified
+    Bangladeshi (BD) IPs / BDIX hosts or GEO_BLOCKED_DOMAINS.
+    Genuine stream failures (404, 500, 502, Connection Refused, Empty M3U8) are NOT bypassed.
+    """
     err_low = (error_msg or "").lower()
     is_timeout = "timed out" in err_low or "timeout" in err_low
     is_dns_or_refused = (
@@ -270,24 +310,27 @@ def check_bypass_rules(target_url, http_code, error_msg):
         or "getaddrinfo failed" in err_low
         or "connection refused" in err_low
     )
-    if is_geo and not is_dns_or_refused and (
-        http_code in (401, 403, 405, 429, 503) or is_timeout
-    ):
+
+    if is_dns_or_refused:
+        return False, ""
+
+    is_firewall_or_geo_err = http_code in (401, 403, 405, 429, 503) or is_timeout
+    if not is_firewall_or_geo_err:
+        return False, ""
+
+    if is_geo_blocked_domain(target_url):
         return True, f"Geo-block bypass ({error_msg})"
+
+    if is_bdix_host(target_url):
+        return True, f"BD/BDIX firewall bypass ({error_msg})"
 
     return False, ""
 
 
 def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth=0):
-    """
-    Deep-verifies an HLS (.m3u8) playlist by checking its child variant playlist
-    or media (.ts/.m4s/.aac) segment URLs so dead static playlists are caught.
-    Returns: (is_working, http_code, note_or_error, retryable_with_next_ua)
-    """
     if depth > 2:
         return False, 0, "Too many nested HLS playlists", False
 
-    # Collect non-comment URI lines inside the playlist
     uris = []
     for line in playlist_text.splitlines():
         line = line.strip()
@@ -300,7 +343,6 @@ def verify_hls_playlist(playlist_text, base_url, user_agent, referer=None, depth
     is_master = "#ext-x-stream-inf" in playlist_text.lower()
 
     if is_master:
-        # Test up to 2 variant playlists
         last_code = 0
         last_err = "All HLS variants failed"
         retryable = False
@@ -380,7 +422,6 @@ def check_stream(channel):
     custom_ref = channel.get("custom_ref")
     start_time = time.time()
 
-    is_bdix = is_direct_ip_or_bdix_stream(url)
     ua_list = [custom_ua] if custom_ua else USER_AGENTS
     last_http_code = 0
     last_error = ""
@@ -413,7 +454,6 @@ def check_stream(channel):
                         break
                     continue
 
-                # Non-HLS direct stream (e.g. .ts / .aac / octet-stream)
                 if len(raw_bytes) == 0:
                     last_error = "Empty stream response (0 bytes)"
                     break
@@ -437,7 +477,8 @@ def check_stream(channel):
         except Exception as e:
             last_http_code = 0
             last_error = str(e)
-            if is_bdix:
+            # Don't retry multiple UAs on timeout or connection refused
+            if "timed out" in last_error.lower() or "connection refused" in last_error.lower():
                 break
             continue
 
