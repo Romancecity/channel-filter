@@ -5,7 +5,11 @@ on:
     # প্রতি ১ ঘণ্টা পরপর অটো রান হবে (GitHub-এর পিক-আওয়ার লোড এড়াতে 0 মিনিটের বদলে 17 মিনিট দেওয়া হয়েছে)
     - cron: '17 * * * *'
   workflow_dispatch:
-    # Allows manual trigger anytime from GitHub Actions tab
+    # Allows manual trigger anytime from GitHub Actions tab or Workflow Dispatch API
+  repository_dispatch:
+    # Render বা এক্সটার্নাল স্ক্রিপ্ট থেকে ট্রিগার গ্রহণ করার জন্য
+    # আপনি চাইলে নির্দিষ্ট নাম দিতে নিচের লাইনটি আনকমেন্ট করতে পারেন, আর কমেন্ট করা থাকলে যেকোনো event_type গ্রহণ করবে
+    # types: [render-trigger]
 
 permissions:
   contents: write
