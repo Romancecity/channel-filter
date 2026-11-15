@@ -1,15 +1,16 @@
 name: IPTV Playlist Hourly Auto Update Bot
 
 on:
-  schedule:
-    # প্রতি ১ ঘণ্টা পরপর অটো রান হবে (GitHub-এর পিক-আওয়ার লোড এড়াতে 0 মিনিটের বদলে 17 মিনিট দেওয়া হয়েছে)
-    - cron: '17 * * * *'
-  workflow_dispatch:
-    # Allows manual trigger anytime from GitHub Actions tab or Workflow Dispatch API
+  # ১. cronjob.org থেকে repository_dispatch মেথডে কল করলে চালু হবে
   repository_dispatch:
-    # Render বা এক্সটার্নাল স্ক্রিপ্ট থেকে ট্রিগার গ্রহণ করার জন্য
-    # আপনি চাইলে নির্দিষ্ট নাম দিতে নিচের লাইনটি আনকমেন্ট করতে পারেন, আর কমেন্ট করা থাকলে যেকোনো event_type গ্রহণ করবে
-    # types: [render-trigger]
+    types: [cronjob_trigger, update_playlist, render_trigger]
+
+  # ২. cronjob.org থেকে সরাসরি workflow_dispatch মেথডে কল করলে বা ম্যানুয়ালি রান করলে চালু হবে
+  workflow_dispatch:
+
+  # ৩. ব্যাকআপ হিসেবে গিটহাবের নিজস্ব শিডিউলার (প্রতি ১ ঘণ্টা পরপর)
+  schedule:
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
@@ -30,6 +31,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      # স্ক্রিপ্টের জন্য রিকোয়ার্ড লাইব্রেরি ইনস্টল নিশ্চিত করা
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install httpx; fi
+
       - name: Run IPTV Playlist Filter & Health Check
         run: |
           python scripts/update_playlist.py
@@ -39,4 +46,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add working_playlist.m3u all_channels_status.m3u channels_status.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update working IPTV playlist [$(date -u +'%Y-%m-%d %H:%M UTC')]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update working IPTV playlist [$(TZ='Asia/Dhaka' date '+%Y-%m-%d %I:%M %p BST')]" && git push)
