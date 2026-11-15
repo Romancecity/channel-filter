@@ -1,16 +1,29 @@
 name: Update IreenTV VIP Playlist
 
 on:
+  # ১. cronjob.org বা এক্সটার্নাল এপিআই থেকে কল গ্রহণ করার জন্য
+  repository_dispatch:
+    types: [cronjob_trigger, update_ireentv, external_trigger]
+
+  # ২. cronjob.org থেকে সরাসরি workflow_dispatch দিয়ে কল করার বা ম্যানুয়ালি রান করার জন্য
+  workflow_dispatch:
+
+  # ৩. ব্যাকআপ হিসেবে গিটহাবের নিজস্ব শিডিউলার (প্রতি ৩০ মিনিট পরপর)
   schedule:
-    # প্রতি ৩০ মিনিট পর পর অটোমেটিক রান হবে (প্রতি ঘণ্টার ৫ ও ৩৫ মিনিটে)
     - cron: '5,35 * * * *'
-  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+  # ৪. এই yml ফাইল আপডেট করলে সাথে সাথেই একবার টেস্ট রান হবে
   push:
     paths:
-      - '.github/workflows/**' # এই yml ফাইল আপডেট করলে সাথে সাথেই একবার রান হবে
+      - '.github/workflows/**'
 
 permissions:
   contents: write
+
+# একসাথে একাধিক ট্রিগার আসলে কনফ্লিক্ট এড়ানোর জন্য
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   merge-and-update:
