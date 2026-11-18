@@ -25,9 +25,9 @@ JSON_URL = "#"
 
 # Add any additional playlist sources here if needed
 EXTRA_SOURCES = [
-    {"url": "https://raw.githubusercontent.com/iptvorg-bd/Bingst/refs/heads/main/IPTV%20Playlist.m3u", "type": "m3u", "name": "Example_M3U_1"},
+    {"url": "https://raw.githubusercontent.com/iptvorg-bd/Anya/refs/heads/main/ayna_ott.m3u", "type": "m3u", "name": "Example_M3U_1"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_2"},
-    {"url": "#", "type": "m3u", "name": "Example_M3U_3"},
+    {"url": "https://raw.githubusercontent.com/iptvorg-bd/Bingst/refs/heads/main/IPTV%20Playlist.m3u", "type": "m3u", "name": "Example_M3U_3"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_4"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_5"},
     {"url": "#", "type": "m3u", "name": "Example_M3U_6"},
