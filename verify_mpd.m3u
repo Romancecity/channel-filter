@@ -1,4 +1,26 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/8C2gLZX9/SS-Fancode.png" group-title="Sports",Fancode Live 1
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/8C2gLZX9/SS-Fancode.png" group-title="Sports",Fancode Live 2
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1994b1df7dfd2e8a8d7b9bf3fb900285:22a1444b3da18e139191665b3d652835
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/0R2YXqLk/sky-sports.jpg" group-title="SPORTS" tvg-name="SKY SPORTS PREMIER LEAGUE",SKY SPORTS PREMIER LEAGUE HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1106fb025da5b31657618344099c6c14:788284538616a73b56214e90196a6e0f
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/qdbhkwig26/out/v1/c3a69dfec0434abea00756cd73e749ff/cenc.mpd
+#EXTINF:-1 tvg-logo="https://logo.m3uassets.com/skysporttopevent.png" group-title="SPORTS" tvg-name="SKY SPORT TOP EVENT",SKY SPORT TOP EVENT HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=368bd4ebe301406897324bc777650411:69d27c2c2b7de927d67aacc973259901
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/dg9oi3org7/out/v1/e75b690762ba4c4ca72bf30703a4473e/cenc.mpd
 #EXTINF:-1 tvg-chno="75.10" channel-id="LaLiga TV Hypermotion HD" tvg-name="LaLiga TV Hypermotion HD"  tvg-logo="https://i.ibb.co.com/fzbfbtGB/La-Liga-TV-Hypermotion.png" group-title="Sports", LaLiga TV Hypermotion HD 🇪🇸
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -167,6 +189,12 @@ https://live-pv-ta.amazon.fastly-edge.com/lhr-nitro/live/clients/dash/enc/tll6uw
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=290e09c837da78d5cd961978d390515c:b748836c71e6a4ca68ef5b5652db6247
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
+#EXTINF:-1 tvg-name="Eurosport HD" tvg-logo="https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp" group-title="SPORTS" ,Eurosport HD
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=12ed56d780abcfebcd23aa27e4ac5015:6784567890abcfebcd23aa27e4ac2814
+https://wbd.skandha.tv/EuroSport_HD/EuroSport_HD.isml/.mpd
 #EXTINF:-1 group-title="Sports"tvg-id="" tvg-logo="https://cdn.broadbandtvnews.com/wp-content/uploads/2025/02/24171333/Eurosport-image.jpg",EuroSport 1
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -497,6 +525,12 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/zzhnlvao6q/out/v1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3290efe4c5cf67165e846a0742c22cd9:ddb94463c46af6037432fc026339c09d
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/gyczo3tdxu/out/v1/4e9f7dd1b08a404581818c3923af9a93/cenc.mpd
+#EXTINF:-1 tvg-id="AMC+.us" group-title="Movies" tvg-logo="https://i.imgur.com/tkFtkpx.png", AMC+
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=59a51164c2c915352f04066a06f6e807:eba5cc362d1d63c0fe6460febca0fd11
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0f5clvxn6o/out/v1/d5a953bb19734fa3baa1776266887fcb/cenc.mpd
 #EXTINF:-1 tvg-name="UniversalMovies.us" tvg-logo="https://iptv-epg.org/logos/USA/UniversalMovies.us.png" group-title="Movies",Universal Movies
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
